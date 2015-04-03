@@ -1,0 +1,18 @@
+﻿<xapCache source="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\Bin\Release\TrekMe_Release_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="25/03/2015 22:23:24">
+  <file source="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\obj\Release\TrekMe.dll" archivePath="TrekMe.dll" lastWriteTime="25/03/2015 22:23:24" />
+  <file source="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\obj\Release\sr-Cyrl\TrekMe.resources.dll" archivePath="sr-Cyrl\TrekMe.resources.dll" lastWriteTime="25/03/2015 22:23:24" />
+  <file source="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\obj\Release\sr-Latn\TrekMe.resources.dll" archivePath="sr-Latn\TrekMe.resources.dll" lastWriteTime="25/03/2015 22:23:24" />
+  <file source="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="01/02/2014 20:02:52" />
+  <file source="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\Assets\ApplicationIcon110x110.png" archivePath="Assets\ApplicationIcon110x110.png" lastWriteTime="01/02/2014 20:02:52" />
+  <file source="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\Assets\ApplicationIcon202x202.png" archivePath="Assets\ApplicationIcon202x202.png" lastWriteTime="01/02/2014 20:02:52" />
+  <file source="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\Assets\ApplicationIconLarge.png" archivePath="Assets\ApplicationIconLarge.png" lastWriteTime="01/02/2014 20:02:52" />
+  <file source="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="01/02/2014 20:02:52" />
+  <file source="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="01/02/2014 20:02:52" />
+  <file source="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="01/02/2014 20:02:52" />
+  <file source="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="01/02/2014 20:02:52" />
+  <file source="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="01/02/2014 20:02:52" />
+  <file source="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\Bin\Release\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="25/03/2015 15:23:11" />
+  <file source="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\Bin\Release\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="01/02/2014 20:02:52" />
+  <file source="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\Bin\Release\Fonts\Warenhaus-Standard.otf" archivePath="Fonts\Warenhaus-Standard.otf" lastWriteTime="30/07/2014 21:04:55" />
+  <file source="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\Bin\Release\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="25/03/2015 15:23:11" />
+</xapCache>

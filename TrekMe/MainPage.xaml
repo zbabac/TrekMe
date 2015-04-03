@@ -1,0 +1,252 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="TrekMe.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:maps="clr-namespace:Microsoft.Phone.Maps.Controls;assembly=Microsoft.Phone.Maps"
+    xmlns:util="clr-namespace:Util"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeMedium}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+    <phone:PhoneApplicationPage.Resources>
+        <LinearGradientBrush x:Key="linearBrush" StartPoint="0,0.5" EndPoint="1,0.5">
+            <GradientStop Color="Red" Offset="0.0" />
+            <GradientStop Color="Blue" Offset="0.7" />
+            <GradientStop Color="LightGray" Offset="1.0" />
+        </LinearGradientBrush>
+    </phone:PhoneApplicationPage.Resources>
+    <!-- 2 pivots: one for run details, other for map -->
+    <phone:Pivot x:Name="pivotControl">
+        <!-- 1st pivot: run details and buttons -->
+        <phone:PivotItem Margin="0,0,0,0">
+            <!-- main grid has 5 rows in order to evenly distribute data and buttons -->
+            <Grid util:GridUtils.RowDefinitions="Auto,Auto,Auto,Auto,Auto">
+                <!-- 1st row has a grid to display heading -->
+                <Grid Margin="20,0,0,0" util:GridUtils.ColumnDefinitions="*" 
+                          util:GridUtils.RowDefinitions="*" HorizontalAlignment="Left">
+                        <TextBlock x:Name="detailLabel"
+                            Text="{Binding Path=LocalizedResources.DetailTitle, Source={StaticResource LocalizedStrings}}" 
+                                Grid.Row="0" Foreground="Transparent"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Center"
+                                FontSize="28" Padding="0,0"/>
+                </Grid>
+                <!-- display warning that GPS is not ready yet -->
+                <Grid x:Name="banner" Margin="0,0,0,0" util:GridUtils.ColumnDefinitions="*" 
+                          util:GridUtils.RowDefinitions="*" HorizontalAlignment="Stretch" Background="Blue">
+                    <TextBlock Text="{Binding Path=LocalizedResources.BannerInfo, Source={StaticResource LocalizedStrings}}"
+                                Grid.Row="1" HorizontalAlignment="Center" 
+                                Foreground="White"
+                                x:Name="BannerInfo"/>
+                </Grid>
+                <!-- 2nd row has 2 rown within to display distance, time elapsed, calories and pause time -->
+                <Grid Grid.Row="1" Background="#99000000" Margin="10,20,10,0" 
+                        VerticalAlignment="Bottom" Height="90">
+                    <Grid Margin="10,5,10,0"
+                            util:GridUtils.RowDefinitions="auto, auto"
+                            util:GridUtils.ColumnDefinitions="auto, *, auto, auto">
+                        <TextBlock Text="{Binding Path=LocalizedResources.Distance2, Source={StaticResource LocalizedStrings}}" 
+                                   Grid.Row="0" Grid.Column="0"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Center"
+                                FontSize="18" Padding="0,0"/>
+                        <TextBlock Text="0 km" Grid.Row="0" Grid.Column="1" x:Name="distanceBox2"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Center"
+                                FontFamily=".\Fonts\Warenhaus-Standard.otf#Warenhaus Typenhebel"
+                                FontSize="30" Margin="0,0,0,-5"/>
+                        <TextBlock Text="{Binding Path=LocalizedResources.Time2, Source={StaticResource LocalizedStrings}}" 
+                                Grid.Row="0" Grid.Column="2"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Center"
+                                FontSize="18"/>
+                        <TextBlock Text="00:00:00" Grid.Row="0" Grid.Column="3" x:Name="elapsedTime2"
+                                HorizontalAlignment="Right"
+                                VerticalAlignment="Center"
+                                FontFamily=".\Fonts\Warenhaus-Standard.otf#Warenhaus Typenhebel"
+                                FontSize="30" Margin="0,0,0,-5"/>
+                        <TextBlock Text="{Binding Path=LocalizedResources.Calories, Source={StaticResource LocalizedStrings}}" 
+                                Grid.Row="1" Grid.Column="0"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Center"
+                                FontSize="18" Padding="0,10"/>
+                        <TextBlock Text="0 kcal" Grid.Row="1" Grid.Column="1" x:Name="caloriesLabel"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Center"
+                                FontFamily=".\Fonts\Warenhaus-Standard.otf#Warenhaus Typenhebel"
+                                FontSize="30" Margin="0,0,0,-5"/>
+                        <TextBlock Text="{Binding Path=LocalizedResources.Break, Source={StaticResource LocalizedStrings}}" 
+                                Grid.Row="1" Grid.Column="2"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Center"
+                                FontSize="18"/>
+                        <TextBlock Text="00:00:00" Grid.Row="1" Grid.Column="3" x:Name="breakTime"
+                                HorizontalAlignment="Right"
+                                VerticalAlignment="Center"
+                                FontFamily=".\Fonts\Warenhaus-Standard.otf#Warenhaus Typenhebel"
+                                FontSize="30" Margin="0,0,0,-5"/>
+                    </Grid>
+                
+                </Grid>
+                <!-- 3rd row has 1 row to display longitude, latitude and altitude -->
+                <Grid Grid.Row="2" Background="#99000000" Margin="10,0,10,0" 
+                        VerticalAlignment="Bottom" Height="40">
+                    <Grid Margin="10,5,10,0" Opacity=".9"
+                            util:GridUtils.RowDefinitions="auto"
+                            util:GridUtils.ColumnDefinitions="*, *, *">
+                        <TextBlock x:Name="lat2" Text="{Binding Path=LocalizedResources.Latitude2, Source={StaticResource LocalizedStrings}}"
+                                Grid.Column="0"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                FontSize="24"/>
+                        <TextBlock x:Name="lon2" Text="{Binding Path=LocalizedResources.Longitude2, Source={StaticResource LocalizedStrings}}"
+                                Grid.Column="1"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                FontSize="24"/>
+                        <TextBlock x:Name="alt2" Text="{Binding Path=LocalizedResources.Altitude2, Source={StaticResource LocalizedStrings}}"
+                                Grid.Column="2"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                FontSize="24"/>
+                    </Grid>
+                </Grid>
+                <!-- 4th row has 2 rows within to display control buttons -->
+                <Grid Grid.Row="3" Background="#99000000" Margin="10,10,10,0" 
+                        VerticalAlignment="Bottom" Height="180">
+                    <Grid Margin="10,5,10,0" Opacity=".9"
+                            util:GridUtils.RowDefinitions="auto,auto"
+                            util:GridUtils.ColumnDefinitions="*, *">
+                        <!-- 1st row with large Start button -->
+                        <Button Content="{Binding Path=LocalizedResources.StartButton, Source={StaticResource LocalizedStrings}}"
+                                Grid.Row="0" Grid.ColumnSpan="2"
+                                Click="StartButton_Click"
+                                x:Name="StartButton" 
+                                VerticalAlignment="Center"
+                                FontFamily="Segoe UI"
+                                FontWeight="SemiBold"
+                                FontSize="30" Padding="0,10"/>
+                        <!-- 2nd row has button Pause and button Stop -->
+                        <Button Content="{Binding Path=LocalizedResources.PauseButton, Source={StaticResource LocalizedStrings}}"
+                                Grid.Row="1" Grid.Column="0"
+                                Click="PauseButton_Click"
+                                x:Name="PauseButton" 
+                                VerticalAlignment="Center"
+                                FontFamily="Segoe UI"
+                                FontWeight="SemiBold"
+                                FontSize="30" Padding="0,10"/>
+                        <Button Content="{Binding Path=LocalizedResources.StopButton, Source={StaticResource LocalizedStrings}}"
+                                Grid.Row="1" Grid.Column="1"
+                                Click="StopButton_Click"
+                                x:Name="StopButton" 
+                                VerticalAlignment="Center"
+                                FontFamily="Segoe UI"
+                                FontWeight="SemiBold"
+                                FontSize="30" Padding="0,10"/>
+                    </Grid>
+                </Grid>
+                <!-- 5th row has 2 rows within to display current and average speed -->
+                <Grid Grid.Row="4" Background="#99000000" Margin="10,30,10,0" 
+                        VerticalAlignment="Bottom" Height="155">
+                    <Grid Margin="10,5,10,0" Opacity=".9"
+                            util:GridUtils.RowDefinitions="auto, auto, , , auto"
+                            util:GridUtils.ColumnDefinitions="*, *">
+                        <TextBlock Text="{Binding Path=LocalizedResources.CurrentSpeed, Source={StaticResource LocalizedStrings}}" 
+                                Grid.Row="0" Grid.Column="0"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Center"
+                                FontSize="20" Padding="0,10" />
+                        <TextBlock Text="0 km/h" Grid.Row="0" Grid.Column="1" x:Name="speedBox2"
+                                HorizontalAlignment="Left" 
+                                VerticalAlignment="Center"
+                                FontFamily=".\Fonts\Warenhaus-Standard.otf#Warenhaus Typenhebel"
+                                FontSize="32" Margin="0,0,0,-5" Padding="0,10"/>
+                        <TextBlock Text="{Binding Path=LocalizedResources.AverageSpeed, Source={StaticResource LocalizedStrings}}" 
+                                Grid.Row="1" Grid.Column="0"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Center"
+                                FontSize="20" Padding="0,10" />
+                        <TextBlock Text="0 km/h" Grid.Row="1" Grid.Column="1" x:Name="avgSpeed"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Center"
+                                FontFamily=".\Fonts\Warenhaus-Standard.otf#Warenhaus Typenhebel"
+                                FontSize="32" Margin="0,0,0,-5" Padding="0,10"/>
+                        <TextBlock Text="{Binding Path=LocalizedResources.SwipeText, Source={StaticResource LocalizedStrings}}" 
+                                   Grid.Row="3" Grid.Column="0"
+                                   HorizontalAlignment="Center"
+                                   FontSize="18" Grid.ColumnSpan="2" Opacity=".4"/>
+                    </Grid>
+                </Grid>
+            </Grid>
+        </phone:PivotItem>
+        <!-- 2nd pivot item is for map -->
+        <phone:PivotItem Margin="0,0,0,0">
+            <Grid util:GridUtils.RowDefinitions="Auto, *">
+                <StackPanel Grid.Row="0" Margin="12,17,0,28">
+                    <StackPanel Orientation="Horizontal" Height="28"/>
+                </StackPanel>
+
+                <!--ContentPanel - for placing eventual additional content-->
+                <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+                    <!-- map -->
+                    <maps:Map x:Name="Map"
+                    PedestrianFeaturesEnabled="True"
+                    LandmarksEnabled="True"
+                    Pitch="25"
+                    ZoomLevel="16" Margin="0,-73,0,0" Height="821" VerticalAlignment="Bottom"/>
+
+                    <!-- run statistics at top of the screen-->
+                    <Grid Background="#99000000" Margin="0,-77,0,0" 
+                        VerticalAlignment="Top" Height="30">
+                        <Grid Margin="0,0,0,0" Opacity=".5"
+                            util:GridUtils.RowDefinitions="30, Auto"
+                            util:GridUtils.ColumnDefinitions="auto,auto,auto,*,auto,*,*">
+                            <TextBlock Text="lng " Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Top" x:Name="longitudelabel"/>
+                            <TextBlock Text="lat " Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" x:Name="latitudelabel"/>
+                            <TextBlock Text="{Binding Path=LocalizedResources.Alt, Source={StaticResource LocalizedStrings}}" 
+                                       Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Top" />
+                            <TextBlock Text="0 m" Grid.Column="3" HorizontalAlignment="Left" VerticalAlignment="Top" x:Name="altLabel"/>
+                            <TextBlock Text="{Binding Path=LocalizedResources.SpeedMap, Source={StaticResource LocalizedStrings}}" 
+                                       Grid.Column="4" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+                            <TextBlock Text="0 km/h" Grid.Column="5" Grid.ColumnSpan="2" HorizontalAlignment="Right" VerticalAlignment="Top"  x:Name="speedBox"/>
+                        </Grid>
+                    </Grid>
+
+                    <Button Content="o" x:Name="CenterButton" Click="CenterButton_Click"
+                        Background="Blue" Foreground="White"  Opacity=".3" HorizontalAlignment="Left"
+                        VerticalAlignment="Bottom" Width="70" Height="50" Margin="0,0,0,30"
+                            Padding="10,10"/>
+                    <!-- bottom portion of the screen displays time, speed and small button to switch to other pivot item-->
+                    <Grid Background="#99000000" Margin="0,0,0,0" 
+                        VerticalAlignment="Bottom" Height="30">
+                        <Grid Margin="0,0,0,0" Opacity=".5"
+                            util:GridUtils.RowDefinitions="40"
+                            util:GridUtils.ColumnDefinitions="*, *, auto, *,60">
+                            <TextBlock Text="{Binding Path=LocalizedResources.Distance, Source={StaticResource LocalizedStrings}}" 
+                                       Grid.Row="0" Grid.Column="0"/>
+                            <TextBlock Text="0 km" Grid.Row="0" Grid.Column="1" x:Name="distanceBox"
+                                HorizontalAlignment="Center"/>
+                            <TextBlock Text="{Binding Path=LocalizedResources.Time, Source={StaticResource LocalizedStrings}}" 
+                                       Grid.Row="0" Grid.Column="2"/>
+                            <TextBlock Text="00:00:00" Grid.Row="0" Grid.Column="3" x:Name="elapsedTime"
+                                HorizontalAlignment="Left"/>
+                            <!-- small button used to jump to details pivot item -->
+                            <!-- for those who find it swipe on the map page -->
+                            <Button Content=""
+                                Grid.Row="0" Grid.Column="4"
+                                Click="PivotButton_Click" Background="Red" Width="70" Height="50" 
+                                    VerticalAlignment="Bottom" HorizontalAlignment="Right"
+                                x:Name="PivotButton" FontSize="{StaticResource PhoneFontSizeSmall}"/>
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </Grid>
+        </phone:PivotItem>
+    </phone:Pivot>
+</phone:PhoneApplicationPage>

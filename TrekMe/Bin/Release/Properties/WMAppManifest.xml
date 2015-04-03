@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
+  <DefaultLanguage xmlns="" code="en-US" />
+  <Languages xmlns="">
+    <Language code="sr" />
+    <Language code="sr-Cyrl" />
+  </Languages>
+  <App xmlns="" ProductID="{0250d539-7c6a-48f2-a443-b73182623572}" Title="TrekMe" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Zlatko Babic" Description="Tracks position when walking, running or driving. Line is drawn on Offline/online maps to show traversed path. Run can be paused. Current speed, average speed, time, calories spent and GPS position are shown." Publisher="TrekMe" PublisherID="{5ffc7c1a-b665-4191-b217-a2be813a39af}">
+    <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>
+    <Capabilities>
+      <Capability Name="ID_CAP_NETWORKING" />
+      <Capability Name="ID_CAP_SENSORS" />
+      <Capability Name="ID_CAP_MAP" />
+      <Capability Name="ID_CAP_LOCATION" />
+    </Capabilities>
+    <Tasks>
+      <DefaultTask Name="_default" NavigationPage="MainPage.xaml">
+        <BackgroundExecution>
+          <ExecutionType Name="LocationTracking" />
+        </BackgroundExecution>
+      </DefaultTask>
+    </Tasks>
+    <Tokens>
+      <PrimaryToken TokenID="TrekMeToken" TaskName="_default">
+        <TemplateIconic>
+          <SmallImageURI IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</SmallImageURI>
+          <Count>0</Count>
+          <IconImageURI IsRelative="true" IsResource="false">Assets\ApplicationIcon110x110.png</IconImageURI>
+          <Title></Title>
+          <Message></Message>
+          <BackgroundColor></BackgroundColor>
+          <HasLarge>True</HasLarge>
+          <LargeContent1></LargeContent1>
+          <LargeContent2></LargeContent2>
+          <LargeContent3></LargeContent3>
+          <DeviceLockImageURI IsRelative="true" IsResource="false"></DeviceLockImageURI>
+        </TemplateIconic>
+      </PrimaryToken>
+    </Tokens>
+    <Extensions>
+      <Extension ExtensionName="LockScreen_Notification_IconCount" ConsumerID="{111DFF24-AA15-4A96-8006-2BFF8122084F}" TaskID="_default" />
+      <Extension ExtensionName="LockScreen_Notification_TextField" ConsumerID="{111DFF24-AA15-4A96-8006-2BFF8122084F}" TaskID="_default" />
+      <Extension ExtensionName="LockScreen_Wallpaper" ConsumerID="{111DFF24-AA15-4A96-8006-2BFF8122084F}" TaskID="_default" />
+    </Extensions>
+    <ScreenResolutions>
+      <ScreenResolution Name="ID_RESOLUTION_WVGA" />
+      <ScreenResolution Name="ID_RESOLUTION_WXGA" />
+      <ScreenResolution Name="ID_RESOLUTION_HD720P" />
+    </ScreenResolutions>
+  </App>
+</Deployment>
+<!-- WPSDK Version 8.0.9900 -->
