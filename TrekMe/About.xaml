@@ -1,0 +1,59 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="TrekMe.About"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock Text="{Binding Path=LocalizedResources.ApplicationTitle, Source={StaticResource LocalizedStrings}}" FontSize="24"/>
+            <TextBlock Text="{Binding Path=LocalizedResources.About, Source={StaticResource LocalizedStrings}}" 
+                       Margin="9,20,0,0" FontSize="36"
+                       Foreground="#FF0D6AA3"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            
+                <StackPanel Grid.Row="0" Margin="12,17,0,28">
+                    <TextBlock Text="{Binding Path=LocalizedResources.Info1, Source={StaticResource LocalizedStrings}}"
+                               FontSize="20" Margin="10,30,10,10" TextWrapping="Wrap"/>
+                    <TextBlock Text="{Binding Path=LocalizedResources.Info1_2, Source={StaticResource LocalizedStrings}}"
+                               FontSize="20" Margin="10,20,10,10" TextWrapping="Wrap"
+                               Foreground="Cyan"/>
+                    <TextBlock Text="{Binding Path=LocalizedResources.Info2, Source={StaticResource LocalizedStrings}}"
+                               FontSize="28" Margin="0,30,10,10"
+                               Foreground="#FF0D6AA3"/>
+                    <TextBlock Text="{Binding Path=LocalizedResources.Info3, Source={StaticResource LocalizedStrings}}"
+                               FontSize="20" Margin="10,20,10,10" TextWrapping="Wrap"/>
+                    <TextBlock Text="{Binding Path=LocalizedResources.Info4, Source={StaticResource LocalizedStrings}}"
+                               FontSize="20" Margin="10,10,10,10" TextWrapping="Wrap"/>
+                    <TextBlock Text="{Binding Path=LocalizedResources.Info5, Source={StaticResource LocalizedStrings}}"
+                               FontSize="20" Margin="10,10,10,10" TextWrapping="Wrap"/>
+                <Button Name="AboutBack" Click="AboutBack_Click"
+                        Content="{Binding Path=LocalizedResources.AboutBack, Source={StaticResource LocalizedStrings}}"
+                        Margin="100,20" Opacity="0.6" Foreground="#FF0D6AA3"
+                        BorderBrush="#FF0D6AA3">
+                    
+                </Button>
+            </StackPanel>
+            </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>

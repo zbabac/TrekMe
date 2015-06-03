@@ -24,7 +24,7 @@
     <comment>Controls the Language and ensures that the font for all elements in the RootFrame aligns with the app's language. Set to the language code of this resource file's language.</comment>
   </data>
   <data name="ApplicationTitle" xml:space="preserve">
-    <value>MY APPLICATION</value>
+    <value>TrekMe</value>
   </data>
   <data name="AppBarButtonText" xml:space="preserve">
     <value>add</value>
@@ -63,7 +63,7 @@
     <value>Стоп</value>
   </data>
   <data name="SwipeText" xml:space="preserve">
-    <value>-- повуци лијево или десно за карту --</value>
+    <value>-- повуци лијево за карту --</value>
   </data>
   <data name="Time" xml:space="preserve">
     <value>вријеме:  </value>
@@ -98,5 +98,38 @@
   </data>
   <data name="Distance2" xml:space="preserve">
     <value>Distance:  </value>
+  </data>
+  <data name="About" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="Info1" xml:space="preserve">
+    <value>Open source app created by Zlatko Babic, 2015</value>
+  </data>
+  <data name="Info1_2" xml:space="preserve">
+    <value>https://sourceforge.net/projects/trekme/</value>
+  </data>
+  <data name="Info2" xml:space="preserve">
+    <value>Credits</value>
+  </data>
+  <data name="Info3" xml:space="preserve">
+    <value>Geo portion of the NExtra class provided by Daniel Saidi.</value>
+  </data>
+  <data name="Info4" xml:space="preserve">
+    <value>Warenhouse Standard font is licensed under SIL Open Font License</value>
+  </data>
+  <data name="Info5" xml:space="preserve">
+    <value>Inspired by Colin Eberhardt's sample WP8Runner</value>
+  </data>
+  <data name="SwipeBack" xml:space="preserve">
+    <value>-- повуци да се вратиш --</value>
+  </data>
+  <data name="AboutBack" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="SettingsBack" xml:space="preserve">
+    <value>Back</value>
   </data>
 </root>

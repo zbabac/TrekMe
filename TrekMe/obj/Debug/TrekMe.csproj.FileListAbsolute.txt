@@ -24,3 +24,5 @@ C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\obj\Debug\
 C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\Bin\Debug\sr-Latn\TrekMe.resources.dll
 C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\obj\Debug\TrekMe.Resources.AppResources.sr-Latn.resources
 C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\obj\Debug\sr-Latn\TrekMe.resources.dll
+C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\obj\Debug\About.g.cs
+C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\obj\Debug\Settings.g.cs

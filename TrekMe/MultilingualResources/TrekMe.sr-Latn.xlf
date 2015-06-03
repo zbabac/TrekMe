@@ -17,8 +17,8 @@
           <note from="MultilingualBuild" annotates="source" priority="2">Controls the Language and ensures that the font for all elements in the RootFrame aligns with the app's language. Set to the language code of this resource file's language.</note>
         </trans-unit>
         <trans-unit id="ApplicationTitle" translate="yes" xml:space="preserve">
-          <source>MY APPLICATION</source>
-          <target state="new">MY APPLICATION</target>
+          <source>TrekMe</source>
+          <target state="new">TrekMe</target>
         </trans-unit>
         <trans-unit id="AppBarButtonText" translate="yes" xml:space="preserve">
           <source>add</source>
@@ -69,8 +69,8 @@
           <target state="translated">Стоп</target>
         </trans-unit>
         <trans-unit id="SwipeText" translate="yes" xml:space="preserve">
-          <source>-- swipe left or right to see the map --</source>
-          <target state="translated">-- повуци лијево или десно за карту --</target>
+          <source>-- swipe left to see the map --</source>
+          <target state="translated">-- повуци лијево за карту --</target>
         </trans-unit>
         <trans-unit id="Time" translate="yes" xml:space="preserve">
           <source>Time: </source>
@@ -116,6 +116,50 @@
         <trans-unit id="Distance2" translate="yes" xml:space="preserve">
           <source>Distance:  </source>
           <target state="new">Distance:  </target>
+        </trans-unit>
+        <trans-unit id="About" translate="yes" xml:space="preserve">
+          <source>About</source>
+          <target state="new">About</target>
+        </trans-unit>
+        <trans-unit id="Info1" translate="yes" xml:space="preserve">
+          <source>Open source app created by Zlatko Babic, 2015</source>
+          <target state="new">Open source app created by Zlatko Babic, 2015</target>
+        </trans-unit>
+        <trans-unit id="Info1_2" translate="yes" xml:space="preserve">
+          <source>https://sourceforge.net/projects/trekme/</source>
+          <target state="new">https://sourceforge.net/projects/trekme/</target>
+        </trans-unit>
+        <trans-unit id="Info2" translate="yes" xml:space="preserve">
+          <source>Credits</source>
+          <target state="new">Credits</target>
+        </trans-unit>
+        <trans-unit id="Info3" translate="yes" xml:space="preserve">
+          <source>Geo portion of the NExtra class provided by Daniel Saidi.</source>
+          <target state="new">Geo portion of the NExtra class provided by Daniel Saidi.</target>
+        </trans-unit>
+        <trans-unit id="Info4" translate="yes" xml:space="preserve">
+          <source>Warenhouse Standard font is licensed under SIL Open Font License</source>
+          <target state="new">Warenhouse Standard font is licensed under SIL Open Font License</target>
+        </trans-unit>
+        <trans-unit id="Info5" translate="yes" xml:space="preserve">
+          <source>Inspired by Colin Eberhardt's sample WP8Runner</source>
+          <target state="new">Inspired by Colin Eberhardt's sample WP8Runner</target>
+        </trans-unit>
+        <trans-unit id="SwipeBack" translate="yes" xml:space="preserve">
+          <source>-- swipe to return to app --</source>
+          <target state="translated">-- повуци да се вратиш --</target>
+        </trans-unit>
+        <trans-unit id="AboutBack" translate="yes" xml:space="preserve">
+          <source>Back</source>
+          <target state="new">Back</target>
+        </trans-unit>
+        <trans-unit id="Settings" translate="yes" xml:space="preserve">
+          <source>Settings</source>
+          <target state="new">Settings</target>
+        </trans-unit>
+        <trans-unit id="SettingsBack" translate="yes" xml:space="preserve">
+          <source>Back</source>
+          <target state="new">Back</target>
         </trans-unit>
       </group>
     </body>

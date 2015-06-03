@@ -21,8 +21,16 @@
             <GradientStop Color="LightGray" Offset="1.0" />
         </LinearGradientBrush>
     </phone:PhoneApplicationPage.Resources>
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar x:Name="AppBarDetails" IsVisible="True">
+            <shell:ApplicationBarIconButton IconUri="Images/feature.settings.png" 
+                                            Text="Settings" Click="ApplicationBarSettings_Click"/>
+            <shell:ApplicationBarIconButton IconUri="Images/questionmark.png" 
+                                            Text="About" Click="ApplicationBarAbout_Click"/>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
     <!-- 2 pivots: one for run details, other for map -->
-    <phone:Pivot x:Name="pivotControl">
+    <phone:Pivot x:Name="pivotControl" SelectionChanged="pivotControl_SelectionChanged">
         <!-- 1st pivot: run details and buttons -->
         <phone:PivotItem Margin="0,0,0,0">
             <!-- main grid has 5 rows in order to evenly distribute data and buttons -->
@@ -199,7 +207,8 @@
                     PedestrianFeaturesEnabled="True"
                     LandmarksEnabled="True"
                     Pitch="25"
-                    ZoomLevel="16" Margin="0,-73,0,0" Height="821" VerticalAlignment="Bottom"/>
+                    ZoomLevel="16" Margin="0,-73,0,0" Height="821" VerticalAlignment="Bottom"
+                    Loaded="Map_Loaded"/>
 
                     <!-- run statistics at top of the screen-->
                     <Grid Background="#99000000" Margin="0,-77,0,0" 
@@ -247,6 +256,8 @@
                     </Grid>
                 </Grid>
             </Grid>
+            
         </phone:PivotItem>
+        
     </phone:Pivot>
 </phone:PhoneApplicationPage>

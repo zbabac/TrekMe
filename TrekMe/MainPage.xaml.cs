@@ -79,6 +79,19 @@ namespace TrekMe
             gps_watcher.Start();
         }
 
+        private void pivotControl_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
+        {
+            switch (((Pivot)sender).SelectedIndex)
+            {
+                case 0:
+                    ApplicationBar.IsVisible = true;
+                    break;
+
+                case 1:
+                    ApplicationBar.IsVisible = false;
+                    break;
+            }
+        }
         private void Timer_Tick(object sender, EventArgs e) //after every 1 second expires, this event is fired
         {
             if (!paused) //if not paused, measure run time and update screen values
@@ -361,5 +374,22 @@ namespace TrekMe
         {
             Map.SetView(coord, Map.ZoomLevel, 0.0, MapAnimationKind.Parabolic); //heading = 0.0
         }
+
+        private void Map_Loaded(object sender, RoutedEventArgs e)
+        {
+            Microsoft.Phone.Maps.MapsSettings.ApplicationContext.ApplicationId = "f519dba9-5601-4691-a614-2df33604452c";
+            Microsoft.Phone.Maps.MapsSettings.ApplicationContext.AuthenticationToken = "pvRxh3mdY1ETTVKB3SB6wA";
+        }
+
+        private void ApplicationBarSettings_Click(object sender, EventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Settings.xaml", UriKind.Relative));
+        }
+
+        private void ApplicationBarAbout_Click(object sender, EventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/About.xaml", UriKind.Relative));
+        }
+
     }
 }

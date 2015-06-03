@@ -61,6 +61,24 @@ namespace TrekMe.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to About.
+        /// </summary>
+        public static string About {
+            get {
+                return ResourceManager.GetString("About", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Back.
+        /// </summary>
+        public static string AboutBack {
+            get {
+                return ResourceManager.GetString("AboutBack", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Alt: .
         /// </summary>
         public static string Alt {
@@ -97,7 +115,7 @@ namespace TrekMe.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MY APPLICATION.
+        ///   Looks up a localized string similar to TrekMe.
         /// </summary>
         public static string ApplicationTitle {
             get {
@@ -178,6 +196,60 @@ namespace TrekMe.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Open source app created by Zlatko Babic, 2015.
+        /// </summary>
+        public static string Info1 {
+            get {
+                return ResourceManager.GetString("Info1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://sourceforge.net/projects/trekme/.
+        /// </summary>
+        public static string Info1_2 {
+            get {
+                return ResourceManager.GetString("Info1_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Credits.
+        /// </summary>
+        public static string Info2 {
+            get {
+                return ResourceManager.GetString("Info2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Geo portion of the NExtra class provided by Daniel Saidi..
+        /// </summary>
+        public static string Info3 {
+            get {
+                return ResourceManager.GetString("Info3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Warenhouse Standard font is licensed under SIL Open Font License.
+        /// </summary>
+        public static string Info4 {
+            get {
+                return ResourceManager.GetString("Info4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Inspired by Colin Eberhardt&apos;s sample WP8Runner.
+        /// </summary>
+        public static string Info5 {
+            get {
+                return ResourceManager.GetString("Info5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to latitude.
         /// </summary>
         public static string Latitude2 {
@@ -223,6 +295,24 @@ namespace TrekMe.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Settings.
+        /// </summary>
+        public static string Settings {
+            get {
+                return ResourceManager.GetString("Settings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Back.
+        /// </summary>
+        public static string SettingsBack {
+            get {
+                return ResourceManager.GetString("SettingsBack", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Speed:.
         /// </summary>
         public static string SpeedMap {
@@ -250,7 +340,16 @@ namespace TrekMe.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to -- swipe left or right to see the map --.
+        ///   Looks up a localized string similar to -- swipe to return to app --.
+        /// </summary>
+        public static string SwipeBack {
+            get {
+                return ResourceManager.GetString("SwipeBack", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to -- swipe left to see the map --.
         /// </summary>
         public static string SwipeText {
             get {
