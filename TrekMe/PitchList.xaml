@@ -1,0 +1,48 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="TrekMe.PitchList"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+    <ScrollViewer>
+        <StackPanel>
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,20,12,20"
+              HorizontalAlignment="Center">
+                <ListBox Name="PitchListBox" SelectionChanged="PitchListBox_SelectionChanged"
+                         Margin="30" FontSize="48"
+                         FontFamily=".\Fonts\Warenhaus-Standard.otf#Warenhaus Typenhebel">
+                  <ListBoxItem Content="0" Margin="30"/>
+                <ListBoxItem Content="5" Margin="20"/>
+                <ListBoxItem Content="10" Margin="20"/>
+                <ListBoxItem Content="15" Margin="20"/>
+                <ListBoxItem Content="20" Margin="20"/>
+                <ListBoxItem Content="25" Margin="20"/>
+                <ListBoxItem Content="30" Margin="20"/>
+                <ListBoxItem Content="35" Margin="20"/>
+                <ListBoxItem Content="40" Margin="20"/>
+                <ListBoxItem Content="45" Margin="20"/>
+                <ListBoxItem Content="50" Margin="20"/>
+                <ListBoxItem Content="55" Margin="20"/>
+                <ListBoxItem Content="60" Margin="20"/>
+                <ListBoxItem Content="65" Margin="20"/>
+                <ListBoxItem Content="70" Margin="20"/>
+                <ListBoxItem Content="75" Margin="20"/>
+                <ListBoxItem Content="80" Margin="20"/>
+                <ListBoxItem Content="85" Margin="20"/>
+                <ListBoxItem Content="90" Margin="20"/>
+                <ListBoxItem Content="95" Margin="20"/>
+
+            </ListBox>
+        </Grid>
+        </StackPanel>
+    </ScrollViewer>
+</phone:PhoneApplicationPage>

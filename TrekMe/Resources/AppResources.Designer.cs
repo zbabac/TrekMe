@@ -313,6 +313,15 @@ namespace TrekMe.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Map pitch.
+        /// </summary>
+        public static string SettingsMapTilt {
+            get {
+                return ResourceManager.GetString("SettingsMapTilt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Speed:.
         /// </summary>
         public static string SpeedMap {

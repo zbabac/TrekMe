@@ -16,10 +16,25 @@ namespace TrekMe
         {
             InitializeComponent();
         }
-
+        protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
+        {
+            string parameterValue = "25";
+            base.OnNavigatedTo(e);
+            if (PhoneApplicationService.Current.State.ContainsKey("parameter"))
+            {
+                parameterValue = (string)PhoneApplicationService.Current.State["parameter"];
+                Pitch.Content = parameterValue;
+            }
+            PhoneApplicationService.Current.State["parameter"] = parameterValue;
+        }
         private void SettingsBack_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.GoBack();
+        }
+
+        private void Pitch_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/PitchList.xaml", UriKind.Relative));
         }
     }
 }

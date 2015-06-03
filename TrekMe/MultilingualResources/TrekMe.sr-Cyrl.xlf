@@ -161,6 +161,10 @@
           <source>Back</source>
           <target state="new">Back</target>
         </trans-unit>
+        <trans-unit id="SettingsMapTilt" translate="yes" xml:space="preserve">
+          <source>Map pitch</source>
+          <target state="new">Map pitch</target>
+        </trans-unit>
       </group>
     </body>
   </file>

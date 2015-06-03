@@ -49,7 +49,7 @@ namespace TrekMe
         private long tick_previousPosition; //remmber previous position change time
         private double current_speed = 0.0, avg_speed; //remember current and average speed
         private Color colour = Colors.Green;
-        
+        private double map_pitch = 25.0;
 
         public MainPage()
         {
@@ -79,6 +79,16 @@ namespace TrekMe
             gps_watcher.Start();
         }
 
+        protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
+        {
+            string parameterValue = "25";
+            base.OnNavigatedTo(e);
+            if (PhoneApplicationService.Current.State.ContainsKey("parameter"))
+            {
+                parameterValue = (string)PhoneApplicationService.Current.State["parameter"];
+                map_pitch = Convert.ToDouble(parameterValue);
+            }
+        }
         private void pivotControl_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
         {
             switch (((Pivot)sender).SelectedIndex)
@@ -271,13 +281,14 @@ namespace TrekMe
         private void GPS_PositionChanged(object sender, GeoPositionChangedEventArgs<GeoCoordinate> e)
         {   //event is fired every time GPS sensor detects position change, location coordinates are then fetched
             coord = new GeoCoordinate(e.Position.Location.Latitude, e.Position.Location.Longitude, e.Position.Location.Altitude);
+            
             if (trek_line.Path.Count > 0) //calculate vars only after 1st position
             {
                 var previousPoint = trek_line.Path.Last(); //to measure distance one must know previous position
                 var distance = coord.GetDistanceTo(previousPoint); //measure distance from previous position
                 var ticks = (System.Environment.TickCount - tick_previousPosition); //time elapsed since was at previous position
                 if (ticks == 0) current_speed = 0.0; //we can measure only if time elapsed is > 0, to avoid dividing by zero
-
+                
                 if (!paused && trek_line.Path.Count > 0)  //if movement detected calculate vars
                 {
                     //to increase accuracy, 2 speed measurements are taken, then median is calculated
@@ -298,6 +309,7 @@ namespace TrekMe
                     caloriesLabel.Text = string.Format("{0:f0} kcal", trek_total_distance * 65);
                     avgSpeed.Text = string.Format("{0:f1} km/h", avg_speed);
                     trek_line.StrokeThickness = 5;
+                    Map.Pitch = map_pitch;
                 }
                 
                 //PositionHandler handler = new PositionHandler();
@@ -363,7 +375,6 @@ namespace TrekMe
                 trek_line.Path.Add(coord); //draw line that displays the change from the last position
             tick_previousPosition = System.Environment.TickCount; //remember time for the next position change
 
-            
         }
         private void PivotButton_Click(object sender, RoutedEventArgs e)
         {   //when small red button is clicked on pivot item with a map, change the view to pivot item with run details

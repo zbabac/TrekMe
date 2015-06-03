@@ -233,4 +233,7 @@
   <data name="SettingsBack" xml:space="preserve">
     <value>Back</value>
   </data>
+  <data name="SettingsMapTilt" xml:space="preserve">
+    <value>Map pitch</value>
+  </data>
 </root>
