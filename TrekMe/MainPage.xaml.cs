@@ -49,7 +49,7 @@ namespace TrekMe
         private long tick_previousPosition; //remmber previous position change time
         private double current_speed = 0.0, avg_speed; //remember current and average speed
         private Color colour = Colors.Green;
-        private double map_pitch = 25.0;
+        private double map_pitch = 0.25;
 
         public MainPage()
         {
@@ -309,7 +309,6 @@ namespace TrekMe
                     caloriesLabel.Text = string.Format("{0:f0} kcal", trek_total_distance * 65);
                     avgSpeed.Text = string.Format("{0:f1} km/h", avg_speed);
                     trek_line.StrokeThickness = 5;
-                    Map.Pitch = map_pitch;
                 }
                 
                 //PositionHandler handler = new PositionHandler();
@@ -338,6 +337,7 @@ namespace TrekMe
                         WideContent3 = string.Format("{0} {1} Alt:{2:f0}m", lon2.Text, lat2.Text, coord.Altitude),
                         BackgroundColor = new Color { A = 255, R = 255, G = 0, B = 0 }
                     });
+                    
                 }
             }
             else
@@ -374,7 +374,7 @@ namespace TrekMe
             if (trek_started)
                 trek_line.Path.Add(coord); //draw line that displays the change from the last position
             tick_previousPosition = System.Environment.TickCount; //remember time for the next position change
-
+            Map.Pitch = map_pitch;
         }
         private void PivotButton_Click(object sender, RoutedEventArgs e)
         {   //when small red button is clicked on pivot item with a map, change the view to pivot item with run details

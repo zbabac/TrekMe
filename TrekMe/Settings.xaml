@@ -41,7 +41,9 @@
                     
                     <Button Name="Pitch" Content="25" FontSize="32" FontWeight="Bold"
                        Click="Pitch_Click" 
-                       Grid.Column="2" Grid.Row="0" HorizontalAlignment="Right" Background="White" Foreground="#FF020000" BorderBrush="#FF9E9B9B"/>
+                       Grid.Column="2" Grid.Row="0" HorizontalAlignment="Right" 
+                            Background="White" Margin="30,0" 
+                            Foreground="#FF020000" BorderBrush="#FF9E9B9B"/>
                     <TextBlock Text="{Binding Path=LocalizedResources.SettingsMapTilt, Source={StaticResource LocalizedStrings}}" 
                        Margin="9,20,0,0" FontSize="32"
                        Grid.Column="0" Grid.Row="0" HorizontalAlignment="Left"/>

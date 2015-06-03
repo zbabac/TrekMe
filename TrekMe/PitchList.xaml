@@ -20,28 +20,23 @@
                 <ListBox Name="PitchListBox" SelectionChanged="PitchListBox_SelectionChanged"
                          Margin="30" FontSize="48"
                          FontFamily=".\Fonts\Warenhaus-Standard.otf#Warenhaus Typenhebel">
-                  <ListBoxItem Content="0" Margin="30"/>
-                <ListBoxItem Content="5" Margin="20"/>
-                <ListBoxItem Content="10" Margin="20"/>
-                <ListBoxItem Content="15" Margin="20"/>
-                <ListBoxItem Content="20" Margin="20"/>
-                <ListBoxItem Content="25" Margin="20"/>
-                <ListBoxItem Content="30" Margin="20"/>
-                <ListBoxItem Content="35" Margin="20"/>
-                <ListBoxItem Content="40" Margin="20"/>
-                <ListBoxItem Content="45" Margin="20"/>
-                <ListBoxItem Content="50" Margin="20"/>
-                <ListBoxItem Content="55" Margin="20"/>
-                <ListBoxItem Content="60" Margin="20"/>
-                <ListBoxItem Content="65" Margin="20"/>
-                <ListBoxItem Content="70" Margin="20"/>
-                <ListBoxItem Content="75" Margin="20"/>
-                <ListBoxItem Content="80" Margin="20"/>
-                <ListBoxItem Content="85" Margin="20"/>
-                <ListBoxItem Content="90" Margin="20"/>
-                <ListBoxItem Content="95" Margin="20"/>
-
-            </ListBox>
+                  <ListBoxItem Content="0" Margin="10"/>
+                <ListBoxItem Content="5" Margin="10"/>
+                <ListBoxItem Content="10" Margin="10"/>
+                <ListBoxItem Content="15" Margin="10"/>
+                <ListBoxItem Content="20" Margin="10"/>
+                <ListBoxItem Content="25" Margin="10"/>
+                <ListBoxItem Content="30" Margin="10"/>
+                <ListBoxItem Content="35" Margin="10"/>
+                <ListBoxItem Content="40" Margin="10"/>
+                <ListBoxItem Content="45" Margin="10"/>
+                <ListBoxItem Content="50" Margin="10"/>
+                <ListBoxItem Content="55" Margin="10"/>
+                <ListBoxItem Content="60" Margin="10"/>
+                <ListBoxItem Content="65" Margin="10"/>
+                <ListBoxItem Content="70" Margin="10"/>
+                <ListBoxItem Content="75" Margin="10"/>
+                </ListBox>
         </Grid>
         </StackPanel>
     </ScrollViewer>
