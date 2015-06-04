@@ -63,7 +63,7 @@
     <value>Стоп</value>
   </data>
   <data name="SwipeText" xml:space="preserve">
-    <value>-- повуци лијево за карту --</value>
+    <value>-- повуци лијево или десно за карту --</value>
   </data>
   <data name="Time" xml:space="preserve">
     <value>вријеме:  </value>
@@ -73,7 +73,6 @@
   </data>
   <data name="WideContent1" xml:space="preserve">
     <value>раздаљина: 0 брзина: 0</value>
-    <comment></comment>
   </data>
   <data name="WideContent2" xml:space="preserve">
     <value>просјечна брзина: 0 вријеме: 00:00:00</value>
@@ -94,45 +93,51 @@
     <value>г. дужина</value>
   </data>
   <data name="Distance" xml:space="preserve">
-    <value>Distance:</value>
+    <value>Прешао:</value>
   </data>
   <data name="Distance2" xml:space="preserve">
-    <value>Distance:  </value>
+    <value>Прешао:  </value>
   </data>
   <data name="About" xml:space="preserve">
-    <value>About</value>
+    <value>Инфо</value>
   </data>
   <data name="Info1" xml:space="preserve">
-    <value>Open source app created by Zlatko Babic, 2015</value>
+    <value>Апликацију отвореног кода креирао Златко Бабић, 2015</value>
   </data>
   <data name="Info1_2" xml:space="preserve">
     <value>https://sourceforge.net/projects/trekme/</value>
   </data>
   <data name="Info2" xml:space="preserve">
-    <value>Credits</value>
+    <value>Захваљујем</value>
   </data>
   <data name="Info3" xml:space="preserve">
-    <value>Geo portion of the NExtra class provided by Daniel Saidi.</value>
+    <value>"Geo" методе "NExtra" класе направио Данијел Саиди.</value>
   </data>
   <data name="Info4" xml:space="preserve">
-    <value>Warenhouse Standard font is licensed under SIL Open Font License</value>
+    <value>"Warenhouse Standard" фонт у оквиру "SIL Open Font License"</value>
   </data>
   <data name="Info5" xml:space="preserve">
-    <value>Inspired by Colin Eberhardt's sample WP8Runner</value>
+    <value>Инспирисао ме примјер "WP8Runner"-а Колина Еберхарда</value>
   </data>
   <data name="SwipeBack" xml:space="preserve">
     <value>-- повуци да се вратиш --</value>
   </data>
   <data name="AboutBack" xml:space="preserve">
-    <value>Back</value>
+    <value>Назад</value>
   </data>
   <data name="Settings" xml:space="preserve">
-    <value>Settings</value>
+    <value>Подешавања</value>
   </data>
   <data name="SettingsBack" xml:space="preserve">
-    <value>Back</value>
+    <value>Назад</value>
   </data>
   <data name="SettingsMapTilt" xml:space="preserve">
-    <value>Map pitch</value>
+    <value>Нагиб карте</value>
+  </data>
+  <data name="AppBarAbout" xml:space="preserve">
+    <value>about</value>
+  </data>
+  <data name="AppBarSettings" xml:space="preserve">
+    <value>settings</value>
   </data>
 </root>

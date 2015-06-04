@@ -54,6 +54,22 @@ namespace TrekMe
         public MainPage()
         {
             InitializeComponent();
+            //AppBarDetails = App.Current.Resources["AppBarDetails"] as ApplicationBar;
+            //appButtonSettings = new ApplicationBarIconButton(new Uri("Images/feature.settings.png", UriKind.Relative));
+            //appButtonAbout = new ApplicationBarIconButton(new Uri("Images/questionmark.png", UriKind.Relative));
+            ApplicationBarIconButton appButtonSettings1 = (ApplicationBarIconButton)ApplicationBar.Buttons[0];
+            ApplicationBarIconButton appButtonAbout1 = (ApplicationBarIconButton)ApplicationBar.Buttons[1];
+            switch (System.Threading.Thread.CurrentThread.CurrentUICulture.Name.Substring(0, 2))
+            {
+                case "en":
+                    appButtonSettings1.Text = "settings";
+                    appButtonAbout1.Text = "about";
+                    break;
+                case "sr":
+                    appButtonSettings1.Text = "подеси";
+                    appButtonAbout1.Text = "инфо";
+                    break;
+            }
             // draw a line for a run
             MapOverlay trekOverlay = new MapOverlay();
             MapLayer trekLayer = new MapLayer();

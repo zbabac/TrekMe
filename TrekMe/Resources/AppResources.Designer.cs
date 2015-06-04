@@ -97,6 +97,15 @@ namespace TrekMe.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to about.
+        /// </summary>
+        public static string AppBarAbout {
+            get {
+                return ResourceManager.GetString("AppBarAbout", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to add.
         /// </summary>
         public static string AppBarButtonText {
@@ -111,6 +120,15 @@ namespace TrekMe.Resources {
         public static string AppBarMenuItemText {
             get {
                 return ResourceManager.GetString("AppBarMenuItemText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to settings.
+        /// </summary>
+        public static string AppBarSettings {
+            get {
+                return ResourceManager.GetString("AppBarSettings", resourceCulture);
             }
         }
         
@@ -358,7 +376,7 @@ namespace TrekMe.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to -- swipe left to see the map --.
+        ///   Looks up a localized string similar to -- swipe left or right to see the map --.
         /// </summary>
         public static string SwipeText {
             get {

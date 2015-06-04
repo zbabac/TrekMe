@@ -23,10 +23,14 @@
     </phone:PhoneApplicationPage.Resources>
     <phone:PhoneApplicationPage.ApplicationBar>
         <shell:ApplicationBar x:Name="AppBarDetails" IsVisible="True">
-            <shell:ApplicationBarIconButton IconUri="Images/feature.settings.png" 
-                                            Text="Settings" Click="ApplicationBarSettings_Click"/>
-            <shell:ApplicationBarIconButton IconUri="Images/questionmark.png" 
-                                            Text="About" Click="ApplicationBarAbout_Click"/>
+            <shell:ApplicationBarIconButton x:Name="appButtonSettings"
+                    IconUri="Images/feature.settings.png" 
+                                            Text="Settings" 
+                                            Click="ApplicationBarSettings_Click"/>
+            <shell:ApplicationBarIconButton x:Name="appButtonAbout" 
+                    IconUri="Images/questionmark.png" 
+                                            Text="About" 
+                                            Click="ApplicationBarAbout_Click"/>
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>
     <!-- 2 pivots: one for run details, other for map -->
@@ -161,7 +165,7 @@
                 </Grid>
                 <!-- 5th row has 2 rows within to display current and average speed -->
                 <Grid Grid.Row="4" Background="#99000000" Margin="10,30,10,0" 
-                        VerticalAlignment="Bottom" Height="155">
+                        VerticalAlignment="Bottom" Height="160">
                     <Grid Margin="10,5,10,0" Opacity=".9"
                             util:GridUtils.RowDefinitions="auto, auto, , , auto"
                             util:GridUtils.ColumnDefinitions="*, *">
@@ -187,8 +191,8 @@
                                 FontSize="32" Margin="0,0,0,-5" Padding="0,10"/>
                         <TextBlock Text="{Binding Path=LocalizedResources.SwipeText, Source={StaticResource LocalizedStrings}}" 
                                    Grid.Row="3" Grid.Column="0"
-                                   HorizontalAlignment="Center"
-                                   FontSize="18" Grid.ColumnSpan="2" Opacity=".4"/>
+                                   HorizontalAlignment="Center" 
+                                   FontSize="18" Grid.ColumnSpan="2" Opacity=".5"/>
                     </Grid>
                 </Grid>
             </Grid>

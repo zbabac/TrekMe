@@ -174,7 +174,7 @@
     <value>Stop</value>
   </data>
   <data name="SwipeText" xml:space="preserve">
-    <value>-- swipe left to see the map --</value>
+    <value>-- swipe left or right to see the map --</value>
   </data>
   <data name="Time" xml:space="preserve">
     <value>Time: </value>
@@ -235,5 +235,11 @@
   </data>
   <data name="SettingsMapTilt" xml:space="preserve">
     <value>Map pitch</value>
+  </data>
+  <data name="AppBarAbout" xml:space="preserve">
+    <value>about</value>
+  </data>
+  <data name="AppBarSettings" xml:space="preserve">
+    <value>settings</value>
   </data>
 </root>

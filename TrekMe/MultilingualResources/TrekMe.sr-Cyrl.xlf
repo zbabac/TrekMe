@@ -69,8 +69,8 @@
           <target state="translated">Стоп</target>
         </trans-unit>
         <trans-unit id="SwipeText" translate="yes" xml:space="preserve">
-          <source>-- swipe left to see the map --</source>
-          <target state="translated">-- повуци лијево за карту --</target>
+          <source>-- swipe left or right to see the map --</source>
+          <target state="translated">-- повуци лијево или десно за карту --</target>
         </trans-unit>
         <trans-unit id="Time" translate="yes" xml:space="preserve">
           <source>Time: </source>
@@ -82,8 +82,7 @@
         </trans-unit>
         <trans-unit id="WideContent1" translate="yes" xml:space="preserve">
           <source>Distance: 0 Speed: 0</source>
-          <target state="needs-review-translation">раздаљина: 0 брзина: 0</target>
-          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
+          <target state="translated">раздаљина: 0 брзина: 0</target>
         </trans-unit>
         <trans-unit id="WideContent2" translate="yes" xml:space="preserve">
           <source>Avg. speed: 0 Time: 00:00:00</source>
@@ -111,19 +110,19 @@
         </trans-unit>
         <trans-unit id="Distance" translate="yes" xml:space="preserve">
           <source>Distance:</source>
-          <target state="new">Distance:</target>
+          <target state="translated">Прешао:</target>
         </trans-unit>
         <trans-unit id="Distance2" translate="yes" xml:space="preserve">
           <source>Distance:  </source>
-          <target state="new">Distance:  </target>
+          <target state="translated">Прешао:  </target>
         </trans-unit>
         <trans-unit id="About" translate="yes" xml:space="preserve">
           <source>About</source>
-          <target state="new">About</target>
+          <target state="translated">Инфо</target>
         </trans-unit>
         <trans-unit id="Info1" translate="yes" xml:space="preserve">
           <source>Open source app created by Zlatko Babic, 2015</source>
-          <target state="new">Open source app created by Zlatko Babic, 2015</target>
+          <target state="translated">Апликацију отвореног кода креирао Златко Бабић, 2015</target>
         </trans-unit>
         <trans-unit id="Info1_2" translate="yes" xml:space="preserve">
           <source>https://sourceforge.net/projects/trekme/</source>
@@ -131,19 +130,19 @@
         </trans-unit>
         <trans-unit id="Info2" translate="yes" xml:space="preserve">
           <source>Credits</source>
-          <target state="new">Credits</target>
+          <target state="translated">Захваљујем</target>
         </trans-unit>
         <trans-unit id="Info3" translate="yes" xml:space="preserve">
           <source>Geo portion of the NExtra class provided by Daniel Saidi.</source>
-          <target state="new">Geo portion of the NExtra class provided by Daniel Saidi.</target>
+          <target state="translated">"Geo" методе "NExtra" класе направио Данијел Саиди.</target>
         </trans-unit>
         <trans-unit id="Info4" translate="yes" xml:space="preserve">
           <source>Warenhouse Standard font is licensed under SIL Open Font License</source>
-          <target state="new">Warenhouse Standard font is licensed under SIL Open Font License</target>
+          <target state="translated">"Warenhouse Standard" фонт у оквиру "SIL Open Font License"</target>
         </trans-unit>
         <trans-unit id="Info5" translate="yes" xml:space="preserve">
           <source>Inspired by Colin Eberhardt's sample WP8Runner</source>
-          <target state="new">Inspired by Colin Eberhardt's sample WP8Runner</target>
+          <target state="translated">Инспирисао ме примјер "WP8Runner"-а Колина Еберхарда</target>
         </trans-unit>
         <trans-unit id="SwipeBack" translate="yes" xml:space="preserve">
           <source>-- swipe to return to app --</source>
@@ -151,19 +150,27 @@
         </trans-unit>
         <trans-unit id="AboutBack" translate="yes" xml:space="preserve">
           <source>Back</source>
-          <target state="new">Back</target>
+          <target state="translated">Назад</target>
         </trans-unit>
         <trans-unit id="Settings" translate="yes" xml:space="preserve">
           <source>Settings</source>
-          <target state="new">Settings</target>
+          <target state="translated">Подешавања</target>
         </trans-unit>
         <trans-unit id="SettingsBack" translate="yes" xml:space="preserve">
           <source>Back</source>
-          <target state="new">Back</target>
+          <target state="translated">Назад</target>
         </trans-unit>
         <trans-unit id="SettingsMapTilt" translate="yes" xml:space="preserve">
           <source>Map pitch</source>
-          <target state="new">Map pitch</target>
+          <target state="translated">Нагиб карте</target>
+        </trans-unit>
+        <trans-unit id="AppBarAbout" translate="yes" xml:space="preserve">
+          <source>about</source>
+          <target state="new">about</target>
+        </trans-unit>
+        <trans-unit id="AppBarSettings" translate="yes" xml:space="preserve">
+          <source>settings</source>
+          <target state="new">settings</target>
         </trans-unit>
       </group>
     </body>
