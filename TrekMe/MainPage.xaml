@@ -52,10 +52,10 @@
                 <!-- display warning that GPS is not ready yet -->
                 <Grid x:Name="banner" Margin="0,0,0,0" util:GridUtils.ColumnDefinitions="*" 
                           util:GridUtils.RowDefinitions="*" HorizontalAlignment="Stretch" Background="Blue">
-                    <TextBlock Text="{Binding Path=LocalizedResources.BannerInfo, Source={StaticResource LocalizedStrings}}"
+                    <TextBlock x:Name="BannerInfo"
+                        Text="{Binding Path=LocalizedResources.BannerInfo, Source={StaticResource LocalizedStrings}}"
                                 Grid.Row="1" HorizontalAlignment="Center" 
-                                Foreground="White"
-                                x:Name="BannerInfo"/>
+                                Foreground="White"/>
                 </Grid>
                 <!-- 2nd row has 2 rown within to display distance, time elapsed, calories and pause time -->
                 <Grid Grid.Row="1" Background="#99000000" Margin="10,20,10,0" 

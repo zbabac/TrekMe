@@ -10,6 +10,7 @@ using Microsoft.Phone.Controls;
 using Microsoft.Phone.Maps.Controls;
 using Microsoft.Phone.Shell;
 using NExtra.Geo;
+using TrekMe.Resources;
 
 namespace TrekMe
 {   
@@ -83,6 +84,7 @@ namespace TrekMe
             Map.MapElements.Add(trek_line);
             //add handler for position change event
             gps_watcher.PositionChanged += GPS_PositionChanged;
+            gps_watcher.StatusChanged += new EventHandler<GeoPositionStatusChangedEventArgs>(GPS_StatusChanged);
             //add timer handler to measure ticks when run starts
             trek_timer.Interval = TimeSpan.FromSeconds(1);
             trek_timer.Tick += Timer_Tick;
@@ -92,6 +94,7 @@ namespace TrekMe
             PauseButton.IsEnabled = false;//disallow user to tap pause, because the run is not yet started
             //Start GPS watcher immediatelly, so that the map is displayed regardless of the fact that run is not yet started
             //otherwise, map would not be not displayed until the Start is tapped
+            gps_watcher.MovementThreshold = 20;
             gps_watcher.Start();
         }
 
@@ -172,7 +175,8 @@ namespace TrekMe
             {   //if the run had been started before, show GPS warning again
                 BannerInfo.Foreground = new SolidColorBrush(Colors.White);
                 banner.Background = new SolidColorBrush(Colors.Blue);
-                detailLabel.Foreground = new SolidColorBrush(Colors.Transparent); 
+                detailLabel.Foreground = new SolidColorBrush(Colors.Transparent);
+                BannerInfo.Text = AppResources.BannerInfo;
             }
             was_started = true;
         }
@@ -293,7 +297,33 @@ namespace TrekMe
                 });
             }
         }
-
+        private void GPS_StatusChanged(object sender, GeoPositionStatusChangedEventArgs e)
+        {
+            switch (e.Status)
+            {
+                case GeoPositionStatus.Disabled:
+                    // The Location Service is disabled or unsupported.
+                    // Check to see whether the user has disabled the Location Service.
+                    if (gps_watcher.Permission == GeoPositionPermission.Denied)
+                    {
+                        // The user has disabled the Location Service on their device.
+                        BannerInfo.Foreground = new SolidColorBrush(Colors.White);
+                        banner.Background = new SolidColorBrush(Colors.Blue);
+                        detailLabel.Foreground = new SolidColorBrush(Colors.Transparent);
+                        BannerInfo.Text = AppResources.WarningLocationDisabled;
+                        MessageBox.Show(AppResources.MessageWarningText1,AppResources.MessageWarningTitle, MessageBoxButton.OK);
+                    }
+                    else
+                    {
+                        BannerInfo.Foreground = new SolidColorBrush(Colors.White);
+                        banner.Background = new SolidColorBrush(Colors.Blue);
+                        detailLabel.Foreground = new SolidColorBrush(Colors.Transparent);
+                        BannerInfo.Text = AppResources.WarningLocationNotSupported;
+                        MessageBox.Show(AppResources.MessageWarningText2, AppResources.MessageWarningTitle, MessageBoxButton.OK);
+                    }
+                    break;
+            }
+        }
         private void GPS_PositionChanged(object sender, GeoPositionChangedEventArgs<GeoCoordinate> e)
         {   //event is fired every time GPS sensor detects position change, location coordinates are then fetched
             coord = new GeoCoordinate(e.Position.Location.Latitude, e.Position.Location.Longitude, e.Position.Location.Altitude);

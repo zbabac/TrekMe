@@ -242,4 +242,19 @@
   <data name="AppBarSettings" xml:space="preserve">
     <value>settings</value>
   </data>
+  <data name="WarningLocationDisabled" xml:space="preserve">
+    <value>Please first turn on location!</value>
+  </data>
+  <data name="WarningLocationNotSupported" xml:space="preserve">
+    <value>Location not supported on this phone!</value>
+  </data>
+  <data name="MessageWarningText1" xml:space="preserve">
+    <value>Please enable location services on your phone: Settings --&gt; Location = ON</value>
+  </data>
+  <data name="MessageWarningText2" xml:space="preserve">
+    <value>Location not supported on this phone! This app can't function without GPS.</value>
+  </data>
+  <data name="MessageWarningTitle" xml:space="preserve">
+    <value>Warning</value>
+  </data>
 </root>

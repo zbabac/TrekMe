@@ -286,6 +286,33 @@ namespace TrekMe.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Please enable location services on your phone: Settings --&gt; Location = ON.
+        /// </summary>
+        public static string MessageWarningText1 {
+            get {
+                return ResourceManager.GetString("MessageWarningText1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Location not supported on this phone! This app can&apos;t function without GPS..
+        /// </summary>
+        public static string MessageWarningText2 {
+            get {
+                return ResourceManager.GetString("MessageWarningText2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Warning.
+        /// </summary>
+        public static string MessageWarningTitle {
+            get {
+                return ResourceManager.GetString("MessageWarningTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Pause.
         /// </summary>
         public static string PauseButton {
@@ -399,6 +426,24 @@ namespace TrekMe.Resources {
         public static string Time2 {
             get {
                 return ResourceManager.GetString("Time2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please first turn on location!.
+        /// </summary>
+        public static string WarningLocationDisabled {
+            get {
+                return ResourceManager.GetString("WarningLocationDisabled", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Location not supported on this phone!.
+        /// </summary>
+        public static string WarningLocationNotSupported {
+            get {
+                return ResourceManager.GetString("WarningLocationNotSupported", resourceCulture);
             }
         }
         

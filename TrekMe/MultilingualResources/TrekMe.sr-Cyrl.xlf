@@ -166,11 +166,31 @@
         </trans-unit>
         <trans-unit id="AppBarAbout" translate="yes" xml:space="preserve">
           <source>about</source>
-          <target state="new">about</target>
+          <target state="translated">инфо</target>
         </trans-unit>
         <trans-unit id="AppBarSettings" translate="yes" xml:space="preserve">
           <source>settings</source>
-          <target state="new">settings</target>
+          <target state="translated">подеси</target>
+        </trans-unit>
+        <trans-unit id="WarningLocationDisabled" translate="yes" xml:space="preserve">
+          <source>Please first turn on location!</source>
+          <target state="translated">Прво омогућите ГПС!</target>
+        </trans-unit>
+        <trans-unit id="WarningLocationNotSupported" translate="yes" xml:space="preserve">
+          <source>Location not supported on this phone!</source>
+          <target state="translated">Телефон не подржава локацију!</target>
+        </trans-unit>
+        <trans-unit id="MessageWarningText1" translate="yes" xml:space="preserve">
+          <source>Please enable location services on your phone: Settings --%%amp;gt; Location = ON</source>
+          <target state="translated">Омогућите ГПС локацију на телефону: Подешавања --%%amp;gt; Локација = ON</target>
+        </trans-unit>
+        <trans-unit id="MessageWarningText2" translate="yes" xml:space="preserve">
+          <source>Location not supported on this phone! This app can't function without GPS.</source>
+          <target state="translated">Овај телефон не подржава услуге локације. Апликација не ради без ГПС-а!</target>
+        </trans-unit>
+        <trans-unit id="MessageWarningTitle" translate="yes" xml:space="preserve">
+          <source>Warning</source>
+          <target state="translated">Упозорење</target>
         </trans-unit>
       </group>
     </body>

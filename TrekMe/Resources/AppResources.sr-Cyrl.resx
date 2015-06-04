@@ -135,9 +135,24 @@
     <value>Нагиб карте</value>
   </data>
   <data name="AppBarAbout" xml:space="preserve">
-    <value>about</value>
+    <value>инфо</value>
   </data>
   <data name="AppBarSettings" xml:space="preserve">
-    <value>settings</value>
+    <value>подеси</value>
+  </data>
+  <data name="WarningLocationDisabled" xml:space="preserve">
+    <value>Прво омогућите ГПС!</value>
+  </data>
+  <data name="WarningLocationNotSupported" xml:space="preserve">
+    <value>Телефон не подржава локацију!</value>
+  </data>
+  <data name="MessageWarningText1" xml:space="preserve">
+    <value>Омогућите ГПС локацију на телефону: Подешавања --&gt; Локација = ON</value>
+  </data>
+  <data name="MessageWarningText2" xml:space="preserve">
+    <value>Овај телефон не подржава услуге локације. Апликација не ради без ГПС-а!</value>
+  </data>
+  <data name="MessageWarningTitle" xml:space="preserve">
+    <value>Упозорење</value>
   </data>
 </root>

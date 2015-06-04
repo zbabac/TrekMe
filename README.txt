@@ -2,6 +2,9 @@ TrekMe  ---Windows Phone 8 and higher tracking app
 
 source code: https://github.com/zbabac/TrekMe
 
+Windows Phone Store location:
+http://www.windowsphone.com/s?appid=f519dba9-5601-4691-a614-2df33604452c
+
 Latest version 1.0.0
 
 Content:
