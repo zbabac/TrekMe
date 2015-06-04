@@ -165,7 +165,7 @@
     <value>Pause</value>
   </data>
   <data name="SpeedMap" xml:space="preserve">
-    <value>Speed:</value>
+    <value> Speed:</value>
   </data>
   <data name="StartButton" xml:space="preserve">
     <value>Start</value>

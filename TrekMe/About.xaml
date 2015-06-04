@@ -52,7 +52,8 @@
                 <Button Name="AboutBack" Click="AboutBack_Click"
                         Content="{Binding Path=LocalizedResources.AboutBack, Source={StaticResource LocalizedStrings}}"
                         Margin="100,20" Opacity="0.6" Foreground="#FF0D6AA3"
-                        BorderBrush="#FF0D6AA3">
+                        BorderBrush="#FF0D6AA3"
+                        IsEnabled="False" Visibility="Collapsed">
                     
                 </Button>
             </StackPanel>

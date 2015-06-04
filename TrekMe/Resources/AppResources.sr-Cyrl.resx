@@ -57,7 +57,8 @@
     <value>Пауза</value>
   </data>
   <data name="SpeedMap" xml:space="preserve">
-    <value>брзина:</value>
+    <value> брзина:</value>
+    <comment></comment>
   </data>
   <data name="StopButton" xml:space="preserve">
     <value>Стоп</value>

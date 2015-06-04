@@ -391,7 +391,7 @@ namespace TrekMe
                 Map.Center = coord;
                 BannerInfo.Foreground = new SolidColorBrush(Colors.Transparent); //remove warning about GPS data
                 banner.Background = new SolidColorBrush(Colors.Transparent);
-                detailLabel.Foreground = new SolidColorBrush(Colors.Gray);
+                detailLabel.Foreground = new SolidColorBrush(Color.FromArgb(0xFF,0x0D,0x6A,0xA3));
                 if (trek_started && !paused)   // if not paused, draw start circle
                 {
                     StartButton.Background = (LinearGradientBrush)this.Resources["linearBrush"];

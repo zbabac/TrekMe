@@ -5,7 +5,7 @@ source code: https://github.com/zbabac/TrekMe
 Windows Phone Store location:
 http://www.windowsphone.com/s?appid=f519dba9-5601-4691-a614-2df33604452c
 
-Latest version 1.0.0
+Latest version 1.1.0
 
 Content:
  - Change logs
@@ -15,6 +15,10 @@ Content:
 
 Licensed under MIT license, so you are free to use the source code for any purpose you like, open source or commercial.
 Please, don't forget to mention me in your work. I hope that you will learn a lot, as I have learned from others.
+
+Change log since v1.1.0:
+	- added About and Settings page: Map Pitch configurable
+	- UI improvements and fixes
 
 Change log since v1.0.0:
 	- this is first stable version, tested and working on Samsung Ativ S
@@ -31,7 +35,7 @@ I will put this app to the Windows Phone Store soon, so then it won't be needed 
 Features:
 - 2 pivot items are displayed: one with details, other with map
 - swiping switches between pivot items
-- details pivot shows GPS location data, speed, avg. speed, distance covered, run time, pause time
+- details pivot shows GPS location data, speed, avg. speed, distance covered, run time, break time
 - run can be paused
 - map pivot shows the map where line is drawn showing your movements
 - starting point is shown with red or blue circle

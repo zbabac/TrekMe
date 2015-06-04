@@ -54,7 +54,8 @@
                         Content="{Binding Path=LocalizedResources.SettingsBack, Source={StaticResource LocalizedStrings}}"
                         Opacity="0.6" Foreground="#FF0D6AA3" HorizontalAlignment="Center"
                         BorderBrush="#FF0D6AA3"
-                        VerticalAlignment="Bottom" Margin="10,40"/>
+                        VerticalAlignment="Bottom" Margin="10,40"
+                        IsEnabled="False" Visibility="Collapsed"/>
         </StackPanel>
 
     </Grid>

@@ -61,8 +61,9 @@
           <target state="translated">Пауза</target>
         </trans-unit>
         <trans-unit id="SpeedMap" translate="yes" xml:space="preserve">
-          <source>Speed:</source>
-          <target state="translated">брзина:</target>
+          <source> Speed:</source>
+          <target state="needs-review-translation"> брзина:</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="StopButton" translate="yes" xml:space="preserve">
           <source>Stop</source>

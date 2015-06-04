@@ -367,7 +367,7 @@ namespace TrekMe.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Speed:.
+        ///   Looks up a localized string similar to  Speed:.
         /// </summary>
         public static string SpeedMap {
             get {

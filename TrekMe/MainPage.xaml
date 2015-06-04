@@ -47,7 +47,7 @@
                                 Grid.Row="0" Foreground="Transparent"
                                 HorizontalAlignment="Left"
                                 VerticalAlignment="Center"
-                                FontSize="28" Padding="0,0"/>
+                                FontSize="36" Padding="0,0"/>
                 </Grid>
                 <!-- display warning that GPS is not ready yet -->
                 <Grid x:Name="banner" Margin="0,0,0,0" util:GridUtils.ColumnDefinitions="*" 
