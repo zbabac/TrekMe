@@ -214,20 +214,11 @@ namespace TrekMe.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Open source app created by Zlatko Babic, 2015.
+        ///   Looks up a localized string similar to Open source app by Zlatko Babic, 2015.
         /// </summary>
         public static string Info1 {
             get {
                 return ResourceManager.GetString("Info1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to https://sourceforge.net/projects/trekme/.
-        /// </summary>
-        public static string Info1_2 {
-            get {
-                return ResourceManager.GetString("Info1_2", resourceCulture);
             }
         }
         
@@ -264,6 +255,15 @@ namespace TrekMe.Resources {
         public static string Info5 {
             get {
                 return ResourceManager.GetString("Info5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Running Icon by Elegantthemes.
+        /// </summary>
+        public static string Info6 {
+            get {
+                return ResourceManager.GetString("Info6", resourceCulture);
             }
         }
         

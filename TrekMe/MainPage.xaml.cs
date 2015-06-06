@@ -70,6 +70,10 @@ namespace TrekMe
                     appButtonSettings1.Text = "подеси";
                     appButtonAbout1.Text = "инфо";
                     break;
+                case "nb":
+                    appButtonSettings1.Text = "innstillinger";
+                    appButtonAbout1.Text = "om";
+                    break;
             }
             // draw a line for a run
             MapOverlay trekOverlay = new MapOverlay();

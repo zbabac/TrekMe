@@ -15,7 +15,7 @@
     <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
     <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
     <SilverlightApplication>true</SilverlightApplication>
-    <SupportedCultures>sr-Cyrl;sr-Latn</SupportedCultures>
+    <SupportedCultures>nb;sr-Cyrl;sr-Latn</SupportedCultures>
     <XapOutputs>true</XapOutputs>
     <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
     <XapFilename>TrekMe_$(Configuration)_$(Platform).xap</XapFilename>
@@ -168,6 +168,8 @@
     <Content Include="Assets\ApplicationIcon110x110.png" />
     <Content Include="Assets\ApplicationIcon202x202.png" />
     <Content Include="Assets\ApplicationIconLarge.png" />
+    <Content Include="Assets\running-icon100.png" />
+    <Content Include="Assets\running-icon300.png" />
     <Content Include="Assets\Tiles\FlipCycleTileLarge.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -189,6 +191,7 @@
     <Content Include="Images\questionmark.png" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Resources\AppResources.nb.resx" />
     <EmbeddedResource Include="Resources\AppResources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
@@ -198,6 +201,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <XliffResource Include="MultilingualResources\TrekMe.nb.xlf" />
     <XliffResource Include="MultilingualResources\TrekMe.sr-Cyrl.xlf" />
     <XliffResource Include="MultilingualResources\TrekMe.sr-Latn.xlf" />
   </ItemGroup>

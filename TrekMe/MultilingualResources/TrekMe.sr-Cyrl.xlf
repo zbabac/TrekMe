@@ -122,12 +122,9 @@
           <target state="translated">Инфо</target>
         </trans-unit>
         <trans-unit id="Info1" translate="yes" xml:space="preserve">
-          <source>Open source app created by Zlatko Babic, 2015</source>
-          <target state="translated">Апликацију отвореног кода креирао Златко Бабић, 2015</target>
-        </trans-unit>
-        <trans-unit id="Info1_2" translate="yes" xml:space="preserve">
-          <source>https://sourceforge.net/projects/trekme/</source>
-          <target state="new">https://sourceforge.net/projects/trekme/</target>
+          <source>Open source app by Zlatko Babic, 2015</source>
+          <target state="needs-review-translation">Апликацију отвореног кода креирао Златко Бабић, 2015</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="Info2" translate="yes" xml:space="preserve">
           <source>Credits</source>
@@ -192,6 +189,10 @@
         <trans-unit id="MessageWarningTitle" translate="yes" xml:space="preserve">
           <source>Warning</source>
           <target state="translated">Упозорење</target>
+        </trans-unit>
+        <trans-unit id="Info6" translate="yes" xml:space="preserve">
+          <source>Running Icon by Elegantthemes</source>
+          <target state="new">Running Icon by Elegantthemes</target>
         </trans-unit>
       </group>
     </body>

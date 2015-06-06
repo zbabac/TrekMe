@@ -104,9 +104,7 @@
   </data>
   <data name="Info1" xml:space="preserve">
     <value>Апликацију отвореног кода направио Златко Бабић, 2015</value>
-  </data>
-  <data name="Info1_2" xml:space="preserve">
-    <value>https://sourceforge.net/projects/trekme/</value>
+    <comment></comment>
   </data>
   <data name="Info2" xml:space="preserve">
     <value>Захваљујем</value>
@@ -155,5 +153,8 @@
   </data>
   <data name="MessageWarningTitle" xml:space="preserve">
     <value>Упозорење</value>
+  </data>
+  <data name="Info6" xml:space="preserve">
+    <value>Running Icon by Elegantthemes</value>
   </data>
 </root>

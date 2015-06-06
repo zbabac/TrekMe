@@ -204,10 +204,7 @@
     <value>About</value>
   </data>
   <data name="Info1" xml:space="preserve">
-    <value>Open source app created by Zlatko Babic, 2015</value>
-  </data>
-  <data name="Info1_2" xml:space="preserve">
-    <value>https://sourceforge.net/projects/trekme/</value>
+    <value>Open source app by Zlatko Babic, 2015</value>
   </data>
   <data name="Info2" xml:space="preserve">
     <value>Credits</value>
@@ -256,5 +253,8 @@
   </data>
   <data name="MessageWarningTitle" xml:space="preserve">
     <value>Warning</value>
+  </data>
+  <data name="Info6" xml:space="preserve">
+    <value>Running Icon by Elegantthemes</value>
   </data>
 </root>
