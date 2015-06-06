@@ -36,8 +36,9 @@ At start, first couple of lines may show inaccurate location (several red lines 
 Prerequisities:
 To be able to load XAP file to your phone, it must be developer unlocked. Please search microsoft:
 https://msdn.microsoft.com/en-us/library/windows/apps/ff769508%28v=vs.105%29.aspx
-to register for developer account (it's free).
-I will put this app to the Windows Phone Store soon, so then it won't be needed anymore.
+to register for developer account (it's free) or DOWNLOAD APP FROM WINDOWS PHONE STORE:
+
+http://www.windowsphone.com/s?appid=f519dba9-5601-4691-a614-2df33604452c
 
 Features:
 - 2 pivot items are displayed: one with details, other with map

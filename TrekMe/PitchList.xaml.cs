@@ -19,7 +19,7 @@ namespace TrekMe
 
         private void PitchListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            
+            // if user selects value, define parameter to be pass ListBoxItem back to settings.xaml page
             ListBoxItem lbi = ((sender as ListBox).SelectedItem as ListBoxItem);
             PhoneApplicationService.Current.State["parameter"] = lbi.Content.ToString();
             NavigationService.GoBack();

@@ -55,9 +55,7 @@ namespace TrekMe
         public MainPage()
         {
             InitializeComponent();
-            //AppBarDetails = App.Current.Resources["AppBarDetails"] as ApplicationBar;
-            //appButtonSettings = new ApplicationBarIconButton(new Uri("Images/feature.settings.png", UriKind.Relative));
-            //appButtonAbout = new ApplicationBarIconButton(new Uri("Images/questionmark.png", UriKind.Relative));
+            // AppBar can't be localized as resource so this is workaround
             ApplicationBarIconButton appButtonSettings1 = (ApplicationBarIconButton)ApplicationBar.Buttons[0];
             ApplicationBarIconButton appButtonAbout1 = (ApplicationBarIconButton)ApplicationBar.Buttons[1];
             switch (System.Threading.Thread.CurrentThread.CurrentUICulture.Name.Substring(0, 2))
@@ -98,12 +96,13 @@ namespace TrekMe
             PauseButton.IsEnabled = false;//disallow user to tap pause, because the run is not yet started
             //Start GPS watcher immediatelly, so that the map is displayed regardless of the fact that run is not yet started
             //otherwise, map would not be not displayed until the Start is tapped
-            gps_watcher.MovementThreshold = 20;
+            gps_watcher.MovementThreshold = 20; //reduce noise when GPS signal is weak
             gps_watcher.Start();
         }
 
         protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
         {
+            // the way to pass value from other xaml page - settings, parameter is defined there
             string parameterValue = "25";
             base.OnNavigatedTo(e);
             if (PhoneApplicationService.Current.State.ContainsKey("parameter"))
@@ -114,6 +113,7 @@ namespace TrekMe
         }
         private void pivotControl_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
         {
+            // show AppBar on Details pivot only
             switch (((Pivot)sender).SelectedIndex)
             {
                 case 0:
@@ -432,23 +432,23 @@ namespace TrekMe
         }
 
         private void CenterButton_Click(object sender, RoutedEventArgs e)
-        {
+        {   // when small blue button is clicked on a map, center it
             Map.SetView(coord, Map.ZoomLevel, 0.0, MapAnimationKind.Parabolic); //heading = 0.0
         }
 
         private void Map_Loaded(object sender, RoutedEventArgs e)
-        {
+        {   // appId and appToken needed to use the map from Microsoft
             Microsoft.Phone.Maps.MapsSettings.ApplicationContext.ApplicationId = "f519dba9-5601-4691-a614-2df33604452c";
             Microsoft.Phone.Maps.MapsSettings.ApplicationContext.AuthenticationToken = "pvRxh3mdY1ETTVKB3SB6wA";
         }
 
         private void ApplicationBarSettings_Click(object sender, EventArgs e)
-        {
+        {   // go to settings page
             NavigationService.Navigate(new Uri("/Settings.xaml", UriKind.Relative));
         }
 
         private void ApplicationBarAbout_Click(object sender, EventArgs e)
-        {
+        {   // go to about page
             NavigationService.Navigate(new Uri("/About.xaml", UriKind.Relative));
         }
 
