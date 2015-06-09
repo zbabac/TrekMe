@@ -374,10 +374,17 @@ namespace TrekMe
                     avgSpeed.Text = string.Format("{0:f1} km/h", avg_speed);
                     trek_line.StrokeThickness = 5;
                 }
-                
-                PositionHandler handler = new PositionHandler();
-                var heading = handler.CalculateBearing(new Position(previousPoint), new Position(coord)); //set map orientation
-                Map.SetView(coord, Map.ZoomLevel, heading, MapAnimationKind.Parabolic); 
+                // if set in settings to rotate map with user changing heading
+                if (rotate_map)
+                {
+                    PositionHandler handler = new PositionHandler();
+                    var heading = handler.CalculateBearing(new Position(previousPoint), new Position(coord)); //set map orientation
+                    Map.SetView(coord, Map.ZoomLevel, heading, MapAnimationKind.Parabolic);
+                }
+                // otherwise set map view to point to north
+                else
+                    Map.SetView(coord, Map.ZoomLevel, 0.0, MapAnimationKind.Linear);
+
                 if (coord.Longitude < 0)
                     longitudelabel.Text = string.Format("{0:f2}⁰W ", (coord.Longitude*(-1.0))); //display latitude and longitude
                 else
