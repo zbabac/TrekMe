@@ -16,7 +16,12 @@ namespace TrekMe
         {
             InitializeComponent();
         }
-
+        protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
+        { 
+            string aboutText = aboutTitle.Text;
+            aboutTitle.Text = aboutText + " v"+ System.Reflection.Assembly.GetExecutingAssembly()
+                    .FullName.Split('=')[1].Split(',')[0];
+        }
         private void AboutBack_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.GoBack();

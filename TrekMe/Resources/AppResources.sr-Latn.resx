@@ -157,4 +157,7 @@
   <data name="Info6" xml:space="preserve">
     <value>Running Icon by Elegantthemes</value>
   </data>
+  <data name="SettingsRotateMap" xml:space="preserve">
+    <value>Rotate map</value>
+  </data>
 </root>

@@ -62,8 +62,7 @@
         </trans-unit>
         <trans-unit id="SpeedMap" translate="yes" xml:space="preserve">
           <source> Speed:</source>
-          <target state="needs-review-translation"> брзина:</target>
-          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
+          <target state="translated"> брзина:</target>
         </trans-unit>
         <trans-unit id="StopButton" translate="yes" xml:space="preserve">
           <source>Stop</source>
@@ -123,8 +122,7 @@
         </trans-unit>
         <trans-unit id="Info1" translate="yes" xml:space="preserve">
           <source>Open source app by Zlatko Babic, 2015</source>
-          <target state="needs-review-translation">Апликацију отвореног кода креирао Златко Бабић, 2015</target>
-          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
+          <target state="translated">Апликацију отвореног кода креирао Златко Бабић, 2015</target>
         </trans-unit>
         <trans-unit id="Info2" translate="yes" xml:space="preserve">
           <source>Credits</source>
@@ -193,6 +191,10 @@
         <trans-unit id="Info6" translate="yes" xml:space="preserve">
           <source>Running Icon by Elegantthemes</source>
           <target state="new">Running Icon by Elegantthemes</target>
+        </trans-unit>
+        <trans-unit id="SettingsRotateMap" translate="yes" xml:space="preserve">
+          <source>Rotate map</source>
+          <target state="new">Rotate map</target>
         </trans-unit>
       </group>
     </body>

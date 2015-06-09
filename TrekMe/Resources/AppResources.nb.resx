@@ -33,7 +33,7 @@
     <value>Menyelement</value>
   </data>
   <data name="Alt" xml:space="preserve">
-    <value>høy: </value>
+    <value>moh. </value>
   </data>
   <data name="AverageSpeed" xml:space="preserve">
     <value>gj.sn. hastighet:</value>
@@ -63,7 +63,7 @@
     <value>Pause</value>
   </data>
   <data name="SpeedMap" xml:space="preserve">
-    <value> hastighet:</value>
+    <value> hast.</value>
   </data>
   <data name="StartButton" xml:space="preserve">
     <value>Start</value>
@@ -72,7 +72,7 @@
     <value>Stopp</value>
   </data>
   <data name="SwipeText" xml:space="preserve">
-    <value>--Magnetstripe venstre eller høyre for å se kartet--</value>
+    <value>--sveip venstre eller høyre for å se kartet--</value>
   </data>
   <data name="Time" xml:space="preserve">
     <value>tid: </value>
@@ -87,13 +87,13 @@
     <value>gj.sn hastighet: 0 tid: 00:00:00</value>
   </data>
   <data name="WideContent3" xml:space="preserve">
-    <value>Lengdegrad Latitude høyde</value>
+    <value>lengdegrad breddegrad moh.</value>
   </data>
   <data name="Altitude2" xml:space="preserve">
-    <value>høydenivå m</value>
+    <value>moh. m</value>
   </data>
   <data name="Latitude2" xml:space="preserve">
-    <value>bredegrad</value>
+    <value>breddegrad</value>
   </data>
   <data name="Longitude2" xml:space="preserve">
     <value>lengdegrad</value>
@@ -117,7 +117,7 @@
     <value>Inspirerte av Colin Eberhardt utvalg WP8Runner</value>
   </data>
   <data name="SwipeBack" xml:space="preserve">
-    <value>--Magnetstripe å gå tilbake til app--</value>
+    <value>--sveip å gå tilbake til app--</value>
   </data>
   <data name="AboutBack" xml:space="preserve">
     <value>Tilbake</value>
@@ -129,7 +129,7 @@
     <value>Tilbake</value>
   </data>
   <data name="SettingsMapTilt" xml:space="preserve">
-    <value>Kart-avstand</value>
+    <value>kart helningsvinkel</value>
   </data>
   <data name="AppBarAbout" xml:space="preserve">
     <value>om</value>
@@ -138,13 +138,13 @@
     <value>innstilling</value>
   </data>
   <data name="WarningLocationDisabled" xml:space="preserve">
-    <value>Du må først aktivere GPS!</value>
+    <value>Du må aktivere GPS først!</value>
   </data>
   <data name="WarningLocationNotSupported" xml:space="preserve">
-    <value>Plassering støttes ikke på denne telefonen!</value>
+    <value>Posisjon støttes ikke på denne telefonen!</value>
   </data>
   <data name="MessageWarningText1" xml:space="preserve">
-    <value>Aktiver plassering tjenester på telefonen: innstillinger--&gt; posisjon = På</value>
+    <value>Aktiver posisjon tjenester på telefonen: innstillinger--&gt; posisjon = På</value>
   </data>
   <data name="MessageWarningText2" xml:space="preserve">
     <value>Posisjon støttes ikke på denne telefonen! Dette programmet kan ikke fungere uten GPS.</value>
@@ -154,5 +154,8 @@
   </data>
   <data name="Info6" xml:space="preserve">
     <value>Running ikonet av Elegantthemes</value>
+  </data>
+  <data name="SettingsRotateMap" xml:space="preserve">
+    <value>Rotate map</value>
   </data>
 </root>

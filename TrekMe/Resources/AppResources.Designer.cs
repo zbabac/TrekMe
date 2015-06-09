@@ -367,6 +367,15 @@ namespace TrekMe.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Rotate map.
+        /// </summary>
+        public static string SettingsRotateMap {
+            get {
+                return ResourceManager.GetString("SettingsRotateMap", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to  Speed:.
         /// </summary>
         public static string SpeedMap {

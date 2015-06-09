@@ -194,6 +194,10 @@
           <source>Running Icon by Elegantthemes</source>
           <target state="new">Running Icon by Elegantthemes</target>
         </trans-unit>
+        <trans-unit id="SettingsRotateMap" translate="yes" xml:space="preserve">
+          <source>Rotate map</source>
+          <target state="new">Rotate map</target>
+        </trans-unit>
       </group>
     </body>
   </file>

@@ -30,7 +30,7 @@
         </trans-unit>
         <trans-unit id="Alt" translate="yes" xml:space="preserve">
           <source>Alt: </source>
-          <target state="translated">høy: </target>
+          <target state="translated">moh. </target>
         </trans-unit>
         <trans-unit id="AverageSpeed" translate="yes" xml:space="preserve">
           <source>Average speed:</source>
@@ -70,7 +70,7 @@
         </trans-unit>
         <trans-unit id="SpeedMap" translate="yes" xml:space="preserve">
           <source> Speed:</source>
-          <target state="translated"> hastighet:</target>
+          <target state="translated"> hast.</target>
         </trans-unit>
         <trans-unit id="StartButton" translate="yes" xml:space="preserve">
           <source>Start</source>
@@ -82,7 +82,7 @@
         </trans-unit>
         <trans-unit id="SwipeText" translate="yes" xml:space="preserve">
           <source>-- swipe left or right to see the map --</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">--Magnetstripe venstre eller høyre for å se kartet--</target>
+          <target state="translated">--sveip venstre eller høyre for å se kartet--</target>
         </trans-unit>
         <trans-unit id="Time" translate="yes" xml:space="preserve">
           <source>Time: </source>
@@ -102,15 +102,15 @@
         </trans-unit>
         <trans-unit id="WideContent3" translate="yes" xml:space="preserve">
           <source>Longitude Latitude Altitude</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">Lengdegrad Latitude høyde</target>
+          <target state="translated">lengdegrad breddegrad moh.</target>
         </trans-unit>
         <trans-unit id="Altitude2" translate="yes" xml:space="preserve">
           <source>altitude m</source>
-          <target state="translated">høydenivå m</target>
+          <target state="translated">moh. m</target>
         </trans-unit>
         <trans-unit id="Latitude2" translate="yes" xml:space="preserve">
           <source>latitude</source>
-          <target state="translated">bredegrad</target>
+          <target state="translated">breddegrad</target>
         </trans-unit>
         <trans-unit id="Longitude2" translate="yes" xml:space="preserve">
           <source>longitude</source>
@@ -142,7 +142,7 @@
         </trans-unit>
         <trans-unit id="SwipeBack" translate="yes" xml:space="preserve">
           <source>-- swipe to return to app --</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">--Magnetstripe å gå tilbake til app--</target>
+          <target state="translated">--sveip å gå tilbake til app--</target>
         </trans-unit>
         <trans-unit id="AboutBack" translate="yes" xml:space="preserve">
           <source>Back</source>
@@ -158,7 +158,7 @@
         </trans-unit>
         <trans-unit id="SettingsMapTilt" translate="yes" xml:space="preserve">
           <source>Map pitch</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">Kart-avstand</target>
+          <target state="translated">kart helningsvinkel</target>
         </trans-unit>
         <trans-unit id="AppBarAbout" translate="yes" xml:space="preserve">
           <source>about</source>
@@ -170,15 +170,15 @@
         </trans-unit>
         <trans-unit id="WarningLocationDisabled" translate="yes" xml:space="preserve">
           <source>Please first turn on location!</source>
-          <target state="translated">Du må først aktivere GPS!</target>
+          <target state="translated">Du må aktivere GPS først!</target>
         </trans-unit>
         <trans-unit id="WarningLocationNotSupported" translate="yes" xml:space="preserve">
           <source>Location not supported on this phone!</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">Plassering støttes ikke på denne telefonen!</target>
+          <target state="translated">Posisjon støttes ikke på denne telefonen!</target>
         </trans-unit>
         <trans-unit id="MessageWarningText1" translate="yes" xml:space="preserve">
           <source>Please enable location services on your phone: Settings --%%amp;gt; Location = ON</source>
-          <target state="translated">Aktiver plassering tjenester på telefonen: innstillinger--%%amp;gt; posisjon = På</target>
+          <target state="translated">Aktiver posisjon tjenester på telefonen: innstillinger--%%amp;gt; posisjon = På</target>
         </trans-unit>
         <trans-unit id="MessageWarningText2" translate="yes" xml:space="preserve">
           <source>Location not supported on this phone! This app can't function without GPS.</source>
@@ -191,6 +191,10 @@
         <trans-unit id="Info6" translate="yes" xml:space="preserve">
           <source>Running Icon by Elegantthemes</source>
           <target state="translated">Running ikonet av Elegantthemes</target>
+        </trans-unit>
+        <trans-unit id="SettingsRotateMap" translate="yes" xml:space="preserve">
+          <source>Rotate map</source>
+          <target state="new">Rotate map</target>
         </trans-unit>
       </group>
     </body>

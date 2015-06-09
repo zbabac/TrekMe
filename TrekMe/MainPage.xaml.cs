@@ -38,6 +38,7 @@ namespace TrekMe
         private long walk_time_tick, pause_time_tick, total_pause;  //count ticks to remember them when having paused the walk
         private long trek_startTime, pause_start_time; //remember when the run is started and when pause is started
         private bool trek_started = false; //is the run started?
+        private bool rotate_map = false; //display map that rotates when heading changes?
         private bool paused = false;//is the run paused?
         private bool was_started = false; //was it started before, then wait for GPS
         private bool draw_circle = false; //should I draw the circle?
@@ -50,7 +51,7 @@ namespace TrekMe
         private long tick_previousPosition; //remmber previous position change time
         private double current_speed = 0.0, avg_speed; //remember current and average speed
         private Color colour = Colors.Green;
-        private double map_pitch = 0.25;
+        private double map_pitch = 0.0;
 
         public MainPage()
         {
@@ -96,10 +97,14 @@ namespace TrekMe
             PauseButton.IsEnabled = false;//disallow user to tap pause, because the run is not yet started
             //Start GPS watcher immediatelly, so that the map is displayed regardless of the fact that run is not yet started
             //otherwise, map would not be not displayed until the Start is tapped
-            gps_watcher.MovementThreshold = 20; //reduce noise when GPS signal is weak
+            gps_watcher.MovementThreshold = 20; //reduce erratic data display when GPS signal is weak
             gps_watcher.Start();
         }
-
+        protected override void OnNavigatedFrom(System.Windows.Navigation.NavigationEventArgs e)
+        {
+            PhoneApplicationService.Current.State["parameter"] = map_pitch.ToString();
+            PhoneApplicationService.Current.State["rotate"] = rotate_map.ToString();
+        }
         protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
         {
             // the way to pass value from other xaml page - settings, parameter is defined there
@@ -109,6 +114,11 @@ namespace TrekMe
             {
                 parameterValue = (string)PhoneApplicationService.Current.State["parameter"];
                 map_pitch = Convert.ToDouble(parameterValue);
+            }
+            if (PhoneApplicationService.Current.State.ContainsKey("rotate"))
+            {
+                string rotate = (string)PhoneApplicationService.Current.State["rotate"];
+                rotate_map = Convert.ToBoolean(rotate);
             }
         }
         private void pivotControl_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
@@ -151,7 +161,7 @@ namespace TrekMe
             redtrek_line = !redtrek_line; //first run is marked with red line, next one blue, then again red, etc.
             trek_startTime = System.Environment.TickCount; //remember start time
             StartButton.IsEnabled = false; //disallow to start when it is started
-            PauseButton.IsEnabled = true; //aloow user to pause the run
+            PauseButton.IsEnabled = true; //allow user to pause the run
             
             paused = false; //not paused
             walk_time_tick = 0; //set variables initial values
@@ -207,8 +217,9 @@ namespace TrekMe
             Map.Layers.Add(myLocationLayer);
             gps_watcher.Stop();
             trek_timer.Stop();
-            StartButton.Background = new SolidColorBrush(color: SystemColors.ActiveCaptionColor); //make buttons normal color
-            PauseButton.Background = new SolidColorBrush(color: SystemColors.ActiveCaptionColor);
+            StartButton.Background = new SolidColorBrush(Colors.Transparent); //make buttons normal color
+            
+            PauseButton.Background = new SolidColorBrush(Colors.Transparent);
             draw_circle = false;
             trek_started = false;
             paused = false;
@@ -246,6 +257,7 @@ namespace TrekMe
                     colour = Colors.Blue;
                 }
                 trek_line.StrokeColor = colour;
+                trek_line.StrokeThickness = 5;
                 draw_circle = false;
                 Map.MapElements.Add(trek_line);  //add line for run continuation
                 total_pause += pause_time_tick; //increase total pause with latest pause time
@@ -256,7 +268,8 @@ namespace TrekMe
                 //PauseButton.Content = "Pause";
                 StartButton.IsEnabled = false;
                 StartButton.Background = (LinearGradientBrush)this.Resources["linearBrush"]; //started again so this button is painted
-                PauseButton.Background = new SolidColorBrush(color: SystemColors.ActiveCaptionColor);
+                PauseButton.Background = new SolidColorBrush(Colors.Transparent);
+                
                 trek_started = true;
             }
             else
@@ -280,14 +293,15 @@ namespace TrekMe
                 Map.Layers.Add(myCircleLayer);
                 trek_line = new MapPolyline(); //draw new line for measuring movements during pause
                 trek_line.StrokeColor = colour;
-                trek_line.StrokeThickness = 5;
+                trek_line.StrokeThickness = 2;
                 draw_circle = false;
                 Map.MapElements.Add(trek_line); //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
                 
                 trek_timer.Stop(); //restart timer to measure pause time
                 trek_timer.Start();
                 pause_start_time = System.Environment.TickCount; //remember pause start time
-                StartButton.Background = new SolidColorBrush(color: SystemColors.ActiveCaptionColor);
+                StartButton.Background = new SolidColorBrush(Colors.Transparent);
+                //StartButton.Foreground = new SolidColorBrush(color: SystemColors.ControlTextColor); 
                 PauseButton.Background = (LinearGradientBrush)this.Resources["linearBrush"];
                 trek_started = true;  //run is paused but still running
                 ShellTile.ActiveTiles.First().Update(new IconicTileData() //update live tiles
@@ -361,9 +375,9 @@ namespace TrekMe
                     trek_line.StrokeThickness = 5;
                 }
                 
-                //PositionHandler handler = new PositionHandler();
-                //var heading = handler.CalculateBearing(new Position(previousPoint), new Position(coord)); //set map orientation
-                //Map.SetView(coord, Map.ZoomLevel, 0.0, MapAnimationKind.Parabolic); //heading = 0.0
+                PositionHandler handler = new PositionHandler();
+                var heading = handler.CalculateBearing(new Position(previousPoint), new Position(coord)); //set map orientation
+                Map.SetView(coord, Map.ZoomLevel, heading, MapAnimationKind.Parabolic); 
                 if (coord.Longitude < 0)
                     longitudelabel.Text = string.Format("{0:f2}⁰W ", (coord.Longitude*(-1.0))); //display latitude and longitude
                 else
@@ -395,7 +409,7 @@ namespace TrekMe
                 Map.Center = coord;
                 BannerInfo.Foreground = new SolidColorBrush(Colors.Transparent); //remove warning about GPS data
                 banner.Background = new SolidColorBrush(Colors.Transparent);
-                detailLabel.Foreground = new SolidColorBrush(Color.FromArgb(0xFF,0x0D,0x6A,0xA3));
+                detailLabel.Foreground = new SolidColorBrush(Color.FromArgb(0xFF,0x00,0x9E,0xFF));
                 if (trek_started && !paused)   // if not paused, draw start circle
                 {
                     StartButton.Background = (LinearGradientBrush)this.Resources["linearBrush"];

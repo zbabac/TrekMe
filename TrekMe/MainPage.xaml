@@ -42,7 +42,7 @@
                 <!-- 1st row has a grid to display heading -->
                 <Grid Margin="20,0,0,0" util:GridUtils.ColumnDefinitions="*" 
                           util:GridUtils.RowDefinitions="*" HorizontalAlignment="Left">
-                        <TextBlock x:Name="detailLabel"
+                    <TextBlock x:Name="detailLabel"
                             Text="{Binding Path=LocalizedResources.DetailTitle, Source={StaticResource LocalizedStrings}}" 
                                 Grid.Row="0" Foreground="Transparent"
                                 HorizontalAlignment="Left"
@@ -58,7 +58,7 @@
                                 Foreground="White"/>
                 </Grid>
                 <!-- 2nd row has 2 rown within to display distance, time elapsed, calories and pause time -->
-                <Grid Grid.Row="1" Background="#99000000" Margin="10,20,10,0" 
+                <Grid Grid.Row="1" Margin="10,20,10,0" 
                         VerticalAlignment="Bottom" Height="90">
                     <Grid Margin="10,5,10,0"
                             util:GridUtils.RowDefinitions="auto, auto"
@@ -104,10 +104,10 @@
                                 FontFamily=".\Fonts\Warenhaus-Standard.otf#Warenhaus Typenhebel"
                                 FontSize="30" Margin="0,0,0,-5"/>
                     </Grid>
-                
+
                 </Grid>
                 <!-- 3rd row has 1 row to display longitude, latitude and altitude -->
-                <Grid Grid.Row="2" Background="#99000000" Margin="10,0,10,0" 
+                <Grid Grid.Row="2" Margin="10,0,10,0" 
                         VerticalAlignment="Bottom" Height="40">
                     <Grid Margin="10,5,10,0" Opacity=".9"
                             util:GridUtils.RowDefinitions="auto"
@@ -130,7 +130,7 @@
                     </Grid>
                 </Grid>
                 <!-- 4th row has 2 rows within to display control buttons -->
-                <Grid Grid.Row="3" Background="#99000000" Margin="10,10,10,0" 
+                <Grid Grid.Row="3" Margin="10,10,10,0" 
                         VerticalAlignment="Bottom" Height="180">
                     <Grid Margin="10,5,10,0" Opacity=".9"
                             util:GridUtils.RowDefinitions="auto,auto"
@@ -164,7 +164,7 @@
                     </Grid>
                 </Grid>
                 <!-- 5th row has 2 rows within to display current and average speed -->
-                <Grid Grid.Row="4" Background="#99000000" Margin="10,30,10,0" 
+                <Grid Grid.Row="4" Margin="10,30,10,0" 
                         VerticalAlignment="Bottom" Height="160">
                     <Grid Margin="10,5,10,0" Opacity=".9"
                             util:GridUtils.RowDefinitions="auto, auto, , , auto"
@@ -215,19 +215,19 @@
                     Loaded="Map_Loaded"/>
 
                     <!-- run statistics at top of the screen-->
-                    <Grid Background="#99000000" Margin="0,-77,0,0" 
+                    <Grid Margin="0,-77,0,0" 
                         VerticalAlignment="Top" Height="30">
-                        <Grid Margin="0,0,0,0" Opacity=".5"
+                        <Grid Margin="0,0,0,0" Opacity=".6" Background="#FF6E6E6E"
                             util:GridUtils.RowDefinitions="30, Auto"
-                            util:GridUtils.ColumnDefinitions="auto,auto,auto,*,auto,*,*">
-                            <TextBlock Text="lng " Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Top" x:Name="longitudelabel"/>
-                            <TextBlock Text="lat " Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" x:Name="latitudelabel"/>
+                            util:GridUtils.ColumnDefinitions="auto,auto,auto,*,auto,*,*" HorizontalAlignment="Right" Width="456">
+                            <TextBlock Text="lng " Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Top" x:Name="longitudelabel" Foreground="White"/>
+                            <TextBlock Text="lat " Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" x:Name="latitudelabel" Foreground="White"/>
                             <TextBlock Text="{Binding Path=LocalizedResources.Alt, Source={StaticResource LocalizedStrings}}" 
-                                       Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Top" />
-                            <TextBlock Text="0 m" Grid.Column="3" HorizontalAlignment="Left" VerticalAlignment="Top" x:Name="altLabel"/>
+                                       Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Top" Foreground="White" />
+                            <TextBlock Text="0 m" Grid.Column="3" HorizontalAlignment="Left" VerticalAlignment="Top" x:Name="altLabel" Foreground="White"/>
                             <TextBlock Text="{Binding Path=LocalizedResources.SpeedMap, Source={StaticResource LocalizedStrings}}" 
-                                       Grid.Column="4" HorizontalAlignment="Right" VerticalAlignment="Top"/>
-                            <TextBlock Text="0 km/h" Grid.Column="5" Grid.ColumnSpan="2" HorizontalAlignment="Right" VerticalAlignment="Top"  x:Name="speedBox"/>
+                                       Grid.Column="4" HorizontalAlignment="Right" VerticalAlignment="Top" Foreground="White"/>
+                            <TextBlock Text="0 km/h" Grid.Column="5" Grid.ColumnSpan="2" HorizontalAlignment="Right" VerticalAlignment="Top"  x:Name="speedBox" Foreground="White"/>
                         </Grid>
                     </Grid>
 
@@ -236,19 +236,22 @@
                         VerticalAlignment="Bottom" Width="70" Height="50" Margin="0,0,0,30"
                             Padding="10,10"/>
                     <!-- bottom portion of the screen displays time, speed and small button to switch to other pivot item-->
-                    <Grid Background="#99000000" Margin="0,0,0,0" 
+                    <Grid Margin="0,0,0,0" 
                         VerticalAlignment="Bottom" Height="30">
-                        <Grid Margin="0,0,0,0" Opacity=".5"
+                        <Grid Margin="0,0,0,0" Opacity=".6"
                             util:GridUtils.RowDefinitions="40"
                             util:GridUtils.ColumnDefinitions="*, *, auto, *,60">
+                            <Grid.Background>
+                                <SolidColorBrush Color="#FF6E6E6E"/>
+                            </Grid.Background>
                             <TextBlock Text="{Binding Path=LocalizedResources.Distance, Source={StaticResource LocalizedStrings}}" 
-                                       Grid.Row="0" Grid.Column="0"/>
+                                       Grid.Row="0" Grid.Column="0" Foreground="White"/>
                             <TextBlock Text="0 km" Grid.Row="0" Grid.Column="1" x:Name="distanceBox"
-                                HorizontalAlignment="Center"/>
+                                HorizontalAlignment="Center" Foreground="White"/>
                             <TextBlock Text="{Binding Path=LocalizedResources.Time, Source={StaticResource LocalizedStrings}}" 
-                                       Grid.Row="0" Grid.Column="2"/>
+                                       Grid.Row="0" HorizontalAlignment="Right" Margin="0,0,172,-10" Width="60" Foreground="White"/>
                             <TextBlock Text="00:00:00" Grid.Row="0" Grid.Column="3" x:Name="elapsedTime"
-                                HorizontalAlignment="Left"/>
+                                HorizontalAlignment="Left" Foreground="White"/>
                             <!-- small button used to jump to details pivot item -->
                             <!-- for those who find it swipe on the map page -->
                             <Button Content=""
@@ -260,8 +263,8 @@
                     </Grid>
                 </Grid>
             </Grid>
-            
+
         </phone:PivotItem>
-        
+
     </phone:Pivot>
 </phone:PhoneApplicationPage>
