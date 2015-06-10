@@ -367,7 +367,7 @@ namespace TrekMe.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Rotate map.
+        ///   Looks up a localized string similar to Automatic map rotation.
         /// </summary>
         public static string SettingsRotateMap {
             get {

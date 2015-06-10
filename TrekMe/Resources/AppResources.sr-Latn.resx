@@ -58,7 +58,6 @@
   </data>
   <data name="SpeedMap" xml:space="preserve">
     <value> брзина:</value>
-    <comment></comment>
   </data>
   <data name="StopButton" xml:space="preserve">
     <value>Стоп</value>
@@ -103,8 +102,7 @@
     <value>Инфо</value>
   </data>
   <data name="Info1" xml:space="preserve">
-    <value>Апликацију отвореног кода направио Златко Бабић, 2015</value>
-    <comment></comment>
+    <value>Апликација отвореног кода, Златко Бабић, 2015</value>
   </data>
   <data name="Info2" xml:space="preserve">
     <value>Захваљујем</value>
@@ -158,6 +156,6 @@
     <value>Running Icon by Elegantthemes</value>
   </data>
   <data name="SettingsRotateMap" xml:space="preserve">
-    <value>Rotate map</value>
+    <value>Аутоматска ротација карте</value>
   </data>
 </root>

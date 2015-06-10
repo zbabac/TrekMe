@@ -258,6 +258,6 @@
     <value>Running Icon by Elegantthemes</value>
   </data>
   <data name="SettingsRotateMap" xml:space="preserve">
-    <value>Rotate map</value>
+    <value>Automatic map rotation</value>
   </data>
 </root>

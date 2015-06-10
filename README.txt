@@ -9,7 +9,7 @@ or at SF: git clone ssh://zbabac@git.code.sf.net/p/trekme/code trekme-code
 Windows Phone Store location:
 http://www.windowsphone.com/s?appid=f519dba9-5601-4691-a614-2df33604452c
 
-Latest version 1.1.1
+Latest version 1.2.0
 
 Content:
  - Change logs
@@ -20,8 +20,10 @@ Content:
 Licensed under MIT license, so you are free to use the source code for any purpose you like, open source or commercial.
 Please, don't forget to mention me in your work. I hope that you will learn a lot, as I have learned from others.
 
-Change log since v1.1.1:
+Change log since v1.2.0:
 	- added norwegian localization
+	- Settings: Map pitch and rotation
+	- fixed UI when light theme used
 
 Change log since v1.1.0:
 	- added About and Settings page: Map Pitch configurable

@@ -156,6 +156,6 @@
     <value>Running ikonet av Elegantthemes</value>
   </data>
   <data name="SettingsRotateMap" xml:space="preserve">
-    <value>Rotate map</value>
+    <value>automatisk kartrotasjon</value>
   </data>
 </root>

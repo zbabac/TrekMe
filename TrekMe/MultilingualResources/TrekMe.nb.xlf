@@ -193,8 +193,8 @@
           <target state="translated">Running ikonet av Elegantthemes</target>
         </trans-unit>
         <trans-unit id="SettingsRotateMap" translate="yes" xml:space="preserve">
-          <source>Rotate map</source>
-          <target state="new">Rotate map</target>
+          <source>Automatic map rotation</source>
+          <target state="translated">automatisk kartrotasjon</target>
         </trans-unit>
       </group>
     </body>
