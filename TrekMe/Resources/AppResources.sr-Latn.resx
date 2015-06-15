@@ -129,7 +129,7 @@
     <value>Назад</value>
   </data>
   <data name="SettingsMapTilt" xml:space="preserve">
-    <value>Нагиб карте</value>
+    <value>нагиб карте</value>
   </data>
   <data name="AppBarAbout" xml:space="preserve">
     <value>инфо</value>
@@ -156,6 +156,9 @@
     <value>Running Icon by Elegantthemes</value>
   </data>
   <data name="SettingsRotateMap" xml:space="preserve">
-    <value>Аутоматска ротација карте</value>
+    <value>аутоматска ротација карте</value>
+  </data>
+  <data name="SettingsMIles" xml:space="preserve">
+    <value>користи миље и стопе</value>
   </data>
 </root>

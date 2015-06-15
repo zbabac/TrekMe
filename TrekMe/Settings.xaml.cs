@@ -13,6 +13,7 @@ namespace TrekMe
     public partial class Settings : PhoneApplicationPage
     {
         private string rotate = "false";
+        private string miles = "false";
         string parameterValue = "0";
         public Settings()
         {
@@ -33,12 +34,20 @@ namespace TrekMe
                 rotate = (string)PhoneApplicationService.Current.State["rotate"];
                 checkRotate.IsChecked = Convert.ToBoolean(rotate);
             }
+            if (PhoneApplicationService.Current.State.ContainsKey("miles"))
+            {   // if yes, then set check box accordingly
+                miles = (string)PhoneApplicationService.Current.State["miles"];
+                checkMiles.IsChecked = Convert.ToBoolean(miles);
+            }
             PhoneApplicationService.Current.State["parameter"] = parameterValue;
+            PhoneApplicationService.Current.State["rotate"] = rotate;
+            PhoneApplicationService.Current.State["miles"] = miles;
         }
         protected override void OnNavigatedFrom(System.Windows.Navigation.NavigationEventArgs e)
         {
             PhoneApplicationService.Current.State["parameter"] = parameterValue;
             PhoneApplicationService.Current.State["rotate"] = rotate;
+            PhoneApplicationService.Current.State["miles"] = miles;
         }
         private void SettingsBack_Click(object sender, RoutedEventArgs e)
         {   // click on Back button (disabled, HW back is used)
@@ -56,6 +65,14 @@ namespace TrekMe
                 rotate = "true";
             else rotate = "false";
             PhoneApplicationService.Current.State["rotate"] = rotate;
+        }
+
+        private void checkMiles_Click(object sender, RoutedEventArgs e)
+        {
+            if (checkMiles.IsChecked == true)
+                miles = "true";
+            else miles = "false";
+            PhoneApplicationService.Current.State["miles"] = miles;
         }
     }
 }

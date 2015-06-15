@@ -1,8 +1,8 @@
-﻿<xapCache source="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\Bin\Debug\TrekMe_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="11/06/2015 12:40:08">
-  <file source="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\obj\Debug\TrekMe.dll" archivePath="TrekMe.dll" lastWriteTime="11/06/2015 12:40:07" />
-  <file source="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\obj\Debug\nb\TrekMe.resources.dll" archivePath="nb\TrekMe.resources.dll" lastWriteTime="11/06/2015 12:40:07" />
-  <file source="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\obj\Debug\sr-Cyrl\TrekMe.resources.dll" archivePath="sr-Cyrl\TrekMe.resources.dll" lastWriteTime="11/06/2015 12:40:07" />
-  <file source="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\obj\Debug\sr-Latn\TrekMe.resources.dll" archivePath="sr-Latn\TrekMe.resources.dll" lastWriteTime="11/06/2015 12:40:07" />
+﻿<xapCache source="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\Bin\Debug\TrekMe_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="15/06/2015 23:02:33">
+  <file source="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\obj\Debug\TrekMe.dll" archivePath="TrekMe.dll" lastWriteTime="15/06/2015 23:02:33" />
+  <file source="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\obj\Debug\nb\TrekMe.resources.dll" archivePath="nb\TrekMe.resources.dll" lastWriteTime="15/06/2015 23:02:33" />
+  <file source="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\obj\Debug\sr-Cyrl\TrekMe.resources.dll" archivePath="sr-Cyrl\TrekMe.resources.dll" lastWriteTime="15/06/2015 23:02:33" />
+  <file source="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\obj\Debug\sr-Latn\TrekMe.resources.dll" archivePath="sr-Latn\TrekMe.resources.dll" lastWriteTime="15/06/2015 23:02:33" />
   <file source="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="01/02/2014 20:02:52" />
   <file source="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="01/02/2014 20:02:52" />
   <file source="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\Assets\ApplicationIcon110x110.png" archivePath="Assets\ApplicationIcon110x110.png" lastWriteTime="01/02/2014 20:02:52" />
@@ -21,5 +21,5 @@
   <file source="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="11/06/2015 12:40:08" />
   <file source="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\Bin\Debug\Fonts\Warenhaus-Standard.otf" archivePath="Fonts\Warenhaus-Standard.otf" lastWriteTime="30/07/2014 21:04:55" />
   <file source="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\Assets\running-icon300.png" archivePath="Assets\running-icon300.png" lastWriteTime="05/06/2015 18:09:05" />
-  <file source="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="11/06/2015 12:40:08" />
+  <file source="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="15/06/2015 21:42:38" />
 </xapCache>

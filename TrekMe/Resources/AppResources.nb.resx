@@ -158,4 +158,7 @@
   <data name="SettingsRotateMap" xml:space="preserve">
     <value>automatisk kartrotasjon</value>
   </data>
+  <data name="SettingsMIles" xml:space="preserve">
+    <value>bruke miles og fot</value>
+  </data>
 </root>

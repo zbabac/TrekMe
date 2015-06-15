@@ -196,6 +196,10 @@
           <source>Automatic map rotation</source>
           <target state="translated">automatisk kartrotasjon</target>
         </trans-unit>
+        <trans-unit id="SettingsMIles" translate="yes" xml:space="preserve">
+          <source>Use miles and feet</source>
+          <target state="translated">bruke miles og fot</target>
+        </trans-unit>
       </group>
     </body>
   </file>

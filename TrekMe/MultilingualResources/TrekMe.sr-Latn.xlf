@@ -158,7 +158,7 @@
         </trans-unit>
         <trans-unit id="SettingsMapTilt" translate="yes" xml:space="preserve">
           <source>Map pitch</source>
-          <target state="translated">Нагиб карте</target>
+          <target state="translated">нагиб карте</target>
         </trans-unit>
         <trans-unit id="AppBarAbout" translate="yes" xml:space="preserve">
           <source>about</source>
@@ -194,7 +194,11 @@
         </trans-unit>
         <trans-unit id="SettingsRotateMap" translate="yes" xml:space="preserve">
           <source>Automatic map rotation</source>
-          <target state="translated">Аутоматска ротација карте</target>
+          <target state="translated">аутоматска ротација карте</target>
+        </trans-unit>
+        <trans-unit id="SettingsMIles" translate="yes" xml:space="preserve">
+          <source>Use miles and feet</source>
+          <target state="translated">користи миље и стопе</target>
         </trans-unit>
       </group>
     </body>

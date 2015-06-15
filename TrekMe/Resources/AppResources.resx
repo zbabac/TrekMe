@@ -260,4 +260,7 @@
   <data name="SettingsRotateMap" xml:space="preserve">
     <value>Automatic map rotation</value>
   </data>
+  <data name="SettingsMIles" xml:space="preserve">
+    <value>Use miles and feet</value>
+  </data>
 </root>

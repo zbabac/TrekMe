@@ -367,6 +367,15 @@ namespace TrekMe.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Use miles and feet.
+        /// </summary>
+        public static string SettingsMIles {
+            get {
+                return ResourceManager.GetString("SettingsMIles", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Automatic map rotation.
         /// </summary>
         public static string SettingsRotateMap {

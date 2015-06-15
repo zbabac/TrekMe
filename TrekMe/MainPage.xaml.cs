@@ -39,6 +39,7 @@ namespace TrekMe
         private long trek_startTime, pause_start_time; //remember when the run is started and when pause is started
         private bool trek_started = false; //is the run started?
         private bool rotate_map = false; //display map that rotates when heading changes?
+        private bool use_miles = false; //display distance in miles and alt in feet?
         private bool paused = false;//is the run paused?
         private bool was_started = false; //was it started before, then wait for GPS
         private bool draw_circle = false; //should I draw the circle?
@@ -104,6 +105,7 @@ namespace TrekMe
         {
             PhoneApplicationService.Current.State["parameter"] = map_pitch.ToString();
             PhoneApplicationService.Current.State["rotate"] = rotate_map.ToString();
+            PhoneApplicationService.Current.State["miles"] = use_miles.ToString();
         }
         protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
         {
@@ -119,6 +121,11 @@ namespace TrekMe
             {
                 string rotate = (string)PhoneApplicationService.Current.State["rotate"];
                 rotate_map = Convert.ToBoolean(rotate);
+            }
+            if (PhoneApplicationService.Current.State.ContainsKey("miles"))
+            {
+                string miles = (string)PhoneApplicationService.Current.State["miles"];
+                use_miles = Convert.ToBoolean(miles);
             }
         }
         private void pivotControl_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
@@ -345,7 +352,15 @@ namespace TrekMe
         private void GPS_PositionChanged(object sender, GeoPositionChangedEventArgs<GeoCoordinate> e)
         {   //event is fired every time GPS sensor detects position change, location coordinates are then fetched
             coord = new GeoCoordinate(e.Position.Location.Latitude, e.Position.Location.Longitude, e.Position.Location.Altitude);
-            
+
+            string _dst = "km";
+            string _spd = "mil";
+            string _alt = "m";
+            double _avg_speed;
+            double _curr_speed;
+            double _altitude;
+            double _dist;
+
             if (trek_line.Path.Count > 0) //calculate vars only after 1st position
             {
                 var previousPoint = trek_line.Path.Last(); //to measure distance one must know previous position
@@ -366,12 +381,36 @@ namespace TrekMe
                     
                     trek_total_distance += distance / 1000.0; //add last measurement to the total distance covered
                     avg_speed = (trek_total_distance * 3600000) / walk_time_tick; //calc average speed so far
-                    distanceBox.Text = string.Format("{0:f1} km", trek_total_distance);
-                    speedBox.Text = string.Format("{0:f0} km/h", current_speed);
-                    speedBox2.Text = string.Format("{0:f1} km/h", current_speed);
-                    distanceBox2.Text = string.Format("{0:f2} km", trek_total_distance);
+
+                    if (use_miles)
+                    {
+                        _dst = "mil";
+                        _spd = "mph";
+                        
+                        _avg_speed = avg_speed * 0.62137;
+                        _curr_speed = current_speed * 0.62137;
+                        
+                        _dist = trek_total_distance * 0.62137;
+                    }
+                    else
+                    {
+                        _dst = "km";
+                        _spd = "km/h";
+                        
+                        _avg_speed = avg_speed;
+                        _curr_speed = current_speed;
+                        
+                        _dist = trek_total_distance;
+                    }
+
+                    avgSpeed.Text = string.Format("{0:f1} {1}", _avg_speed, _spd);
+                    distanceBox.Text = string.Format("{0:f1} {1}", _dist, _dst);
+                    speedBox.Text = string.Format("{0:f0} {1}", _curr_speed, _spd);
+                    speedBox2.Text = string.Format("{0:f1} {1}", _curr_speed, _spd);
+                    distanceBox2.Text = string.Format("{0:f2} {1}", _dist, _dst);
+                    
                     caloriesLabel.Text = string.Format("{0:f0} kcal", trek_total_distance * 65);
-                    avgSpeed.Text = string.Format("{0:f1} km/h", avg_speed);
+                    
                     trek_line.StrokeThickness = 5;
                 }
                 // if set in settings to rotate map with user changing heading
@@ -393,12 +432,26 @@ namespace TrekMe
                     latitudelabel.Text = string.Format("{0:f2}⁰S ", (coord.Latitude*(-1.0)));
                 else
                     latitudelabel.Text = string.Format("{0:f2}⁰N ", coord.Latitude);
-                altLabel.Text = string.Format("{0:f0} m", coord.Altitude);
+
+                if(use_miles)
+                {
+                    _alt = "ft";
+                    _altitude = coord.Altitude * 3.28084;
+                }
+                else
+                {
+                    _alt = "m";
+                    _altitude = coord.Altitude;
+                }
+                altLabel.Text = string.Format("{0:f0} {1}", _altitude, _alt);
                 lon2.Text = longitudelabel.Text;
                 lat2.Text = latitudelabel.Text;
-                alt2.Text = string.Format("{0:f0} m", coord.Altitude);
+                alt2.Text = string.Format("{0:f0} {1}", _altitude, _alt);
+                
                 if (trek_started && !paused)
                 {
+                    
+                    
                     ShellTile.ActiveTiles.First().Update(new IconicTileData() //update live tiles
                     {
                         Title = "TrekMe",
