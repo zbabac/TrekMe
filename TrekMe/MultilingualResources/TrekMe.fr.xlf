@@ -201,8 +201,8 @@
           <target state="needs-review-translation" state-qualifier="mt-suggestion">Utilisez miles et pieds</target>
         </trans-unit>
         <trans-unit id="AltUpDown" translate="yes" xml:space="preserve">
-          <source>Alt change</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">Modification ALT</target>
+          <source>Altitude diff.</source>
+          <target state="translated">Modification ALT</target>
         </trans-unit>
       </group>
     </body>

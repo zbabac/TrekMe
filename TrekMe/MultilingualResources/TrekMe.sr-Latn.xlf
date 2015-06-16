@@ -201,8 +201,8 @@
           <target state="translated">користи миље и стопе</target>
         </trans-unit>
         <trans-unit id="AltUpDown" translate="yes" xml:space="preserve">
-          <source>Alt change</source>
-          <target state="new">Alt change</target>
+          <source>Altitude diff.</source>
+          <target state="translated">промјена НВ:</target>
         </trans-unit>
       </group>
     </body>

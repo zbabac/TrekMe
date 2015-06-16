@@ -82,7 +82,7 @@
         </trans-unit>
         <trans-unit id="SwipeText" translate="yes" xml:space="preserve">
           <source>-- swipe left or right to see the map --</source>
-          <target state="translated">--sveip venstre eller høyre for å se kartet--</target>
+          <target state="translated">sveip venstre eller høyre for å se kartet</target>
         </trans-unit>
         <trans-unit id="Time" translate="yes" xml:space="preserve">
           <source>Time: </source>
@@ -201,8 +201,8 @@
           <target state="translated">bruke miles og fot</target>
         </trans-unit>
         <trans-unit id="AltUpDown" translate="yes" xml:space="preserve">
-          <source>Alt change</source>
-          <target state="new">Alt change</target>
+          <source>Altitude diff.</source>
+          <target state="translated">høydeforskjell:</target>
         </trans-unit>
       </group>
     </body>

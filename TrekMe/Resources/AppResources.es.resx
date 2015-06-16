@@ -72,7 +72,7 @@
     <value>Stop</value>
   </data>
   <data name="SwipeText" xml:space="preserve">
-    <value>--golpe izquierdo o derecho Ver el mapa:</value>
+    <value>golpe izquierdo o derecho Ver el mapa</value>
   </data>
   <data name="Time" xml:space="preserve">
     <value>Hora: </value>

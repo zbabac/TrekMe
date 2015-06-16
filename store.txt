@@ -8,7 +8,7 @@ TrekMe takođe prikazuje pređene kilometre, trenutnu i prosječnu brzinu, GPS p
 Izvorni kod dostupan na:
 https://github.com/zbabac/TrekMe
 
-v 1.3.1
+v 1.3.2
 - podešavanja se automatski sačuvaju
 - opcija da se koriste milje i stope
 - jezici njemački, francuski, španski i portugalski
@@ -25,7 +25,7 @@ Units can be metric or US (miles and feet).
 This is open source app and source code is available.
 https://github.com/zbabac/TrekMe.git
 
-v 1.3.1
+v 1.3.2
 - settings are saved automatically
 - added option to use miles and feet instead km and meters
 - languages: French, Spanish, Portuguese, German
@@ -42,7 +42,7 @@ Stor Live Tile viser data på startskjermen, mellomstore og små Live Tile viser
 Source code:
 https://github.com/zbabac/TrekMe
 
-v 1.3.0
+v 1.3.2
 - instillinger er lagret automatisk
 - lagt alternativ for å bruke miles og fot
 - språk: fransk, spansk, tusk og portugisisk
@@ -64,7 +64,7 @@ Große Live-Kachel zeigt diese Daten im Home-Bildschirm, mittlere und kleine Fli
 Das ist ein Open-Source-app und Quellcode ist verfügbar.
 https://github.com/zbabac/TrekMe
 
-v 1.3.1
+v 1.3.2
 - Einstellungen werden automatisch gespeichert
 - Option hinzugefügt, um Meilen und Fuß statt km und m verwenden
 - Sprachen: Französisch, Spanisch, Portugiesisch, Deutsch
@@ -84,7 +84,7 @@ Grand live tile montre ces données sur l'écran d'accueil, moyen et petit carre
 Cette application est open source et le code source est disponible.
 https://github.com/zbabac/TrekMe
 
-v 1.3.1
+v 1.3.2
 - Les paramètres sont sauvegardés automatiquement
 - Ajout d'une option pour utiliser des miles et les pieds au lieu km et mètres
 - Langues: français, espagnol, portugais, allemand
@@ -104,7 +104,7 @@ Telha ao vivo grande mostra esses dados na tela inicial, médio e pequeno show d
 Este é aplicativo de código aberto e de código-fonte está disponível.
 https://github.com/zbabac/TrekMe
 
-v 1.3.1
+v 1.3.2
 - Configurações são salvas automaticamente
 - Opção adicional para usar milhas e pés em vez km e medidores
 - Línguas: Francês, Espanhol, Português, Alemão
@@ -123,7 +123,7 @@ Baldosas en vivo grande muestra estos datos en la pantalla de inicio, medio y mu
 Se trata de aplicaciones de código abierto y el código fuente está disponible.
 https://github.com/zbabac/TrekMe
 
-v 1.3.1
+v 1.3.2
 - Ajustes se guardan automáticamente
 - Opción añadida de usar millas y pies en vez km y medidores
 - Idiomas: francés, español, portugués, alemán

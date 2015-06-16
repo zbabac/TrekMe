@@ -72,7 +72,7 @@
     <value>Parada</value>
   </data>
   <data name="SwipeText" xml:space="preserve">
-    <value>-passar à esquerda ou à direita para ver o mapa-</value>
+    <value>passar à esquerda ou à direita para ver o mapa</value>
   </data>
   <data name="Time" xml:space="preserve">
     <value>Tempo: </value>

@@ -82,7 +82,7 @@
         </trans-unit>
         <trans-unit id="SwipeText" translate="yes" xml:space="preserve">
           <source>-- swipe left or right to see the map --</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">--golpe izquierdo o derecho Ver el mapa:</target>
+          <target state="translated">golpe izquierdo o derecho Ver el mapa</target>
         </trans-unit>
         <trans-unit id="Time" translate="yes" xml:space="preserve">
           <source>Time: </source>
@@ -201,8 +201,8 @@
           <target state="needs-review-translation" state-qualifier="mt-suggestion">Uso de millas y pies</target>
         </trans-unit>
         <trans-unit id="AltUpDown" translate="yes" xml:space="preserve">
-          <source>Alt change</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">Cambio de ALT</target>
+          <source>Altitude diff.</source>
+          <target state="translated">Cambio de ALT</target>
         </trans-unit>
       </group>
     </body>

@@ -72,7 +72,7 @@
     <value>Anhalten</value>
   </data>
   <data name="SwipeText" xml:space="preserve">
-    <value>--Swipe nach links oder rechts, um die Karte zu sehen –</value>
+    <value>Swipe nach links oder rechts, um die Karte zu sehen</value>
   </data>
   <data name="Time" xml:space="preserve">
     <value>Zeit: </value>

@@ -97,7 +97,7 @@ namespace TrekMe.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Alt change.
+        ///   Looks up a localized string similar to Altitude diff..
         /// </summary>
         public static string AltUpDown {
             get {

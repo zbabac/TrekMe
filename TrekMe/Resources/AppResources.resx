@@ -264,6 +264,6 @@
     <value>Use miles and feet</value>
   </data>
   <data name="AltUpDown" xml:space="preserve">
-    <value>Alt change</value>
+    <value>Altitude diff.</value>
   </data>
 </root>

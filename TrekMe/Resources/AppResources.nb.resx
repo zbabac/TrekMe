@@ -72,7 +72,7 @@
     <value>Stopp</value>
   </data>
   <data name="SwipeText" xml:space="preserve">
-    <value>--sveip venstre eller høyre for å se kartet--</value>
+    <value>sveip venstre eller høyre for å se kartet</value>
   </data>
   <data name="Time" xml:space="preserve">
     <value>tid: </value>
@@ -162,6 +162,6 @@
     <value>bruke miles og fot</value>
   </data>
   <data name="AltUpDown" xml:space="preserve">
-    <value>Alt change</value>
+    <value>høydeforskjell:</value>
   </data>
 </root>
