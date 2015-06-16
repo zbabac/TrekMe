@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="source-language">
+    <value>en</value>
+  </resheader>
+  <data name="ResourceFlowDirection" xml:space="preserve">
+    <value>LeftToRight</value>
+    <comment>Controls the FlowDirection for all elements in the RootFrame. Set to the traditional direction of this resource file's language</comment>
+  </data>
+  <data name="ResourceLanguage" xml:space="preserve">
+    <value>fr-fr</value>
+    <comment>Controls the Language and ensures that the font for all elements in the RootFrame aligns with the app's language. Set to the language code of this resource file's language.</comment>
+  </data>
+  <data name="ApplicationTitle" xml:space="preserve">
+    <value>TrekMe</value>
+  </data>
+  <data name="AppBarButtonText" xml:space="preserve">
+    <value>ajouter</value>
+  </data>
+  <data name="AppBarMenuItemText" xml:space="preserve">
+    <value>Élément de menu</value>
+  </data>
+  <data name="Alt" xml:space="preserve">
+    <value>ALT : </value>
+  </data>
+  <data name="AverageSpeed" xml:space="preserve">
+    <value>Vitesse moyenne :</value>
+  </data>
+  <data name="BannerInfo" xml:space="preserve">
+    <value>L'extraction de GPS données, veuillez patienter.</value>
+  </data>
+  <data name="Break" xml:space="preserve">
+    <value>Pause :  </value>
+  </data>
+  <data name="Calories" xml:space="preserve">
+    <value>Calories :</value>
+  </data>
+  <data name="CurrentSpeed" xml:space="preserve">
+    <value>Vitesse actuelle :</value>
+  </data>
+  <data name="DetailTitle" xml:space="preserve">
+    <value>Données détaillées</value>
+  </data>
+  <data name="Distance" xml:space="preserve">
+    <value>Distance :</value>
+  </data>
+  <data name="Distance2" xml:space="preserve">
+    <value>Distance :  </value>
+  </data>
+  <data name="PauseButton" xml:space="preserve">
+    <value>Pause</value>
+  </data>
+  <data name="SpeedMap" xml:space="preserve">
+    <value> Vitesse :</value>
+  </data>
+  <data name="StartButton" xml:space="preserve">
+    <value>Début</value>
+  </data>
+  <data name="StopButton" xml:space="preserve">
+    <value>Arrêt</value>
+  </data>
+  <data name="SwipeText" xml:space="preserve">
+    <value>--Balayez l'écran gauche ou la droite pour voir la carte :</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>Heure : </value>
+  </data>
+  <data name="Time2" xml:space="preserve">
+    <value>Heure :</value>
+  </data>
+  <data name="WideContent1" xml:space="preserve">
+    <value>Distance : vitesse 0: 0</value>
+  </data>
+  <data name="WideContent2" xml:space="preserve">
+    <value>Vitesse moyenne: 0 heure: 00:00:00</value>
+  </data>
+  <data name="WideContent3" xml:space="preserve">
+    <value>Longitude Latitude Altitude</value>
+  </data>
+  <data name="Altitude2" xml:space="preserve">
+    <value>m d'altitude</value>
+  </data>
+  <data name="Latitude2" xml:space="preserve">
+    <value>Latitude</value>
+  </data>
+  <data name="Longitude2" xml:space="preserve">
+    <value>longitude</value>
+  </data>
+  <data name="About" xml:space="preserve">
+    <value>À propos de</value>
+  </data>
+  <data name="Info1" xml:space="preserve">
+    <value>l'application Open Source par Zlatko Babic, 2015</value>
+  </data>
+  <data name="Info2" xml:space="preserve">
+    <value>Crédits</value>
+  </data>
+  <data name="Info3" xml:space="preserve">
+    <value>Geo la partie de la classe NExtra fournie par Daniel Saidi.</value>
+  </data>
+  <data name="Info4" xml:space="preserve">
+    <value>Warenhouse police est concédé sous licence de police ouvert SIL</value>
+  </data>
+  <data name="Info5" xml:space="preserve">
+    <value>Inspirés par exemple de Colin Eberhardt WP8Runner</value>
+  </data>
+  <data name="SwipeBack" xml:space="preserve">
+    <value>--Faites défiler pour retourner à l'application :</value>
+  </data>
+  <data name="AboutBack" xml:space="preserve">
+    <value>Retour</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Paramètres</value>
+  </data>
+  <data name="SettingsBack" xml:space="preserve">
+    <value>Retour</value>
+  </data>
+  <data name="SettingsMapTilt" xml:space="preserve">
+    <value>Carte inclinaison</value>
+  </data>
+  <data name="AppBarAbout" xml:space="preserve">
+    <value>à propos</value>
+  </data>
+  <data name="AppBarSettings" xml:space="preserve">
+    <value>paramètres</value>
+  </data>
+  <data name="WarningLocationDisabled" xml:space="preserve">
+    <value>Veuillez tout d'abord activer emplacement !</value>
+  </data>
+  <data name="WarningLocationNotSupported" xml:space="preserve">
+    <value>Emplacement non pris en charge sur ce téléphone !</value>
+  </data>
+  <data name="MessageWarningText1" xml:space="preserve">
+    <value>Veuillez activer les services de localisation de votre téléphone : paramètres--&amp;gt ; Emplacement = activé</value>
+  </data>
+  <data name="MessageWarningText2" xml:space="preserve">
+    <value>Emplacement non pris en charge sur ce téléphone ! Cette application ne peut pas fonctionner sans GPS.</value>
+  </data>
+  <data name="MessageWarningTitle" xml:space="preserve">
+    <value>Attention</value>
+  </data>
+  <data name="Info6" xml:space="preserve">
+    <value>Icône en cours d'exécution par Elegantthemes</value>
+  </data>
+  <data name="SettingsRotateMap" xml:space="preserve">
+    <value>Rotation de mappage automatique</value>
+  </data>
+  <data name="SettingsMIles" xml:space="preserve">
+    <value>Utilisez miles et pieds</value>
+  </data>
+  <data name="AltUpDown" xml:space="preserve">
+    <value>Modification ALT</value>
+  </data>
+</root>

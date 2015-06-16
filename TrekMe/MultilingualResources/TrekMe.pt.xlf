@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en" target-language="pt" original="TREKME/RESOURCES/APPRESOURCES.RESX" tool-id="MultilingualAppToolkit" product-name="n/a" product-version="n/a" build-num="n/a">
+    <header>
+      <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="4.0.1132.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="TREKME/RESOURCES/APPRESOURCES.RESX">
+        <trans-unit id="ResourceFlowDirection" translate="yes" xml:space="preserve">
+          <source>LeftToRight</source>
+          <target state="translated" state-qualifier="tm-suggestion">LeftToRight</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">Controls the FlowDirection for all elements in the RootFrame. Set to the traditional direction of this resource file's language</note>
+        </trans-unit>
+        <trans-unit id="ResourceLanguage" translate="yes" xml:space="preserve">
+          <source>en-US</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">en-US</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">Controls the Language and ensures that the font for all elements in the RootFrame aligns with the app's language. Set to the language code of this resource file's language.</note>
+        </trans-unit>
+        <trans-unit id="ApplicationTitle" translate="yes" xml:space="preserve">
+          <source>TrekMe</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">TrekMe</target>
+        </trans-unit>
+        <trans-unit id="AppBarButtonText" translate="yes" xml:space="preserve">
+          <source>add</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Adicionar</target>
+        </trans-unit>
+        <trans-unit id="AppBarMenuItemText" translate="yes" xml:space="preserve">
+          <source>Menu Item</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Item de menu</target>
+        </trans-unit>
+        <trans-unit id="Alt" translate="yes" xml:space="preserve">
+          <source>Alt: </source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">ALT: </target>
+        </trans-unit>
+        <trans-unit id="AverageSpeed" translate="yes" xml:space="preserve">
+          <source>Average speed:</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Velocidade média:</target>
+        </trans-unit>
+        <trans-unit id="BannerInfo" translate="yes" xml:space="preserve">
+          <source>Fetching GPS data, please wait.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Buscando GPS dados, aguarde.</target>
+        </trans-unit>
+        <trans-unit id="Break" translate="yes" xml:space="preserve">
+          <source>Break:  </source>
+          <target state="translated">Pausa:  </target>
+        </trans-unit>
+        <trans-unit id="Calories" translate="yes" xml:space="preserve">
+          <source>Calories:</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Calorias:</target>
+        </trans-unit>
+        <trans-unit id="CurrentSpeed" translate="yes" xml:space="preserve">
+          <source>Current speed:</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Velocidade atual:</target>
+        </trans-unit>
+        <trans-unit id="DetailTitle" translate="yes" xml:space="preserve">
+          <source>Detailed data</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Dados detalhados</target>
+        </trans-unit>
+        <trans-unit id="Distance" translate="yes" xml:space="preserve">
+          <source>Distance:</source>
+          <target state="translated" state-qualifier="tm-suggestion">Distância:</target>
+        </trans-unit>
+        <trans-unit id="Distance2" translate="yes" xml:space="preserve">
+          <source>Distance:  </source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Distância:  </target>
+        </trans-unit>
+        <trans-unit id="PauseButton" translate="yes" xml:space="preserve">
+          <source>Pause</source>
+          <target state="translated" state-qualifier="tm-suggestion">Pausa</target>
+        </trans-unit>
+        <trans-unit id="SpeedMap" translate="yes" xml:space="preserve">
+          <source> Speed:</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion"> Velocidade:</target>
+        </trans-unit>
+        <trans-unit id="StartButton" translate="yes" xml:space="preserve">
+          <source>Start</source>
+          <target state="translated" state-qualifier="tm-suggestion">Start</target>
+        </trans-unit>
+        <trans-unit id="StopButton" translate="yes" xml:space="preserve">
+          <source>Stop</source>
+          <target state="translated" state-qualifier="tm-suggestion">Parada</target>
+        </trans-unit>
+        <trans-unit id="SwipeText" translate="yes" xml:space="preserve">
+          <source>-- swipe left or right to see the map --</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">-passar à esquerda ou à direita para ver o mapa-</target>
+        </trans-unit>
+        <trans-unit id="Time" translate="yes" xml:space="preserve">
+          <source>Time: </source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Tempo: </target>
+        </trans-unit>
+        <trans-unit id="Time2" translate="yes" xml:space="preserve">
+          <source>Time:</source>
+          <target state="translated" state-qualifier="tm-suggestion">Tempo:</target>
+        </trans-unit>
+        <trans-unit id="WideContent1" translate="yes" xml:space="preserve">
+          <source>Distance: 0 Speed: 0</source>
+          <target state="translated">Distância: 0 velocidade: 0</target>
+        </trans-unit>
+        <trans-unit id="WideContent2" translate="yes" xml:space="preserve">
+          <source>Avg. speed: 0 Time: 00:00:00</source>
+          <target state="translated">Velocidade média: 0 tempo de: 00:00:00</target>
+        </trans-unit>
+        <trans-unit id="WideContent3" translate="yes" xml:space="preserve">
+          <source>Longitude Latitude Altitude</source>
+          <target state="translated">Altitude Latitude Longitude</target>
+        </trans-unit>
+        <trans-unit id="Altitude2" translate="yes" xml:space="preserve">
+          <source>altitude m</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">m de altitude</target>
+        </trans-unit>
+        <trans-unit id="Latitude2" translate="yes" xml:space="preserve">
+          <source>latitude</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Latitude</target>
+        </trans-unit>
+        <trans-unit id="Longitude2" translate="yes" xml:space="preserve">
+          <source>longitude</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">longitude</target>
+        </trans-unit>
+        <trans-unit id="About" translate="yes" xml:space="preserve">
+          <source>About</source>
+          <target state="translated" state-qualifier="tm-suggestion">Sobre</target>
+        </trans-unit>
+        <trans-unit id="Info1" translate="yes" xml:space="preserve">
+          <source>Open source app by Zlatko Babic, 2015</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Aplicativo de código-fonte aberto por Zlatko Babic, 2015</target>
+        </trans-unit>
+        <trans-unit id="Info2" translate="yes" xml:space="preserve">
+          <source>Credits</source>
+          <target state="translated" state-qualifier="tm-suggestion">Créditos</target>
+        </trans-unit>
+        <trans-unit id="Info3" translate="yes" xml:space="preserve">
+          <source>Geo portion of the NExtra class provided by Daniel Saidi.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Geo parte da classe NExtra fornecida por Daniel Saidi.</target>
+        </trans-unit>
+        <trans-unit id="Info4" translate="yes" xml:space="preserve">
+          <source>Warenhouse Standard font is licensed under SIL Open Font License</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Fonte padrão de Warenhouse está licenciado sob a licença de fonte aberta SIL</target>
+        </trans-unit>
+        <trans-unit id="Info5" translate="yes" xml:space="preserve">
+          <source>Inspired by Colin Eberhardt's sample WP8Runner</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Inspirado por exemplo de Colin Eberhardt WP8Runner</target>
+        </trans-unit>
+        <trans-unit id="SwipeBack" translate="yes" xml:space="preserve">
+          <source>-- swipe to return to app --</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">-passar para retornar ao aplicativo –</target>
+        </trans-unit>
+        <trans-unit id="AboutBack" translate="yes" xml:space="preserve">
+          <source>Back</source>
+          <target state="translated" state-qualifier="tm-suggestion">Voltar</target>
+        </trans-unit>
+        <trans-unit id="Settings" translate="yes" xml:space="preserve">
+          <source>Settings</source>
+          <target state="translated" state-qualifier="tm-suggestion">Configurações</target>
+        </trans-unit>
+        <trans-unit id="SettingsBack" translate="yes" xml:space="preserve">
+          <source>Back</source>
+          <target state="translated" state-qualifier="tm-suggestion">Voltar</target>
+        </trans-unit>
+        <trans-unit id="SettingsMapTilt" translate="yes" xml:space="preserve">
+          <source>Map pitch</source>
+          <target state="translated">Mapa inclinação</target>
+        </trans-unit>
+        <trans-unit id="AppBarAbout" translate="yes" xml:space="preserve">
+          <source>about</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">sobre</target>
+        </trans-unit>
+        <trans-unit id="AppBarSettings" translate="yes" xml:space="preserve">
+          <source>settings</source>
+          <target state="translated" state-qualifier="tm-suggestion">config.</target>
+        </trans-unit>
+        <trans-unit id="WarningLocationDisabled" translate="yes" xml:space="preserve">
+          <source>Please first turn on location!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Por favor, pela primeira vez no local!</target>
+        </trans-unit>
+        <trans-unit id="WarningLocationNotSupported" translate="yes" xml:space="preserve">
+          <source>Location not supported on this phone!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Local não tem suportado neste telefone!</target>
+        </trans-unit>
+        <trans-unit id="MessageWarningText1" translate="yes" xml:space="preserve">
+          <source>Please enable location services on your phone: Settings --%%amp;gt; Location = ON</source>
+          <target state="translated">Habilite os serviços no seu telefone local: configurações--%%amp;gt; Local = ligar</target>
+        </trans-unit>
+        <trans-unit id="MessageWarningText2" translate="yes" xml:space="preserve">
+          <source>Location not supported on this phone! This app can't function without GPS.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Local não tem suportado neste telefone! Esse aplicativo não funciona sem GPS.</target>
+        </trans-unit>
+        <trans-unit id="MessageWarningTitle" translate="yes" xml:space="preserve">
+          <source>Warning</source>
+          <target state="translated" state-qualifier="tm-suggestion">Advertência</target>
+        </trans-unit>
+        <trans-unit id="Info6" translate="yes" xml:space="preserve">
+          <source>Running Icon by Elegantthemes</source>
+          <target state="translated">RunningIcon por Elegantthemes</target>
+        </trans-unit>
+        <trans-unit id="SettingsRotateMap" translate="yes" xml:space="preserve">
+          <source>Automatic map rotation</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Rotação automática de mapa</target>
+        </trans-unit>
+        <trans-unit id="SettingsMIles" translate="yes" xml:space="preserve">
+          <source>Use miles and feet</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Milhas de uso e pés</target>
+        </trans-unit>
+        <trans-unit id="AltUpDown" translate="yes" xml:space="preserve">
+          <source>Alt change</source>
+          <target state="translated">Diferença de altitude</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

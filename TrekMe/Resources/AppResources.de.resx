@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="source-language">
+    <value>en</value>
+  </resheader>
+  <data name="ResourceFlowDirection" xml:space="preserve">
+    <value>LeftToRight</value>
+    <comment>Controls the FlowDirection for all elements in the RootFrame. Set to the traditional direction of this resource file's language</comment>
+  </data>
+  <data name="ResourceLanguage" xml:space="preserve">
+    <value>En-US</value>
+    <comment>Controls the Language and ensures that the font for all elements in the RootFrame aligns with the app's language. Set to the language code of this resource file's language.</comment>
+  </data>
+  <data name="ApplicationTitle" xml:space="preserve">
+    <value>TrekMe</value>
+  </data>
+  <data name="AppBarButtonText" xml:space="preserve">
+    <value>Hinzufügen</value>
+  </data>
+  <data name="AppBarMenuItemText" xml:space="preserve">
+    <value>Menüspeise</value>
+  </data>
+  <data name="Alt" xml:space="preserve">
+    <value>Höhe: </value>
+  </data>
+  <data name="AverageSpeed" xml:space="preserve">
+    <value>Durchschnittliche Geschw.:</value>
+  </data>
+  <data name="BannerInfo" xml:space="preserve">
+    <value>Abrufen von GPS warten-Daten, bitte.</value>
+  </data>
+  <data name="Break" xml:space="preserve">
+    <value>Anhalten:  </value>
+  </data>
+  <data name="Calories" xml:space="preserve">
+    <value>Kalorien:</value>
+  </data>
+  <data name="CurrentSpeed" xml:space="preserve">
+    <value>Aktuelle Geschw.:</value>
+  </data>
+  <data name="DetailTitle" xml:space="preserve">
+    <value>Detaildaten</value>
+  </data>
+  <data name="Distance" xml:space="preserve">
+    <value>Abstand:</value>
+  </data>
+  <data name="Distance2" xml:space="preserve">
+    <value>Abstand:  </value>
+  </data>
+  <data name="PauseButton" xml:space="preserve">
+    <value>Anhalten</value>
+  </data>
+  <data name="SpeedMap" xml:space="preserve">
+    <value> Geschw.:</value>
+  </data>
+  <data name="StartButton" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="StopButton" xml:space="preserve">
+    <value>Anhalten</value>
+  </data>
+  <data name="SwipeText" xml:space="preserve">
+    <value>--Swipe nach links oder rechts, um die Karte zu sehen –</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>Zeit: </value>
+  </data>
+  <data name="Time2" xml:space="preserve">
+    <value>Zeitpunkt:</value>
+  </data>
+  <data name="WideContent1" xml:space="preserve">
+    <value>Entfernung: 0-Geschwindigkeit: 0</value>
+  </data>
+  <data name="WideContent2" xml:space="preserve">
+    <value>Durchschnittliche Geschw.: 0 Zeit: 00:00:00</value>
+  </data>
+  <data name="WideContent3" xml:space="preserve">
+    <value>Länge-Breite-Höhe</value>
+  </data>
+  <data name="Altitude2" xml:space="preserve">
+    <value>m Höhe</value>
+  </data>
+  <data name="Latitude2" xml:space="preserve">
+    <value>Latitude</value>
+  </data>
+  <data name="Longitude2" xml:space="preserve">
+    <value>Länge</value>
+  </data>
+  <data name="About" xml:space="preserve">
+    <value>Info</value>
+  </data>
+  <data name="Info1" xml:space="preserve">
+    <value>Open-Source-Anwendung durch Babic Zlatko 2015</value>
+  </data>
+  <data name="Info2" xml:space="preserve">
+    <value>Abspann</value>
+  </data>
+  <data name="Info3" xml:space="preserve">
+    <value>Geo-Teil der NExtra Klasse von Daniel Saidi bereitgestellt.</value>
+  </data>
+  <data name="Info4" xml:space="preserve">
+    <value>Warenhouse Standard Schriftart ist unter SIL Open Font License lizenziert.</value>
+  </data>
+  <data name="Info5" xml:space="preserve">
+    <value>Inspiriert von Colin Eberhardt Beispiel WP8Runner</value>
+  </data>
+  <data name="SwipeBack" xml:space="preserve">
+    <value>--Swipe-Sensor an die Anwendung zurückgegeben:</value>
+  </data>
+  <data name="AboutBack" xml:space="preserve">
+    <value>Zurück</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Einstellungen</value>
+  </data>
+  <data name="SettingsBack" xml:space="preserve">
+    <value>Zurück</value>
+  </data>
+  <data name="SettingsMapTilt" xml:space="preserve">
+    <value>Karte Neigung</value>
+  </data>
+  <data name="AppBarAbout" xml:space="preserve">
+    <value>über</value>
+  </data>
+  <data name="AppBarSettings" xml:space="preserve">
+    <value>Einstell.</value>
+  </data>
+  <data name="WarningLocationDisabled" xml:space="preserve">
+    <value>Bitte schalten Sie zuerst Position!</value>
+  </data>
+  <data name="WarningLocationNotSupported" xml:space="preserve">
+    <value>Speicherort für dieses Telefon nicht unterstützt!</value>
+  </data>
+  <data name="MessageWarningText1" xml:space="preserve">
+    <value>Speicherort der Dienste auf Ihrem Telefon aktivieren: Einstellungen--&amp;-Gt; Speicherort = Ein</value>
+  </data>
+  <data name="MessageWarningText2" xml:space="preserve">
+    <value>Speicherort für dieses Telefon nicht unterstützt! Diese Anwendung kann nicht ohne GPS-Funktion.</value>
+  </data>
+  <data name="MessageWarningTitle" xml:space="preserve">
+    <value>Achtung</value>
+  </data>
+  <data name="Info6" xml:space="preserve">
+    <value>RunningIcon von Elegantthemes</value>
+  </data>
+  <data name="SettingsRotateMap" xml:space="preserve">
+    <value>Automatische Zuordnung Drehung</value>
+  </data>
+  <data name="SettingsMIles" xml:space="preserve">
+    <value>Verwendung Miles und Fuß</value>
+  </data>
+  <data name="AltUpDown" xml:space="preserve">
+    <value>Höhenunterschied</value>
+  </data>
+</root>

@@ -8,31 +8,126 @@ TrekMe takođe prikazuje pređene kilometre, trenutnu i prosječnu brzinu, GPS p
 Izvorni kod dostupan na:
 https://github.com/zbabac/TrekMe
 
-v 1.3.0
+v 1.3.1
 - podešavanja se automatski sačuvaju
 - opcija da se koriste milje i stope
+- jezici njemački, francuski, španski i portugalski
 
 TrekMe is a simple navigation tracking app.
 It can be used while running, hiking, cycling or driving.
 
 TrekMe uses maps stored on your phone (to avoid data charging save maps on your phone or SD card) to draw a line showing your movements.
-It also shows current and average speed, running time and pause time (if you pause your run), GPS data, distance.
+It also shows current and average speed, running time and pause time (if you pause your run), GPS data, distance and latitude difference.
 Large live tile shows this data on home screen, medium and small tile show distance only.
+
+Units can be metric or US (miles and feet).
 
 This is open source app and source code is available.
 https://github.com/zbabac/TrekMe.git
 
-v 1.3.0
+v 1.3.1
 - settings are saved automatically
 - added option to use miles and feet instead km and meters
+- languages: French, Spanish, Portuguese, German
 
+
+
+TrekMe er en enkel navigasjon sporing app.
+Den kan brukes mens du kjører, turer, sykler eller kjører.
+
+TrekMe bruker kartene lagret på telefonen (for å unngå at dataene lading lagre kart på telefonen eller SD-kort) til å tegne en linje som viser bevegelsene dine.
+Den viser også aktuell og gjennomsnittlig hastighet, driftstid og pause tid (hvis du pause løpeturen), GPS-data, avstand og breddegrad forskjell.
+Stor Live Tile viser data på startskjermen, mellomstore og små Live Tile viser avstand.
+
+Source code:
+https://github.com/zbabac/TrekMe
 
 v 1.3.0
 - instillinger er lagret automatisk
 - lagt alternativ for å bruke miles og fot
+- språk: fransk, spansk, tusk og portugisisk
 
 gps
 tur
 navigasjon
 løping
 kart
+
+
+TrekMe ist eine einfache Navigation Tracking App.
+Es kann beim Laufen, Wandern, Radfahren oder Fahren verwendet werden.
+
+TrekMe nutzt Karten auf dem Telefon gespeichert (um Daten zu vermeiden Lade speichern Karten auf Ihrem Telefon oder SD-Karte), eine Linie, die Ihre Bewegungen zu zeichnen.
+Es zeigt auch, aktuelle und durchschnittliche Geschwindigkeit, Laufzeit und Pausenzeit (wenn Sie Ihren Lauf anzuhalten), GPS-Daten, Distanz und Höhenunterschied.
+Große Live-Kachel zeigt diese Daten im Home-Bildschirm, mittlere und kleine Fliesen zeigen nur Distanz.
+
+Das ist ein Open-Source-app und Quellcode ist verfügbar.
+https://github.com/zbabac/TrekMe
+
+v 1.3.1
+- Einstellungen werden automatisch gespeichert
+- Option hinzugefügt, um Meilen und Fuß statt km und m verwenden
+- Sprachen: Französisch, Spanisch, Portugiesisch, Deutsch
+
+Navigation
+Wanderung
+Lauf
+
+
+TrekMe est une application de suivi de navigation simple.
+Il peut être utilisé pendant la course, la randonnée, le vélo ou la conduite.
+
+TrekMe utilise des cartes stockées sur votre téléphone (pour éviter les données de taxation enregistrer des cartes sur votre téléphone ou votre carte SD) pour dessiner une ligne montrant vos mouvements.
+Il montre également la vitesse instantanée et moyenne, temps de fonctionnement et le temps de pause (si vous interrompez votre course), les données GPS, la distance et la différence de latitude.
+Grand live tile montre ces données sur l'écran d'accueil, moyen et petit carreau spectacle la distance seulement.
+
+Cette application est open source et le code source est disponible.
+https://github.com/zbabac/TrekMe
+
+v 1.3.1
+- Les paramètres sont sauvegardés automatiquement
+- Ajout d'une option pour utiliser des miles et les pieds au lieu km et mètres
+- Langues: français, espagnol, portugais, allemand
+
+marche
+promenade
+navigation
+
+
+TrekMe é um aplicativo de rastreamento de navegação simples.
+Ele pode ser usado durante a execução, caminhadas, andar de bicicleta ou de carro.
+
+TrekMe usa mapas armazenados no telefone (para evitar o carregamento de dados salvar mapas em seu telefone ou cartão SD) para desenhar uma linha que mostra seus movimentos.
+Ele também mostra a velocidade atual e média, tempo de funcionamento eo tempo de pausa (se você pausar a sua corrida), dados de GPS, a distância ea diferença de latitude.
+Telha ao vivo grande mostra esses dados na tela inicial, médio e pequeno show de telha distância somente.
+
+Este é aplicativo de código aberto e de código-fonte está disponível.
+https://github.com/zbabac/TrekMe
+
+v 1.3.1
+- Configurações são salvas automaticamente
+- Opção adicional para usar milhas e pés em vez km e medidores
+- Línguas: Francês, Espanhol, Português, Alemão
+
+navegação
+marcha
+encalço
+
+TrekMe es una sencilla aplicación de seguimiento de la navegación.
+Se puede utilizar mientras se ejecuta, senderismo, montar en bicicleta o en coche.
+
+TrekMe utiliza mapas almacenados en el teléfono (para evitar la carga de datos guardar mapas en su teléfono o tarjeta SD) para dibujar una línea que muestra sus movimientos.
+También muestra actual y la velocidad media, el tiempo de funcionamiento y el tiempo de pausa (si hace una pausa su carrera), los datos del GPS, la distancia y la diferencia de latitud.
+Baldosas en vivo grande muestra estos datos en la pantalla de inicio, medio y muestran la distancia pequeña baldosa solamente.
+
+Se trata de aplicaciones de código abierto y el código fuente está disponible.
+https://github.com/zbabac/TrekMe
+
+v 1.3.1
+- Ajustes se guardan automáticamente
+- Opción añadida de usar millas y pies en vez km y medidores
+- Idiomas: francés, español, portugués, alemán
+
+rastreo
+navegación
+marcha

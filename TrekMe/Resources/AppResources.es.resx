@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="source-language">
+    <value>en</value>
+  </resheader>
+  <data name="ResourceFlowDirection" xml:space="preserve">
+    <value>LeftToRight</value>
+    <comment>Controls the FlowDirection for all elements in the RootFrame. Set to the traditional direction of this resource file's language</comment>
+  </data>
+  <data name="ResourceLanguage" xml:space="preserve">
+    <value>es-ES</value>
+    <comment>Controls the Language and ensures that the font for all elements in the RootFrame aligns with the app's language. Set to the language code of this resource file's language.</comment>
+  </data>
+  <data name="ApplicationTitle" xml:space="preserve">
+    <value>TrekMe</value>
+  </data>
+  <data name="AppBarButtonText" xml:space="preserve">
+    <value>Agregar</value>
+  </data>
+  <data name="AppBarMenuItemText" xml:space="preserve">
+    <value>Plato de menú</value>
+  </data>
+  <data name="Alt" xml:space="preserve">
+    <value>ALT: </value>
+  </data>
+  <data name="AverageSpeed" xml:space="preserve">
+    <value>Velocidad media:</value>
+  </data>
+  <data name="BannerInfo" xml:space="preserve">
+    <value>Obtención de GPS los datos, por favor, espere.</value>
+  </data>
+  <data name="Break" xml:space="preserve">
+    <value>Pausa:  </value>
+  </data>
+  <data name="Calories" xml:space="preserve">
+    <value>Calorías:</value>
+  </data>
+  <data name="CurrentSpeed" xml:space="preserve">
+    <value>Velocidad actual:</value>
+  </data>
+  <data name="DetailTitle" xml:space="preserve">
+    <value>Datos detallados</value>
+  </data>
+  <data name="Distance" xml:space="preserve">
+    <value>Distancia:</value>
+  </data>
+  <data name="Distance2" xml:space="preserve">
+    <value>Distancia:  </value>
+  </data>
+  <data name="PauseButton" xml:space="preserve">
+    <value>Pausa</value>
+  </data>
+  <data name="SpeedMap" xml:space="preserve">
+    <value> Velocidad:</value>
+  </data>
+  <data name="StartButton" xml:space="preserve">
+    <value>Inicio</value>
+  </data>
+  <data name="StopButton" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="SwipeText" xml:space="preserve">
+    <value>--golpe izquierdo o derecho Ver el mapa:</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>Hora: </value>
+  </data>
+  <data name="Time2" xml:space="preserve">
+    <value>Hora:</value>
+  </data>
+  <data name="WideContent1" xml:space="preserve">
+    <value>Distancia: velocidad 0: 0</value>
+  </data>
+  <data name="WideContent2" xml:space="preserve">
+    <value>Velocidad promedio: 0 tiempo: 00:00:00</value>
+  </data>
+  <data name="WideContent3" xml:space="preserve">
+    <value>Longitud latitud altitud</value>
+  </data>
+  <data name="Altitude2" xml:space="preserve">
+    <value>Altitud </value>
+  </data>
+  <data name="Latitude2" xml:space="preserve">
+    <value>Latitude</value>
+  </data>
+  <data name="Longitude2" xml:space="preserve">
+    <value>longitud</value>
+  </data>
+  <data name="About" xml:space="preserve">
+    <value>Acerca de</value>
+  </data>
+  <data name="Info1" xml:space="preserve">
+    <value>Aplicación de código abierto por Zlatko Babic, 2015</value>
+  </data>
+  <data name="Info2" xml:space="preserve">
+    <value>Créditos</value>
+  </data>
+  <data name="Info3" xml:space="preserve">
+    <value>Geo parte de la clase NExtra proporcionada por Daniel Saidi.</value>
+  </data>
+  <data name="Info4" xml:space="preserve">
+    <value>Fuente estándar Warenhouse está licenciado bajo licencia de fuente abierta SIL</value>
+  </data>
+  <data name="Info5" xml:space="preserve">
+    <value>Inspirado en el ejemplo de Colin Eberhardt WP8Runner</value>
+  </data>
+  <data name="SwipeBack" xml:space="preserve">
+    <value>--pase para volver a la aplicación:</value>
+  </data>
+  <data name="AboutBack" xml:space="preserve">
+    <value>Atrás</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Configuración</value>
+  </data>
+  <data name="SettingsBack" xml:space="preserve">
+    <value>Atrás</value>
+  </data>
+  <data name="SettingsMapTilt" xml:space="preserve">
+    <value>Mapa de inclinación</value>
+  </data>
+  <data name="AppBarAbout" xml:space="preserve">
+    <value>información</value>
+  </data>
+  <data name="AppBarSettings" xml:space="preserve">
+    <value>config.</value>
+  </data>
+  <data name="WarningLocationDisabled" xml:space="preserve">
+    <value>Por favor, primero Active la ubicación!</value>
+  </data>
+  <data name="WarningLocationNotSupported" xml:space="preserve">
+    <value>Ubicación no compatible con este teléfono!</value>
+  </data>
+  <data name="MessageWarningText1" xml:space="preserve">
+    <value>Habilite los servicios de localización en el teléfono: configuración--&gt; Ubicación = ON</value>
+  </data>
+  <data name="MessageWarningText2" xml:space="preserve">
+    <value>Ubicación no compatible con este teléfono! Esta aplicación no puede funcionar sin GPS.</value>
+  </data>
+  <data name="MessageWarningTitle" xml:space="preserve">
+    <value>Aviso</value>
+  </data>
+  <data name="Info6" xml:space="preserve">
+    <value>Icono de ejecución de Elegantthemes</value>
+  </data>
+  <data name="SettingsRotateMap" xml:space="preserve">
+    <value>Rotación de mapa automático</value>
+  </data>
+  <data name="SettingsMIles" xml:space="preserve">
+    <value>Uso de millas y pies</value>
+  </data>
+  <data name="AltUpDown" xml:space="preserve">
+    <value>Cambio de ALT</value>
+  </data>
+</root>

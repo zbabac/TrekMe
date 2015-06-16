@@ -30,3 +30,15 @@ C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\obj\Debug\
 C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\Bin\Debug\nb\TrekMe.resources.dll
 C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\obj\Debug\TrekMe.Resources.AppResources.nb.resources
 C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\obj\Debug\nb\TrekMe.resources.dll
+C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\Bin\Debug\de\TrekMe.resources.dll
+C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\Bin\Debug\es\TrekMe.resources.dll
+C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\Bin\Debug\fr\TrekMe.resources.dll
+C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\obj\Debug\TrekMe.Resources.AppResources.de.resources
+C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\obj\Debug\TrekMe.Resources.AppResources.es.resources
+C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\obj\Debug\TrekMe.Resources.AppResources.fr.resources
+C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\obj\Debug\de\TrekMe.resources.dll
+C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\obj\Debug\es\TrekMe.resources.dll
+C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\obj\Debug\fr\TrekMe.resources.dll
+C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\Bin\Debug\pt\TrekMe.resources.dll
+C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\obj\Debug\TrekMe.Resources.AppResources.pt.resources
+C:\Users\ba100065\Documents\Visual Studio 2013\Projects\TrekMe\TrekMe\obj\Debug\pt\TrekMe.resources.dll

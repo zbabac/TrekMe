@@ -199,7 +199,7 @@
                                 FontFamily=".\Fonts\Warenhaus-Standard.otf#Warenhaus Typenhebel"
                                 FontSize="32" Margin="0,0,0,0" Padding="0,0"/>
                         <TextBlock Text="{Binding Path=LocalizedResources.SwipeText, Source={StaticResource LocalizedStrings}}" 
-                                   HorizontalAlignment="Center" Grid.Row="3"
+                                   HorizontalAlignment="Center" Grid.Row="3" TextWrapping="Wrap"
                                    FontSize="18" Grid.ColumnSpan="2" Opacity=".5" Margin="69,20,68,0"/>
                     </Grid>
                 </Grid>
