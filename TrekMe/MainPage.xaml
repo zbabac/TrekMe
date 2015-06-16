@@ -164,35 +164,43 @@
                     </Grid>
                 </Grid>
                 <!-- 5th row has 2 rows within to display current and average speed -->
-                <Grid Grid.Row="4" Margin="10,30,10,0" 
-                        VerticalAlignment="Bottom" Height="160">
-                    <Grid Margin="10,5,10,0" Opacity=".9"
-                            util:GridUtils.RowDefinitions="auto, auto, , , auto"
+                <Grid Grid.Row="4" Margin="10,10,10,0" 
+                        VerticalAlignment="Bottom" Height="240">
+                    <Grid Margin="10,5,10,0"
+                            util:GridUtils.RowDefinitions="*, *, *, *"
                             util:GridUtils.ColumnDefinitions="*, *">
+                        
                         <TextBlock Text="{Binding Path=LocalizedResources.CurrentSpeed, Source={StaticResource LocalizedStrings}}" 
                                 Grid.Row="0" Grid.Column="0"
                                 HorizontalAlignment="Left"
                                 VerticalAlignment="Center"
-                                FontSize="20" Padding="0,10" />
+                                FontSize="20" Padding="0,10" Margin="0,0,0,0" />
                         <TextBlock Text="0 km/h" Grid.Row="0" Grid.Column="1" x:Name="speedBox2"
                                 HorizontalAlignment="Left" 
                                 VerticalAlignment="Center"
                                 FontFamily=".\Fonts\Warenhaus-Standard.otf#Warenhaus Typenhebel"
-                                FontSize="32" Margin="0,0,0,-5" Padding="0,10"/>
+                                FontSize="32" Margin="0,0,0,0" Padding="0,0"/>
                         <TextBlock Text="{Binding Path=LocalizedResources.AverageSpeed, Source={StaticResource LocalizedStrings}}" 
-                                Grid.Row="1" Grid.Column="0"
-                                HorizontalAlignment="Left"
+                                HorizontalAlignment="Left" Grid.Column="0"
+                                VerticalAlignment="Center" Grid.Row="1"
+                                FontSize="20" Padding="0,0" Margin="0,0,0,0" />
+                        <TextBlock Text="0 km/h" Grid.Column="1" x:Name="avgSpeed"
+                                HorizontalAlignment="Left" Grid.Row="1"
                                 VerticalAlignment="Center"
-                                FontSize="20" Padding="0,10" />
-                        <TextBlock Text="0 km/h" Grid.Row="1" Grid.Column="1" x:Name="avgSpeed"
+                                FontFamily=".\Fonts\Warenhaus-Standard.otf#Warenhaus Typenhebel"
+                                FontSize="32" Margin="0,0,0,0" Padding="0,0"/>
+                        <TextBlock Text="{Binding Path=LocalizedResources.AltUpDown, Source={StaticResource LocalizedStrings}}" 
+                                HorizontalAlignment="Left" Grid.Column="0"
+                                VerticalAlignment="Center" Grid.Row="2"
+                                FontSize="20" Padding="0,0" Margin="0,0,0,0" />
+                        <TextBlock Text="↑ ↓" Grid.Row="2" Grid.Column="1" x:Name="altUpDown"
                                 HorizontalAlignment="Left"
                                 VerticalAlignment="Center"
                                 FontFamily=".\Fonts\Warenhaus-Standard.otf#Warenhaus Typenhebel"
-                                FontSize="32" Margin="0,0,0,-5" Padding="0,10"/>
+                                FontSize="32" Margin="0,0,0,0" Padding="0,0"/>
                         <TextBlock Text="{Binding Path=LocalizedResources.SwipeText, Source={StaticResource LocalizedStrings}}" 
-                                   Grid.Row="3" Grid.Column="0"
-                                   HorizontalAlignment="Center" 
-                                   FontSize="18" Grid.ColumnSpan="2" Opacity=".5"/>
+                                   HorizontalAlignment="Center" Grid.Row="3"
+                                   FontSize="18" Grid.ColumnSpan="2" Opacity=".5" Margin="69,20,68,0"/>
                     </Grid>
                 </Grid>
             </Grid>

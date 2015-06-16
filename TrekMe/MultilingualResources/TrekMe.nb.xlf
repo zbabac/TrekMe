@@ -200,6 +200,10 @@
           <source>Use miles and feet</source>
           <target state="translated">bruke miles og fot</target>
         </trans-unit>
+        <trans-unit id="AltUpDown" translate="yes" xml:space="preserve">
+          <source>Alt change</source>
+          <target state="new">Alt change</target>
+        </trans-unit>
       </group>
     </body>
   </file>

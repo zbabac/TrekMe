@@ -97,6 +97,15 @@ namespace TrekMe.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Alt change.
+        /// </summary>
+        public static string AltUpDown {
+            get {
+                return ResourceManager.GetString("AltUpDown", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to about.
         /// </summary>
         public static string AppBarAbout {

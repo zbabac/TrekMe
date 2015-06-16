@@ -161,4 +161,7 @@
   <data name="SettingsMIles" xml:space="preserve">
     <value>bruke miles og fot</value>
   </data>
+  <data name="AltUpDown" xml:space="preserve">
+    <value>Alt change</value>
+  </data>
 </root>

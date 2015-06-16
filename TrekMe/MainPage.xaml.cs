@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Device.Location;
 using System.Diagnostics;
+using System.IO.IsolatedStorage;
+using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
 using System.Windows.Media;
@@ -44,7 +46,7 @@ namespace TrekMe
         private bool was_started = false; //was it started before, then wait for GPS
         private bool draw_circle = false; //should I draw the circle?
         private bool redtrek_line = false;//every even run the line is red, for every odd number run it is blue
-        private bool pause_tapped = false; //to draw only 1 circle for pause
+        //private bool pause_tapped = false; //to draw only 1 circle for pause
         private int speed_count; //count number of measurement, for more accurate displaying of the speed
         private double[] spd = new double[2]; //take 3 measurements of speed to have arithmetic median after every 3rd position measured
         TimeSpan runTime;
@@ -53,6 +55,8 @@ namespace TrekMe
         private double current_speed = 0.0, avg_speed; //remember current and average speed
         private Color colour = Colors.Green;
         private double map_pitch = 0.0;
+        private double alt_start, alt_min, alt_max;
+        IsolatedStorageSettings settings = IsolatedStorageSettings.ApplicationSettings; //used to save settings
 
         public MainPage()
         {
@@ -60,6 +64,35 @@ namespace TrekMe
             // AppBar can't be localized as resource so this is workaround
             ApplicationBarIconButton appButtonSettings1 = (ApplicationBarIconButton)ApplicationBar.Buttons[0];
             ApplicationBarIconButton appButtonAbout1 = (ApplicationBarIconButton)ApplicationBar.Buttons[1];
+            
+            // load settings from isolated storage
+            
+            if (!settings.Contains("settingPitch"))
+            {
+                settings.Add("settingPitch", map_pitch);
+            }
+            else
+            {
+                map_pitch= Convert.ToDouble(settings["settingPitch"]);
+            }
+            if (!settings.Contains("settingRotate"))
+            {
+                settings.Add("settingRotate", rotate_map);
+            }
+            else
+            {
+                rotate_map = Convert.ToBoolean(settings["settingRotate"]);
+            }
+            if (!settings.Contains("settingMiles"))
+            {
+                settings.Add("settingMiles", use_miles);
+            }
+            else
+            {
+                use_miles = Convert.ToBoolean(settings["settingMiles"]);
+            }
+
+            // detect culture and apply workaround for Application Bar buttons
             switch (System.Threading.Thread.CurrentThread.CurrentUICulture.Name.Substring(0, 2))
             {
                 case "en":
@@ -127,6 +160,13 @@ namespace TrekMe
                 string miles = (string)PhoneApplicationService.Current.State["miles"];
                 use_miles = Convert.ToBoolean(miles);
             }
+            // save settings section when navigated from Settings page
+            
+            settings["settingPitch"] = map_pitch;
+            settings["settingRotate"] = rotate_map;
+            settings["settingMiles"] = use_miles;
+            settings.Save();
+            
         }
         private void pivotControl_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
         {
@@ -358,7 +398,7 @@ namespace TrekMe
             string _alt = "m";
             double _avg_speed;
             double _curr_speed;
-            double _altitude;
+            double _altitude, _alt_change_up, _alt_change_down;
             double _dist;
 
             if (trek_line.Path.Count > 0) //calculate vars only after 1st position
@@ -382,10 +422,11 @@ namespace TrekMe
                     trek_total_distance += distance / 1000.0; //add last measurement to the total distance covered
                     avg_speed = (trek_total_distance * 3600000) / walk_time_tick; //calc average speed so far
 
+                    //set data to be displayed depending on units set
                     if (use_miles)
                     {
-                        _dst = "mil";
-                        _spd = "mph";
+                        _dst = "mil"; // unit for distance
+                        _spd = "mph"; // unit for speed
                         
                         _avg_speed = avg_speed * 0.62137;
                         _curr_speed = current_speed * 0.62137;
@@ -402,7 +443,7 @@ namespace TrekMe
                         
                         _dist = trek_total_distance;
                     }
-
+                    // set values on page with defined units
                     avgSpeed.Text = string.Format("{0:f1} {1}", _avg_speed, _spd);
                     distanceBox.Text = string.Format("{0:f1} {1}", _dist, _dst);
                     speedBox.Text = string.Format("{0:f0} {1}", _curr_speed, _spd);
@@ -432,26 +473,38 @@ namespace TrekMe
                     latitudelabel.Text = string.Format("{0:f2}⁰S ", (coord.Latitude*(-1.0)));
                 else
                     latitudelabel.Text = string.Format("{0:f2}⁰N ", coord.Latitude);
-
+                // set new max and min altidute reached
+                if (coord.Altitude > alt_max)
+                    alt_max = coord.Altitude;
+                else
+                    if (coord.Altitude < alt_min)
+                        alt_min = coord.Altitude;
+                // define units to be displayed: feet or meters
                 if(use_miles)
                 {
-                    _alt = "ft";
+                    _alt = "ft"; // altitude units
                     _altitude = coord.Altitude * 3.28084;
+                    _alt_change_up = (alt_max - alt_start) * 3.28084; //update max reached alt
+                    _alt_change_down = (alt_start - alt_min) * 3.28084; //update min reached alt
                 }
                 else
                 {
                     _alt = "m";
                     _altitude = coord.Altitude;
+                    _alt_change_up = alt_max - alt_start;
+                    _alt_change_down = alt_start - alt_min;
                 }
+                // format labels to match format: meters or feet
                 altLabel.Text = string.Format("{0:f0} {1}", _altitude, _alt);
                 lon2.Text = longitudelabel.Text;
                 lat2.Text = latitudelabel.Text;
                 alt2.Text = string.Format("{0:f0} {1}", _altitude, _alt);
+                altUpDown.Text = string.Format("↑{0:f0}  ↓{1:f0} {2}", _alt_change_up, _alt_change_down, _alt);
                 
                 if (trek_started && !paused)
                 {
                     
-                    
+                    // update start tile with updated data
                     ShellTile.ActiveTiles.First().Update(new IconicTileData() //update live tiles
                     {
                         Title = "TrekMe",
@@ -492,7 +545,10 @@ namespace TrekMe
                         // Add the MapLayer to the Map.
                         Map.Layers.Add(myCircleLayer);
                     }
-
+                    // define first detected altitude
+                    alt_start = coord.Altitude;
+                    alt_min = alt_start;
+                    alt_max = alt_start;
                 }
             }
             if (trek_started)
