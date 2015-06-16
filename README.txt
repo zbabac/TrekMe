@@ -22,7 +22,7 @@ Please, don't forget to mention me in your work. I hope that you will learn a lo
 
 Change log since v1.3.1:
 	- added automatic settings save, even when app exits
-	- added option to use miles and feet instead of km & m
+	- added settings option to use miles and feet instead of km & m
 	- localization for French, Spanish, Portuguese and German
 
 Change log since v1.2.0:
@@ -40,10 +40,9 @@ Change log since v1.0.0:
 Known issues:
 At start, first couple of lines may show inaccurate location (several red lines drawn on the map missing the target by few hundred meters). Accordingly, speed and distance may be inaccurate. This happens when app is started indoors, so no good GPS signal exists.
 
+So, to have accurate reading start app only when you are outdoors!
+
 Prerequisities:
-To be able to load XAP file to your phone, it must be developer unlocked. Please search microsoft:
-https://msdn.microsoft.com/en-us/library/windows/apps/ff769508%28v=vs.105%29.aspx
-to register for developer account (it's free) or DOWNLOAD APP FROM WINDOWS PHONE STORE:
 
 http://www.windowsphone.com/s?appid=f519dba9-5601-4691-a614-2df33604452c
 
@@ -56,4 +55,6 @@ Features:
 - starting point is shown with red or blue circle
 - pause point is shown with gray circle
 - stopping point is shown with green circle
+- settings page options: map pitch (0-70), map auto rotate option (or fixed north heading), use miles and feet (instead of m and km)
+- settings are saved automatically so that they are not lost after app exits
 - no ads, only map, location and data capabilities needed
