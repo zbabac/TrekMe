@@ -68,7 +68,7 @@
                                 HorizontalAlignment="Left"
                                 VerticalAlignment="Center"
                                 FontSize="18" Padding="0,0"/>
-                        <TextBlock Text="0 km" Grid.Row="0" Grid.Column="1" x:Name="distanceBox2"
+                        <TextBlock Text="0 " Grid.Row="0" Grid.Column="1" x:Name="distanceBox2"
                                 HorizontalAlignment="Left"
                                 VerticalAlignment="Center"
                                 FontFamily=".\Fonts\Warenhaus-Standard.otf#Warenhaus Typenhebel"
@@ -175,7 +175,7 @@
                                 HorizontalAlignment="Left"
                                 VerticalAlignment="Center"
                                 FontSize="20" Padding="0,10" Margin="0,0,0,0" />
-                        <TextBlock Text="0 km/h" Grid.Row="0" Grid.Column="1" x:Name="speedBox2"
+                        <TextBlock Text="0 " Grid.Row="0" Grid.Column="1" x:Name="speedBox2"
                                 HorizontalAlignment="Left" 
                                 VerticalAlignment="Center"
                                 FontFamily=".\Fonts\Warenhaus-Standard.otf#Warenhaus Typenhebel"
@@ -184,7 +184,7 @@
                                 HorizontalAlignment="Left" Grid.Column="0"
                                 VerticalAlignment="Center" Grid.Row="1"
                                 FontSize="20" Padding="0,0" Margin="0,0,0,0" />
-                        <TextBlock Text="0 km/h" Grid.Column="1" x:Name="avgSpeed"
+                        <TextBlock Text="0 " Grid.Column="1" x:Name="avgSpeed"
                                 HorizontalAlignment="Left" Grid.Row="1"
                                 VerticalAlignment="Center"
                                 FontFamily=".\Fonts\Warenhaus-Standard.otf#Warenhaus Typenhebel"
@@ -232,10 +232,10 @@
                             <TextBlock Text="lat " Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" x:Name="latitudelabel" Foreground="White"/>
                             <TextBlock Text="{Binding Path=LocalizedResources.Alt, Source={StaticResource LocalizedStrings}}" 
                                        Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Top" Foreground="White" />
-                            <TextBlock Text="0 m" Grid.Column="3" HorizontalAlignment="Left" VerticalAlignment="Top" x:Name="altLabel" Foreground="White"/>
+                            <TextBlock Text="0 " Grid.Column="3" HorizontalAlignment="Left" VerticalAlignment="Top" x:Name="altLabel" Foreground="White"/>
                             <TextBlock Text="{Binding Path=LocalizedResources.SpeedMap, Source={StaticResource LocalizedStrings}}" 
                                        Grid.Column="4" HorizontalAlignment="Right" VerticalAlignment="Top" Foreground="White"/>
-                            <TextBlock Text="0 km/h" Grid.Column="5" Grid.ColumnSpan="2" HorizontalAlignment="Right" VerticalAlignment="Top"  x:Name="speedBox" Foreground="White"/>
+                            <TextBlock Text="0 " Grid.Column="5" Grid.ColumnSpan="2" HorizontalAlignment="Right" VerticalAlignment="Top"  x:Name="speedBox" Foreground="White"/>
                         </Grid>
                     </Grid>
 
@@ -254,7 +254,7 @@
                             </Grid.Background>
                             <TextBlock Text="{Binding Path=LocalizedResources.Distance, Source={StaticResource LocalizedStrings}}" 
                                        Grid.Row="0" Grid.Column="0" Foreground="White"/>
-                            <TextBlock Text="0 km" Grid.Row="0" Grid.Column="1" x:Name="distanceBox"
+                            <TextBlock Text="0 " Grid.Row="0" Grid.Column="1" x:Name="distanceBox"
                                 HorizontalAlignment="Center" Foreground="White"/>
                             <TextBlock Text="{Binding Path=LocalizedResources.Time, Source={StaticResource LocalizedStrings}}" 
                                        Grid.Row="0" HorizontalAlignment="Right" Margin="0,0,172,-10" Width="60" Foreground="White"/>

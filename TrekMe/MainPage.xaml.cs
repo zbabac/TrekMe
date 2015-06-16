@@ -57,6 +57,13 @@ namespace TrekMe
         private double map_pitch = 0.0;
         private double alt_start, alt_min, alt_max;
         IsolatedStorageSettings settings = IsolatedStorageSettings.ApplicationSettings; //used to save settings
+        string _dst = "km";
+        string _spd = "mil";
+        string _alt = "m";
+        double _avg_speed = 0;
+        double _curr_speed = 0;
+        double _altitude=0, _alt_change_up=0, _alt_change_down=0;
+        double _dist=0;
 
         public MainPage()
         {
@@ -225,12 +232,12 @@ namespace TrekMe
             draw_circle = true;
             trek_line.StrokeColor = colour;
             Map.MapElements.Add(trek_line);
-            distanceBox.Text = "0 km";
-            speedBox.Text = "0 km/h";
-            speedBox2.Text = "0 km/h";
-            distanceBox2.Text = "0 km";
+            distanceBox.Text = "0 ";
+            speedBox.Text = "0 ";
+            speedBox2.Text = "0 ";
+            distanceBox2.Text = "0 ";
             caloriesLabel.Text = "0 kcal";
-            avgSpeed.Text = "0 km/h";
+            avgSpeed.Text = "0 ";
             gps_watcher.Start(); //if not started, start GPS watcher
             if (was_started)
             {   //if the run had been started before, show GPS warning again
@@ -279,10 +286,10 @@ namespace TrekMe
             ShellTile.ActiveTiles.First().Update(new IconicTileData() //update live tiles
             {
                 Title = "TrekMe",
-                Count = Convert.ToInt16(trek_total_distance - 0.5),
-                WideContent1 = string.Format("{0:f1} km", trek_total_distance),
-                WideContent2 = string.Format("avg: {0:f0} km/h", avg_speed),
-                WideContent3 = string.Format("{0} {1} Alt:{2:f0}m", lon2.Text, lat2.Text, coord.Altitude),
+                Count = Math.Abs(Convert.ToInt16(_dist - 0.5)),
+                WideContent1 = string.Format("{0:f1} {1}", _dist, _dst),
+                WideContent2 = string.Format("avg: {0:f0} {1}", _avg_speed, _spd),
+                WideContent3 = string.Format("{0} {1} Alt:{2:f0}{3}", lon2.Text, lat2.Text, _altitude, _alt),
                 BackgroundColor = new Color { A = 255, R = 0, G = 0, B = 255 }
             });
             trek_total_distance = 0;
@@ -290,76 +297,84 @@ namespace TrekMe
 
         private void PauseButton_Click(object sender, RoutedEventArgs e) //pause can be tapped to start the pause as well to continue the run
         {
-            colour = Colors.Gray;
-            if (paused) //was paused so now continue again
+            try
             {
-                trek_line = new MapPolyline(); //draw new line so that old lines are not deleted
-                trek_line.StrokeThickness = 5;
-                if (redtrek_line) //determine color
+                colour = Colors.Gray;
+                if (paused) //was paused so now continue again
                 {
-                    colour = Colors.Red;
+                    trek_line = new MapPolyline(); //draw new line so that old lines are not deleted
+                    trek_line.StrokeThickness = 5;
+                    if (redtrek_line) //determine color
+                    {
+                        colour = Colors.Red;
+                    }
+                    else
+                    {
+                        colour = Colors.Blue;
+                    }
+                    trek_line.StrokeColor = colour;
+                    trek_line.StrokeThickness = 5;
+                    draw_circle = false;
+                    Map.MapElements.Add(trek_line);  //add line for run continuation
+                    total_pause += pause_time_tick; //increase total pause with latest pause time
+                    paused = false; //we continue the run
+                    trek_timer.Stop();
+                    trek_timer.Start(); //restart the timer to measure run time again
+                    //StartButton.Content = "Started";  //let the user know by writing it on the screen
+                    //PauseButton.Content = "Pause";
+                    StartButton.IsEnabled = false;
+                    StartButton.Background = (LinearGradientBrush)this.Resources["linearBrush"]; //started again so this button is painted
+                    PauseButton.Background = new SolidColorBrush(Colors.Transparent);
+
+                    trek_started = true;
                 }
                 else
-                {
-                    colour = Colors.Blue;
+                {   //pause is tapped, now measure pause and stop measuring the run
+                    paused = true; //run is paused
+                    Ellipse myCircle = new Ellipse();
+                    myCircle.Stroke = new SolidColorBrush(colour);
+                    myCircle.StrokeThickness = 10;
+                    myCircle.Height = 25;
+                    myCircle.Width = 25;
+                    myCircle.Opacity = .5;
+                    // Create a MapOverlay to contain the circle.
+                    MapOverlay myCircleOverlay = new MapOverlay();
+                    myCircleOverlay.Content = myCircle;
+                    myCircleOverlay.PositionOrigin = new Point(0.5, 0.5);
+                    myCircleOverlay.GeoCoordinate = coord;
+                    // Create a MapLayer to contain the MapOverlay.
+                    MapLayer myCircleLayer = new MapLayer();
+                    myCircleLayer.Add(myCircleOverlay);
+                    // Add the MapLayer to the Map.
+                    Map.Layers.Add(myCircleLayer);
+                    trek_line = new MapPolyline(); //draw new line for measuring movements during pause
+                    trek_line.StrokeColor = colour;
+                    trek_line.StrokeThickness = 2;
+                    draw_circle = false;
+                    Map.MapElements.Add(trek_line); //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+                    trek_timer.Stop(); //restart timer to measure pause time
+                    trek_timer.Start();
+                    pause_start_time = System.Environment.TickCount; //remember pause start time
+                    StartButton.Background = new SolidColorBrush(Colors.Transparent);
+                    //StartButton.Foreground = new SolidColorBrush(color: SystemColors.ControlTextColor); 
+                    PauseButton.Background = (LinearGradientBrush)this.Resources["linearBrush"];
+                    trek_started = true;  //run is paused but still running
+                    ShellTile.ActiveTiles.First().Update(new IconicTileData() //update live tiles
+                    {
+                        Title = "TrekMe",
+                        Count = Math.Abs(Convert.ToInt16(_dist - 0.5)),
+                        WideContent1 = string.Format("{0:f1} {1}", _dist, _dst),
+                        WideContent2 = string.Format("P avg: {0:f0} {1}", _avg_speed, _spd),
+                        WideContent3 = string.Format("{0} {1} Alt:{2:f0}{3}", lon2.Text, lat2.Text, _altitude, _alt),
+                        BackgroundColor = new Color { A = 255, R = 255, G = 0, B = 0 }
+                    });
                 }
-                trek_line.StrokeColor = colour;
-                trek_line.StrokeThickness = 5;
-                draw_circle = false;
-                Map.MapElements.Add(trek_line);  //add line for run continuation
-                total_pause += pause_time_tick; //increase total pause with latest pause time
-                paused = false; //we continue the run
-                trek_timer.Stop();
-                trek_timer.Start(); //restart the timer to measure run time again
-                //StartButton.Content = "Started";  //let the user know by writing it on the screen
-                //PauseButton.Content = "Pause";
-                StartButton.IsEnabled = false;
-                StartButton.Background = (LinearGradientBrush)this.Resources["linearBrush"]; //started again so this button is painted
-                PauseButton.Background = new SolidColorBrush(Colors.Transparent);
-                
-                trek_started = true;
             }
-            else
-            {   //pause is tapped, now measure pause and stop measuring the run
-                paused = true; //run is paused
-                Ellipse myCircle = new Ellipse();
-                myCircle.Stroke = new SolidColorBrush(colour);
-                myCircle.StrokeThickness = 10;
-                myCircle.Height = 25;
-                myCircle.Width = 25;
-                myCircle.Opacity = .5;
-                // Create a MapOverlay to contain the circle.
-                MapOverlay myCircleOverlay = new MapOverlay();
-                myCircleOverlay.Content = myCircle;
-                myCircleOverlay.PositionOrigin = new Point(0.5, 0.5);
-                myCircleOverlay.GeoCoordinate = coord;
-                // Create a MapLayer to contain the MapOverlay.
-                MapLayer myCircleLayer = new MapLayer();
-                myCircleLayer.Add(myCircleOverlay);
-                // Add the MapLayer to the Map.
-                Map.Layers.Add(myCircleLayer);
-                trek_line = new MapPolyline(); //draw new line for measuring movements during pause
-                trek_line.StrokeColor = colour;
-                trek_line.StrokeThickness = 2;
-                draw_circle = false;
-                Map.MapElements.Add(trek_line); //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-                
-                trek_timer.Stop(); //restart timer to measure pause time
-                trek_timer.Start();
-                pause_start_time = System.Environment.TickCount; //remember pause start time
-                StartButton.Background = new SolidColorBrush(Colors.Transparent);
-                //StartButton.Foreground = new SolidColorBrush(color: SystemColors.ControlTextColor); 
-                PauseButton.Background = (LinearGradientBrush)this.Resources["linearBrush"];
-                trek_started = true;  //run is paused but still running
-                ShellTile.ActiveTiles.First().Update(new IconicTileData() //update live tiles
-                {
-                    Title = "TrekMe",
-                    Count = Convert.ToInt16(trek_total_distance - 0.5),
-                    WideContent1 = string.Format("{0:f1} km", trek_total_distance),
-                    WideContent2 = string.Format("P avg: {0:f0} km/h", avg_speed),
-                    WideContent3 = string.Format("{0} {1} Alt:{2:f0}m", lon2.Text, lat2.Text, coord.Altitude),
-                    BackgroundColor = new Color { A = 255, R = 255, G = 0, B = 0 }
-                });
+            catch (Exception x)
+            {
+                string err = x.Message.ToString();
+                string error = err;
             }
         }
         private void GPS_StatusChanged(object sender, GeoPositionStatusChangedEventArgs e)
@@ -392,14 +407,6 @@ namespace TrekMe
         private void GPS_PositionChanged(object sender, GeoPositionChangedEventArgs<GeoCoordinate> e)
         {   //event is fired every time GPS sensor detects position change, location coordinates are then fetched
             coord = new GeoCoordinate(e.Position.Location.Latitude, e.Position.Location.Longitude, e.Position.Location.Altitude);
-
-            string _dst = "km";
-            string _spd = "mil";
-            string _alt = "m";
-            double _avg_speed;
-            double _curr_speed;
-            double _altitude, _alt_change_up, _alt_change_down;
-            double _dist;
 
             if (trek_line.Path.Count > 0) //calculate vars only after 1st position
             {
@@ -508,10 +515,10 @@ namespace TrekMe
                     ShellTile.ActiveTiles.First().Update(new IconicTileData() //update live tiles
                     {
                         Title = "TrekMe",
-                        Count = Convert.ToInt16(trek_total_distance - 0.5),
-                        WideContent2 = string.Format("{0} | Avg: {1:f0} km/h", runTime.ToString(@"hh\:mm"), avg_speed),
-                        WideContent1 = string.Format("{0:f1} km  | {1:f0} km/h", trek_total_distance, current_speed),
-                        WideContent3 = string.Format("{0} {1} Alt:{2:f0}m", lon2.Text, lat2.Text, coord.Altitude),
+                        Count = Math.Abs(Convert.ToInt16(_dist - 0.5)),
+                        WideContent2 = string.Format("{0} | Avg: {1:f0} {2}", runTime.ToString(@"hh\:mm"), _avg_speed, _spd),
+                        WideContent1 = string.Format("{0:f1} {1} | {2:f0} {3}", _dist, _dst, _curr_speed, _spd),
+                        WideContent3 = string.Format("{0} {1} Alt:{2:f0}{3}", lon2.Text, lat2.Text, _altitude, _alt),
                         BackgroundColor = new Color { A = 255, R = 255, G = 0, B = 0 }
                     });
                     

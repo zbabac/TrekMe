@@ -1,0 +1,38 @@
+﻿zlatko.babic.555@gmail.com
+
+https://sourceforge.net/projects/trekme/
+
+Jednostavna aplikacija koja prati vaše kretanje i iscrtava ga na karti. Preporučujemo da prethodno prebacite karte na telefon ili SD karticu da ne bi plaćali prenos podataka.
+
+TrekMe takođe prikazuje pređene kilometre, trenutnu i prosječnu brzinu, GPS podatke, kalorije (približno samo za kretanje po ravnom), vrijeme kretanja, vrijeme pauziranja, promjenu nadmorske visine.
+Izvorni kod dostupan na:
+https://github.com/zbabac/TrekMe
+
+v 1.3.0
+- podešavanja se automatski sačuvaju
+- opcija da se koriste milje i stope
+
+TrekMe is a simple navigation tracking app.
+It can be used while running, hiking, cycling or driving.
+
+TrekMe uses maps stored on your phone (to avoid data charging save maps on your phone or SD card) to draw a line showing your movements.
+It also shows current and average speed, running time and pause time (if you pause your run), GPS data, distance.
+Large live tile shows this data on home screen, medium and small tile show distance only.
+
+This is open source app and source code is available.
+https://github.com/zbabac/TrekMe.git
+
+v 1.3.0
+- settings are saved automatically
+- added option to use miles and feet instead km and meters
+
+
+v 1.3.0
+- instillinger er lagret automatisk
+- lagt alternativ for å bruke miles og fot
+
+gps
+tur
+navigasjon
+løping
+kart
