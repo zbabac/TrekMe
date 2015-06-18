@@ -1,8 +1,7 @@
 TrekMe  ---Windows Phone 8 and higher tracking app
 
-source code at GIT: https://github.com/zbabac/VCT.git
+source code at GIT: https://github.com/zbabac/TrekMe.git
 
-https://github.com/zbabac/VCT
 
 or at SF: git clone ssh://zbabac@git.code.sf.net/p/trekme/code trekme-code
 
