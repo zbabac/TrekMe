@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="source-language">
+    <value>en</value>
+  </resheader>
+  <data name="ResourceFlowDirection" xml:space="preserve">
+    <value>LeftToRight</value>
+    <comment>Controls the FlowDirection for all elements in the RootFrame. Set to the traditional direction of this resource file's language</comment>
+  </data>
+  <data name="ResourceLanguage" xml:space="preserve">
+    <value>EN US</value>
+    <comment>Controls the Language and ensures that the font for all elements in the RootFrame aligns with the app's language. Set to the language code of this resource file's language.</comment>
+  </data>
+  <data name="ApplicationTitle" xml:space="preserve">
+    <value>TrekMe</value>
+  </data>
+  <data name="AppBarButtonText" xml:space="preserve">
+    <value>dodawanie</value>
+  </data>
+  <data name="AppBarMenuItemText" xml:space="preserve">
+    <value>Element menu</value>
+  </data>
+  <data name="Alt" xml:space="preserve">
+    <value>ALT: </value>
+  </data>
+  <data name="AverageSpeed" xml:space="preserve">
+    <value>Średnia prędkość:</value>
+  </data>
+  <data name="BannerInfo" xml:space="preserve">
+    <value>Trwa pobieranie GPS danych, proszę czekać.</value>
+  </data>
+  <data name="Break" xml:space="preserve">
+    <value>Pauza:  </value>
+  </data>
+  <data name="Calories" xml:space="preserve">
+    <value>Kalorie:</value>
+  </data>
+  <data name="CurrentSpeed" xml:space="preserve">
+    <value>Bieżąca szybkość:</value>
+  </data>
+  <data name="DetailTitle" xml:space="preserve">
+    <value>Szczegółowe dane</value>
+  </data>
+  <data name="Distance" xml:space="preserve">
+    <value>Odległość:</value>
+  </data>
+  <data name="Distance2" xml:space="preserve">
+    <value>Odległość:  </value>
+  </data>
+  <data name="PauseButton" xml:space="preserve">
+    <value>Wstrzymaj</value>
+  </data>
+  <data name="SpeedMap" xml:space="preserve">
+    <value> Prędkość:</value>
+  </data>
+  <data name="StartButton" xml:space="preserve">
+    <value>Początek</value>
+  </data>
+  <data name="StopButton" xml:space="preserve">
+    <value>Zatrzymaj</value>
+  </data>
+  <data name="SwipeText" xml:space="preserve">
+    <value>przesunąć w lewo lub w prawo, aby wyświetlić mapę</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>Czas: </value>
+  </data>
+  <data name="Time2" xml:space="preserve">
+    <value>Czas:</value>
+  </data>
+  <data name="WideContent1" xml:space="preserve">
+    <value>Odległość: 0 prędkości: 0</value>
+  </data>
+  <data name="WideContent2" xml:space="preserve">
+    <value>Średnia prędkość: godzina 0: 00:00:00</value>
+  </data>
+  <data name="WideContent3" xml:space="preserve">
+    <value>Wysokość szerokości geograficznej zachodniej</value>
+  </data>
+  <data name="Altitude2" xml:space="preserve">
+    <value>wysokość m</value>
+  </data>
+  <data name="Latitude2" xml:space="preserve">
+    <value>szerokość</value>
+  </data>
+  <data name="Longitude2" xml:space="preserve">
+    <value>długość</value>
+  </data>
+  <data name="About" xml:space="preserve">
+    <value>informacje</value>
+  </data>
+  <data name="Info1" xml:space="preserve">
+    <value>Otwórz źródło aplikacji przez Zlatko Babic 2015</value>
+  </data>
+  <data name="Info2" xml:space="preserve">
+    <value>Napisy końcowe</value>
+  </data>
+  <data name="Info3" xml:space="preserve">
+    <value>Geo część klasy NExtra, świadczone przez Daniel Saidi.</value>
+  </data>
+  <data name="Info4" xml:space="preserve">
+    <value>Warenhouse standardowe czcionki jest licencją SIL otwarte czcionki</value>
+  </data>
+  <data name="Info5" xml:space="preserve">
+    <value>ZAINSPIROWANE próbki tamtejszym Colin WP8Runner</value>
+  </data>
+  <data name="SwipeBack" xml:space="preserve">
+    <value>--Przesuń, aby powrócić do aplikacji--</value>
+  </data>
+  <data name="AboutBack" xml:space="preserve">
+    <value>Wstecz</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Ustawienia</value>
+  </data>
+  <data name="SettingsBack" xml:space="preserve">
+    <value>Wstecz</value>
+  </data>
+  <data name="SettingsMapTilt" xml:space="preserve">
+    <value>Mapa skoku</value>
+  </data>
+  <data name="AppBarAbout" xml:space="preserve">
+    <value>info</value>
+  </data>
+  <data name="AppBarSettings" xml:space="preserve">
+    <value>ustawienia</value>
+  </data>
+  <data name="WarningLocationDisabled" xml:space="preserve">
+    <value>Należy najpierw włączyć funkcję lokalizacji!</value>
+  </data>
+  <data name="WarningLocationNotSupported" xml:space="preserve">
+    <value>Lokalizacja nie jest obsługiwane w telefonie!</value>
+  </data>
+  <data name="MessageWarningText1" xml:space="preserve">
+    <value>Włącz usługi lokalizacji w telefonie: ustawienia--&gt; Lokalizacja</value>
+  </data>
+  <data name="MessageWarningText2" xml:space="preserve">
+    <value>Lokalizacja nie jest obsługiwane w telefonie! Ta aplikacja nie może działać bez GPS.</value>
+  </data>
+  <data name="MessageWarningTitle" xml:space="preserve">
+    <value>Ostrzeżenia</value>
+  </data>
+  <data name="Info6" xml:space="preserve">
+    <value>RunningIcon przez Elegantthemes</value>
+  </data>
+  <data name="SettingsRotateMap" xml:space="preserve">
+    <value>Automatyczna mapa obrót</value>
+  </data>
+  <data name="SettingsMIles" xml:space="preserve">
+    <value>Użycia mile i stopy</value>
+  </data>
+  <data name="AltUpDown" xml:space="preserve">
+    <value>Różnica wysokości</value>
+  </data>
+</root>

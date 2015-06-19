@@ -5,6 +5,7 @@
     <AssemblyPart Source="es/TrekMe.resources.dll" />
     <AssemblyPart Source="fr/TrekMe.resources.dll" />
     <AssemblyPart Source="nb/TrekMe.resources.dll" />
+    <AssemblyPart Source="pl/TrekMe.resources.dll" />
     <AssemblyPart Source="pt/TrekMe.resources.dll" />
     <AssemblyPart Source="sr-Cyrl/TrekMe.resources.dll" />
     <AssemblyPart Source="sr-Latn/TrekMe.resources.dll" />

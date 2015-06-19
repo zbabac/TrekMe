@@ -114,6 +114,30 @@ namespace TrekMe
                     appButtonSettings1.Text = "innstillinger";
                     appButtonAbout1.Text = "om";
                     break;
+                case "de":
+                    appButtonSettings1.Text = "einstellungen";
+                    appButtonAbout1.Text = "über";
+                    break;
+                case "fr":
+                    appButtonSettings1.Text = "paramètres";
+                    appButtonAbout1.Text = "environ";
+                    break;
+                case "es":
+                    appButtonSettings1.Text = "configuración";
+                    appButtonAbout1.Text = "sobre";
+                    break;
+                case "pt":
+                    appButtonSettings1.Text = "configurações";
+                    appButtonAbout1.Text = "sobre";
+                    break;
+                case "pl":
+                    appButtonSettings1.Text = "ustawienia";
+                    appButtonAbout1.Text = "info";
+                    break;
+                default:
+                    appButtonSettings1.Text = "settings";
+                    appButtonAbout1.Text = "about";
+                    break;
             }
             // draw a line for a run
             MapOverlay trekOverlay = new MapOverlay();
