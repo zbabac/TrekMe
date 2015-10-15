@@ -12,9 +12,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <resheader name="source-language">
-    <value>en</value>
-  </resheader>
   <data name="ResourceFlowDirection" xml:space="preserve">
     <value>LeftToRight</value>
     <comment>Controls the FlowDirection for all elements in the RootFrame. Set to the traditional direction of this resource file's language</comment>
@@ -163,5 +160,26 @@
   </data>
   <data name="AltUpDown" xml:space="preserve">
     <value>høydeforskjell:</value>
+  </data>
+  <data name="SettingsLocation" xml:space="preserve">
+    <value>Bruk posisjon</value>
+  </data>
+  <data name="WarningLocationSettings" xml:space="preserve">
+    <value>Plasseringen er deaktivert i app: innstillinger: Bruk posisjon</value>
+  </data>
+  <data name="Privacy" xml:space="preserve">
+    <value>Retningslinjer for personvern: dette programmet bruker stedstjenester for å spore dine bevegelser og trekke den på kartet. Under ingen omstendigheter er at data brukes av utvikler eller tredjeparter. Ingen data noensinne vil bli sendt til ekstern server ved hjelp av dette programmet.</value>
+  </data>
+  <data name="MessageLocation" xml:space="preserve">
+    <value>Er det ok at appen bruker posisjon? Du kan deaktivere den ved siden Innstillinger. Du kan lese retningslinjene for personvern på Om siden.</value>
+  </data>
+  <data name="MessageLocationTitle" xml:space="preserve">
+    <value>Bruk av posisjon</value>
+  </data>
+  <data name="MessageExit" xml:space="preserve">
+    <value>Dette programmet kan ikke fungere uten plassering services! Avslutter.</value>
+  </data>
+  <data name="MessageExitTitle" xml:space="preserve">
+    <value>Avslutt program</value>
   </data>
 </root>

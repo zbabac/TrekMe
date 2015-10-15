@@ -12,26 +12,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <resheader name="source-language">
-    <value>en</value>
-  </resheader>
-  <data name="ResourceFlowDirection" xml:space="preserve">
-    <value>LeftToRight</value>
-    <comment>Controls the FlowDirection for all elements in the RootFrame. Set to the traditional direction of this resource file's language</comment>
-  </data>
-  <data name="ResourceLanguage" xml:space="preserve">
-    <value>en-US</value>
-    <comment>Controls the Language and ensures that the font for all elements in the RootFrame aligns with the app's language. Set to the language code of this resource file's language.</comment>
-  </data>
-  <data name="ApplicationTitle" xml:space="preserve">
-    <value>TrekMe</value>
-  </data>
-  <data name="AppBarButtonText" xml:space="preserve">
-    <value>add</value>
-  </data>
-  <data name="AppBarMenuItemText" xml:space="preserve">
-    <value>Menu Item</value>
-  </data>
   <data name="StartButton" xml:space="preserve">
     <value>Старт</value>
   </data>
@@ -152,9 +132,6 @@
   <data name="MessageWarningTitle" xml:space="preserve">
     <value>Упозорење</value>
   </data>
-  <data name="Info6" xml:space="preserve">
-    <value>Running Icon by Elegantthemes</value>
-  </data>
   <data name="SettingsRotateMap" xml:space="preserve">
     <value>аутоматска ротација карте</value>
   </data>
@@ -163,5 +140,26 @@
   </data>
   <data name="AltUpDown" xml:space="preserve">
     <value>промјена НВ:</value>
+  </data>
+  <data name="SettingsLocation" xml:space="preserve">
+    <value>Користи локацију</value>
+  </data>
+  <data name="WarningLocationSettings" xml:space="preserve">
+    <value>Локација искључена у апликацији: Подешавања: Користи локацију</value>
+  </data>
+  <data name="Privacy" xml:space="preserve">
+    <value>Политика приватности: апликација користи локацију да би нацртала путању којом се крећете. Тако прибављене податке ова апликација ни у ком случају неће слати ван телефона.</value>
+  </data>
+  <data name="MessageLocation" xml:space="preserve">
+    <value>Да ли је у реду да апликација користи локацију? То можете касније онемогућити на страници са подешавањима. О политици приватности се можете информисати на страници "о програму".</value>
+  </data>
+  <data name="MessageLocationTitle" xml:space="preserve">
+    <value>Коришћење локације</value>
+  </data>
+  <data name="MessageExit" xml:space="preserve">
+    <value>Апликација не може да функционише без локације! Затварам је!</value>
+  </data>
+  <data name="MessageExitTitle" xml:space="preserve">
+    <value>Излаз</value>
   </data>
 </root>

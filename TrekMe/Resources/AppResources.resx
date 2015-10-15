@@ -266,4 +266,25 @@
   <data name="AltUpDown" xml:space="preserve">
     <value>Altitude diff.</value>
   </data>
+  <data name="MessageExit" xml:space="preserve">
+    <value>This app can't function without location services! Exiting.</value>
+  </data>
+  <data name="MessageExitTitle" xml:space="preserve">
+    <value>App Exit</value>
+  </data>
+  <data name="MessageLocation" xml:space="preserve">
+    <value>Is it ok that app uses location? You can disable it at Settings page. You can read privacy policy at About page.</value>
+  </data>
+  <data name="MessageLocationTitle" xml:space="preserve">
+    <value>Usage of location</value>
+  </data>
+  <data name="Privacy" xml:space="preserve">
+    <value>Privacy policy: this app uses location services to track your movements and draw it on the map. In no circumstances is that data used by developer or third parties. No data will ever be sent to external server by means of this app.</value>
+  </data>
+  <data name="SettingsLocation" xml:space="preserve">
+    <value>Use location</value>
+  </data>
+  <data name="WarningLocationSettings" xml:space="preserve">
+    <value>Location disabled in app: Settings: Use location</value>
+  </data>
 </root>

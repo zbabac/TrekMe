@@ -15,6 +15,7 @@ namespace TrekMe
         private string rotate = "false";
         private string miles = "false";
         string parameterValue = "0";
+        string location = "true";
         public Settings()
         {
             InitializeComponent();
@@ -24,6 +25,11 @@ namespace TrekMe
             
             base.OnNavigatedTo(e);
             // check if parameter value is passed
+            if (PhoneApplicationService.Current.State.ContainsKey("location"))
+            {   // if yes, then set check box accordingly
+                location = (string)PhoneApplicationService.Current.State["location"];
+                checkLocation.IsChecked = Convert.ToBoolean(location);
+            }
             if (PhoneApplicationService.Current.State.ContainsKey("parameter"))
             {   // if yes, then set Pitch
                 parameterValue = (string)PhoneApplicationService.Current.State["parameter"];
@@ -45,6 +51,7 @@ namespace TrekMe
         }
         protected override void OnNavigatedFrom(System.Windows.Navigation.NavigationEventArgs e)
         {
+            PhoneApplicationService.Current.State["location"] = location;
             PhoneApplicationService.Current.State["parameter"] = parameterValue;
             PhoneApplicationService.Current.State["rotate"] = rotate;
             PhoneApplicationService.Current.State["miles"] = miles;
@@ -73,6 +80,14 @@ namespace TrekMe
                 miles = "true";
             else miles = "false";
             PhoneApplicationService.Current.State["miles"] = miles;
+        }
+
+        private void checkLocation_Click(object sender, RoutedEventArgs e)
+        {
+            if (checkLocation.IsChecked == true)
+                location = "true";
+            else location = "false";
+            PhoneApplicationService.Current.State["location"] = location;
         }
     }
 }

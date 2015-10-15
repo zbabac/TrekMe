@@ -15,7 +15,7 @@
     <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
     <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
     <SilverlightApplication>true</SilverlightApplication>
-    <SupportedCultures>fr;de;nb;pl;pt;sr-Cyrl;sr-Latn;es</SupportedCultures>
+    <SupportedCultures>nb%3bpl%3bsr-Cyrl%3bsr-Latn%3bfr%3bde</SupportedCultures>
     <XapOutputs>true</XapOutputs>
     <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
     <XapFilename>TrekMe_$(Configuration)_$(Platform).xap</XapFilename>

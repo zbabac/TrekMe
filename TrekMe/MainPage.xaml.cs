@@ -46,9 +46,10 @@ namespace TrekMe
         private bool was_started = false; //was it started before, then wait for GPS
         private bool draw_circle = false; //should I draw the circle?
         private bool redtrek_line = false;//every even run the line is red, for every odd number run it is blue
+        private bool location = false; //introduced due to microsoft privacy policy, however app can't function without location services
         //private bool pause_tapped = false; //to draw only 1 circle for pause
         private int speed_count; //count number of measurement, for more accurate displaying of the speed
-        private double[] spd = new double[2]; //take 3 measurements of speed to have arithmetic median after every 3rd position measured
+        //private double[] spd = new double[2]; //take 3 measurements of speed to have arithmetic median after every 3rd position measured
         TimeSpan runTime;
         private double trek_total_distance = 0.0;  //var to measure kilometers
         private long tick_previousPosition; //remmber previous position change time
@@ -71,9 +72,14 @@ namespace TrekMe
             // AppBar can't be localized as resource so this is workaround
             ApplicationBarIconButton appButtonSettings1 = (ApplicationBarIconButton)ApplicationBar.Buttons[0];
             ApplicationBarIconButton appButtonAbout1 = (ApplicationBarIconButton)ApplicationBar.Buttons[1];
-            
+
             // load settings from isolated storage
-            
+           if (!settings.Contains("settingLocation"))
+            {
+                settings.Add("settingLocation", location);
+            }
+            else
+                location = Convert.ToBoolean(settings["settingLocation"]);
             if (!settings.Contains("settingPitch"))
             {
                 settings.Add("settingPitch", map_pitch);
@@ -157,7 +163,21 @@ namespace TrekMe
             trek_timer.Interval = TimeSpan.FromSeconds(1);
             trek_timer.Tick += Timer_Tick;
             //define boolean to let the app know if the run is paused, so that it doesn't count time, kilometres, calories.
-            paused = false;  
+            paused = false;
+            //after installation, display location usage warning only once
+            if (!location)
+            {
+                MessageBoxResult locOK = MessageBox.Show(AppResources.MessageLocation, AppResources.MessageLocationTitle, MessageBoxButton.OKCancel);
+                if (locOK == MessageBoxResult.Cancel)
+                {
+                    MessageBox.Show(AppResources.MessageExit, AppResources.MessageExitTitle, MessageBoxButton.OK);
+                    Application.Current.Terminate();
+                }
+                else
+                {
+                    location = true;
+                }
+            }
             StartButton.IsEnabled = true;//allow user to tap start
             PauseButton.IsEnabled = false;//disallow user to tap pause, because the run is not yet started
             //Start GPS watcher immediatelly, so that the map is displayed regardless of the fact that run is not yet started
@@ -167,6 +187,7 @@ namespace TrekMe
         }
         protected override void OnNavigatedFrom(System.Windows.Navigation.NavigationEventArgs e)
         {
+            PhoneApplicationService.Current.State["location"] = location.ToString();
             PhoneApplicationService.Current.State["parameter"] = map_pitch.ToString();
             PhoneApplicationService.Current.State["rotate"] = rotate_map.ToString();
             PhoneApplicationService.Current.State["miles"] = use_miles.ToString();
@@ -176,6 +197,11 @@ namespace TrekMe
             // the way to pass value from other xaml page - settings, parameter is defined there
             string parameterValue = "25";
             base.OnNavigatedTo(e);
+            if (PhoneApplicationService.Current.State.ContainsKey("location"))
+            {
+                string loc = (string)PhoneApplicationService.Current.State["location"];
+                location = Convert.ToBoolean(loc);
+            }
             if (PhoneApplicationService.Current.State.ContainsKey("parameter"))
             {
                 parameterValue = (string)PhoneApplicationService.Current.State["parameter"];
@@ -192,12 +218,27 @@ namespace TrekMe
                 use_miles = Convert.ToBoolean(miles);
             }
             // save settings section when navigated from Settings page
-            
+            settings["settingLocation"] = location;
             settings["settingPitch"] = map_pitch;
             settings["settingRotate"] = rotate_map;
             settings["settingMiles"] = use_miles;
             settings.Save();
-            
+            //check location status
+            if (!location)
+            {
+                // The user has disabled the Location Service on Settings page.
+                BannerInfo.Foreground = new SolidColorBrush(Colors.White);
+                banner.Background = new SolidColorBrush(Colors.Blue);
+                detailLabel.Foreground = new SolidColorBrush(Colors.Transparent);
+                BannerInfo.Text = AppResources.WarningLocationDisabled;
+                MessageBox.Show(AppResources.WarningLocationSettings, AppResources.MessageWarningTitle, MessageBoxButton.OK);
+                StartButton.IsEnabled = false;
+            }
+            else
+            {
+                StartButton.IsEnabled = true;
+            }
+
         }
         private void pivotControl_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
         {
@@ -425,13 +466,13 @@ namespace TrekMe
                         BannerInfo.Text = AppResources.WarningLocationNotSupported;
                         MessageBox.Show(AppResources.MessageWarningText2, AppResources.MessageWarningTitle, MessageBoxButton.OK);
                     }
-                    break;
+                 break;
             }
         }
         private void GPS_PositionChanged(object sender, GeoPositionChangedEventArgs<GeoCoordinate> e)
         {   //event is fired every time GPS sensor detects position change, location coordinates are then fetched
-            coord = new GeoCoordinate(e.Position.Location.Latitude, e.Position.Location.Longitude, e.Position.Location.Altitude);
-
+            coord = new GeoCoordinate(e.Position.Location.Latitude, e.Position.Location.Longitude, e.Position.Location.Altitude, e.Position.Location.HorizontalAccuracy,
+                e.Position.Location.VerticalAccuracy, e.Position.Location.Speed, e.Position.Location.Course);
             if (trek_line.Path.Count > 0) //calculate vars only after 1st position
             {
                 var previousPoint = trek_line.Path.Last(); //to measure distance one must know previous position
@@ -441,6 +482,7 @@ namespace TrekMe
                 
                 if (!paused && trek_line.Path.Count > 0)  //if movement detected calculate vars
                 {
+                    /*
                     //to increase accuracy, 2 speed measurements are taken, then median is calculated
                     spd[speed_count] = (distance * 3600) / ticks; //one of 2 measurements for current speed
                     if (speed_count == 1) //if third measurement is taken, calculate median for current speed
@@ -449,7 +491,8 @@ namespace TrekMe
                         speed_count = -1; //prepare for taking another 2 measurements
                     }
                     speed_count++; //count how many speed measurements are taken
-                    
+                    */
+                    current_speed = 3.6 * coord.Speed;
                     trek_total_distance += distance / 1000.0; //add last measurement to the total distance covered
                     avg_speed = (trek_total_distance * 3600000) / walk_time_tick; //calc average speed so far
 

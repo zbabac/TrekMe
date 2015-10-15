@@ -8,10 +8,8 @@ TrekMe takođe prikazuje pređene kilometre, trenutnu i prosječnu brzinu, GPS p
 Izvorni kod dostupan na:
 https://github.com/zbabac/TrekMe
 
-v 1.3.3
-- podešavanja se automatski sačuvaju
-- opcija da se koriste milje i stope
-- jezici njemački, francuski, španski i portugalski
+v1.3.3.1
+Da bi aplikacija funkcionisala, neophodno je uključiti usluge lokacija na telefonu.
 
 TrekMe is a simple navigation tracking app.
 It can be used while running, hiking, cycling or driving.

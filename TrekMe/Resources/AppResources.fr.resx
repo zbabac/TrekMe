@@ -12,9 +12,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <resheader name="source-language">
-    <value>en</value>
-  </resheader>
   <data name="ResourceFlowDirection" xml:space="preserve">
     <value>LeftToRight</value>
     <comment>Controls the FlowDirection for all elements in the RootFrame. Set to the traditional direction of this resource file's language</comment>
@@ -163,5 +160,26 @@
   </data>
   <data name="AltUpDown" xml:space="preserve">
     <value>Modification ALT</value>
+  </data>
+  <data name="SettingsLocation" xml:space="preserve">
+    <value>Utiliser l'emplacement</value>
+  </data>
+  <data name="WarningLocationSettings" xml:space="preserve">
+    <value>Emplacement désactivé dans app: paramètres : utiliser l'emplacement</value>
+  </data>
+  <data name="Privacy" xml:space="preserve">
+    <value>Politique de confidentialité : cette application utilise des services de localisation pour suivre vos mouvements et de dessiner sur la carte. En aucun cas sont que les données utilisées par un développeur ou un tiers. Aucune donnée ne sera jamais adressée au serveur externe au moyen de cette application.</value>
+  </data>
+  <data name="MessageLocation" xml:space="preserve">
+    <value>Il ok cet application utilise emplacement est-il ? Vous pouvez le désactiver dans la page de paramètres. Vous pouvez lire la politique de confidentialité sur à propos de la page.</value>
+  </data>
+  <data name="MessageLocationTitle" xml:space="preserve">
+    <value>Utilisation de l'emplacement</value>
+  </data>
+  <data name="MessageExit" xml:space="preserve">
+    <value>Cette application ne peut pas fonctionner sans les services de localisation ! Sortie en cours.</value>
+  </data>
+  <data name="MessageExitTitle" xml:space="preserve">
+    <value>Sortie de l'application</value>
   </data>
 </root>

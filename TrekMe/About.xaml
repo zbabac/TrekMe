@@ -36,6 +36,8 @@
                                FontSize="20" Margin="10,10,10,10" TextWrapping="Wrap"/>
                 <TextBlock Text="https://github.com/zbabac/TrekMe"
                                FontSize="20" Margin="10,15,10,10" TextWrapping="Wrap" Foreground="#FF7D9AFF"/>
+                <TextBlock Text="{Binding Path=LocalizedResources.Privacy, Source={StaticResource LocalizedStrings}}"
+                               FontSize="20" Margin="10,10,10,10" TextWrapping="Wrap"/>
                 <TextBlock Text="{Binding Path=LocalizedResources.Info2, Source={StaticResource LocalizedStrings}}"
                                FontSize="28" Margin="0,20,10,10" Foreground="#FF009EFF"/>
                 <TextBlock Text="{Binding Path=LocalizedResources.Info3, Source={StaticResource LocalizedStrings}}"

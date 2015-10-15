@@ -204,6 +204,34 @@
           <source>Altitude diff.</source>
           <target state="translated">Modification ALT</target>
         </trans-unit>
+        <trans-unit id="SettingsLocation" translate="yes" xml:space="preserve">
+          <source>Use location</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Utiliser l'emplacement</target>
+        </trans-unit>
+        <trans-unit id="WarningLocationSettings" translate="yes" xml:space="preserve">
+          <source>Location disabled in app: Settings: Use location</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Emplacement désactivé dans app: paramètres : utiliser l'emplacement</target>
+        </trans-unit>
+        <trans-unit id="Privacy" translate="yes" xml:space="preserve">
+          <source>Privacy policy: this app uses location services to track your movements and draw it on the map. In no circumstances is that data used by developer or third parties. No data will ever be sent to external server by means of this app.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Politique de confidentialité : cette application utilise des services de localisation pour suivre vos mouvements et de dessiner sur la carte. En aucun cas sont que les données utilisées par un développeur ou un tiers. Aucune donnée ne sera jamais adressée au serveur externe au moyen de cette application.</target>
+        </trans-unit>
+        <trans-unit id="MessageLocation" translate="yes" xml:space="preserve">
+          <source>Is it ok that app uses location? You can disable it at Settings page. You can read privacy policy at About page.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Il ok cet application utilise emplacement est-il ? Vous pouvez le désactiver dans la page de paramètres. Vous pouvez lire la politique de confidentialité sur à propos de la page.</target>
+        </trans-unit>
+        <trans-unit id="MessageLocationTitle" translate="yes" xml:space="preserve">
+          <source>Usage of location</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Utilisation de l'emplacement</target>
+        </trans-unit>
+        <trans-unit id="MessageExit" translate="yes" xml:space="preserve">
+          <source>This app can't function without location services! Exiting.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Cette application ne peut pas fonctionner sans les services de localisation ! Sortie en cours.</target>
+        </trans-unit>
+        <trans-unit id="MessageExitTitle" translate="yes" xml:space="preserve">
+          <source>App Exit</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Sortie de l'application</target>
+        </trans-unit>
       </group>
     </body>
   </file>

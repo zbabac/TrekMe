@@ -204,6 +204,34 @@
           <source>Altitude diff.</source>
           <target state="translated">høydeforskjell:</target>
         </trans-unit>
+        <trans-unit id="SettingsLocation" translate="yes" xml:space="preserve">
+          <source>Use location</source>
+          <target state="translated">Bruk posisjon</target>
+        </trans-unit>
+        <trans-unit id="WarningLocationSettings" translate="yes" xml:space="preserve">
+          <source>Location disabled in app: Settings: Use location</source>
+          <target state="translated">Plasseringen er deaktivert i app: innstillinger: Bruk posisjon</target>
+        </trans-unit>
+        <trans-unit id="Privacy" translate="yes" xml:space="preserve">
+          <source>Privacy policy: this app uses location services to track your movements and draw it on the map. In no circumstances is that data used by developer or third parties. No data will ever be sent to external server by means of this app.</source>
+          <target state="translated">Retningslinjer for personvern: dette programmet bruker stedstjenester for å spore dine bevegelser og trekke den på kartet. Under ingen omstendigheter er at data brukes av utvikler eller tredjeparter. Ingen data noensinne vil bli sendt til ekstern server ved hjelp av dette programmet.</target>
+        </trans-unit>
+        <trans-unit id="MessageLocation" translate="yes" xml:space="preserve">
+          <source>Is it ok that app uses location? You can disable it at Settings page. You can read privacy policy at About page.</source>
+          <target state="translated">Er det ok at appen bruker posisjon? Du kan deaktivere den ved siden Innstillinger. Du kan lese retningslinjene for personvern på Om siden.</target>
+        </trans-unit>
+        <trans-unit id="MessageLocationTitle" translate="yes" xml:space="preserve">
+          <source>Usage of location</source>
+          <target state="translated">Bruk av posisjon</target>
+        </trans-unit>
+        <trans-unit id="MessageExit" translate="yes" xml:space="preserve">
+          <source>This app can't function without location services! Exiting.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Dette programmet kan ikke fungere uten plassering services! Avslutter.</target>
+        </trans-unit>
+        <trans-unit id="MessageExitTitle" translate="yes" xml:space="preserve">
+          <source>App Exit</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Avslutt program</target>
+        </trans-unit>
       </group>
     </body>
   </file>
