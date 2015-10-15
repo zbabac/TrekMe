@@ -92,3 +92,6 @@ C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Releas
 C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Release\TrekMe.dll
 C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Release\TrekMe.pdb
 C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Release\XapCacheFile.xml
+C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Bin\Release\sr\TrekMe.resources.dll
+C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Release\TrekMe.Resources.AppResources.sr.resources
+C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Release\sr\TrekMe.resources.dll

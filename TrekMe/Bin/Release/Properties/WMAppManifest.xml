@@ -9,10 +9,8 @@
     <Language code="fr" />
     <Language code="pt" />
     <Language code="es" />
-    <Language code="sr-Cyrl" />
-    <Language code="sr-Latn" />
   </Languages>
-  <App xmlns="" ProductID="{0250d539-7c6a-48f2-a443-b73182623572}" Title="TrekMe" RuntimeType="Silverlight" Version="1.3.4.0" Genre="apps.normal" Author="Zlatko Babic" Description="Tracks position when walking, running or driving. Line is drawn on Offline/online maps to show traversed path. Run can be paused. Current speed, average speed, time, calories spent and GPS position are shown." Publisher="TrekMe" PublisherID="{5ffc7c1a-b665-4191-b217-a2be813a39af}">
+  <App xmlns="" ProductID="{0250d539-7c6a-48f2-a443-b73182623572}" Title="TrekMe" RuntimeType="Silverlight" Version="1.3.5.0" Genre="apps.normal" Author="Zlatko Babic" Description="Tracks position when walking, running or driving. Line is drawn on Offline/online maps to show traversed path. Run can be paused. Current speed, average speed, time, calories spent and GPS position are shown." Publisher="TrekMe" PublisherID="{5ffc7c1a-b665-4191-b217-a2be813a39af}">
     <IconPath IsRelative="true" IsResource="false">Assets\running-icon300.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING" />
