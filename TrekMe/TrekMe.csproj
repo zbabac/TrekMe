@@ -201,9 +201,9 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources\AppResources.sr-Cyrl.resx" />
-    <EmbeddedResource Include="Resources\AppResources.sr-Latn.resx" />
-    <EmbeddedResource Include="Resources\AppResources.sr.resx" />
+    <EmbeddedResource Include="Resources\AppResources.sr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -213,8 +213,7 @@
     <XliffResource Include="MultilingualResources\TrekMe.nb.xlf" />
     <XliffResource Include="MultilingualResources\TrekMe.pl.xlf" />
     <XliffResource Include="MultilingualResources\TrekMe.pt.xlf" />
-    <XliffResource Include="MultilingualResources\TrekMe.sr-Cyrl.xlf" />
-    <XliffResource Include="MultilingualResources\TrekMe.sr-Latn.xlf" />
+    <XliffResource Include="MultilingualResources\TrekMe.sr.xlf" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />

@@ -60,8 +60,6 @@ C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Bin\Debug\
 C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Bin\Debug\nb\TrekMe.resources.dll
 C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Bin\Debug\pl\TrekMe.resources.dll
 C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Bin\Debug\pt\TrekMe.resources.dll
-C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Bin\Debug\sr-Cyrl\TrekMe.resources.dll
-C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Bin\Debug\sr-Latn\TrekMe.resources.dll
 C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Bin\Debug\AppManifest.xaml
 C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Bin\Debug\Properties\WMAppManifest.xml
 C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Bin\Debug\TrekMe_Debug_AnyCPU.xap
@@ -78,8 +76,6 @@ C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Debug\
 C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Debug\TrekMe.Resources.AppResources.nb.resources
 C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Debug\TrekMe.Resources.AppResources.pl.resources
 C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Debug\TrekMe.Resources.AppResources.pt.resources
-C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Debug\TrekMe.Resources.AppResources.sr-Cyrl.resources
-C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Debug\TrekMe.Resources.AppResources.sr-Latn.resources
 C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Debug\TrekMe.csproj.GenerateResource.Cache
 C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Debug\de\TrekMe.resources.dll
 C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Debug\es\TrekMe.resources.dll
@@ -87,8 +83,9 @@ C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Debug\
 C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Debug\nb\TrekMe.resources.dll
 C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Debug\pl\TrekMe.resources.dll
 C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Debug\pt\TrekMe.resources.dll
-C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Debug\sr-Cyrl\TrekMe.resources.dll
-C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Debug\sr-Latn\TrekMe.resources.dll
 C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Debug\TrekMe.dll
 C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Debug\TrekMe.pdb
 C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Debug\XapCacheFile.xml
+C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Bin\Debug\sr\TrekMe.resources.dll
+C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Debug\TrekMe.Resources.AppResources.sr.resources
+C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Debug\sr\TrekMe.resources.dll

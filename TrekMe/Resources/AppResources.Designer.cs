@@ -286,6 +286,15 @@ namespace TrekMe.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Location now enabled!.
+        /// </summary>
+        public static string LocationEnabled {
+            get {
+                return ResourceManager.GetString("LocationEnabled", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to longitude.
         /// </summary>
         public static string Longitude2 {

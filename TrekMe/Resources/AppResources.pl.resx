@@ -17,7 +17,7 @@
     <comment>Controls the FlowDirection for all elements in the RootFrame. Set to the traditional direction of this resource file's language</comment>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
-    <value>EN US</value>
+    <value>pl</value>
     <comment>Controls the Language and ensures that the font for all elements in the RootFrame aligns with the app's language. Set to the language code of this resource file's language.</comment>
   </data>
   <data name="ApplicationTitle" xml:space="preserve">
@@ -181,5 +181,8 @@
   </data>
   <data name="MessageExitTitle" xml:space="preserve">
     <value>Zakończ aplikację</value>
+  </data>
+  <data name="LocationEnabled" xml:space="preserve">
+    <value>Pozycjonowanie włączony</value>
   </data>
 </root>

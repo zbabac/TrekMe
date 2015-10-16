@@ -232,10 +232,15 @@ namespace TrekMe
                 detailLabel.Foreground = new SolidColorBrush(Colors.Transparent);
                 BannerInfo.Text = AppResources.WarningLocationDisabled;
                 MessageBox.Show(AppResources.WarningLocationSettings, AppResources.MessageWarningTitle, MessageBoxButton.OK);
+                
                 StartButton.IsEnabled = false;
             }
             else
             {
+                BannerInfo.Foreground = new SolidColorBrush(Colors.White);
+                banner.Background = new SolidColorBrush(Colors.Blue);
+                detailLabel.Foreground = new SolidColorBrush(Colors.Transparent);
+                BannerInfo.Text = AppResources.LocationEnabled;
                 StartButton.IsEnabled = true;
             }
 

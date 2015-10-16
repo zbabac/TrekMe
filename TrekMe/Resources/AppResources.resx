@@ -287,4 +287,7 @@
   <data name="WarningLocationSettings" xml:space="preserve">
     <value>Location disabled in app: Settings: Use location</value>
   </data>
+  <data name="LocationEnabled" xml:space="preserve">
+    <value>Location now enabled!</value>
+  </data>
 </root>

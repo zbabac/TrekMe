@@ -13,7 +13,7 @@
         </trans-unit>
         <trans-unit id="ResourceLanguage" translate="yes" xml:space="preserve">
           <source>en-US</source>
-          <target state="translated" state-qualifier="tm-suggestion">fr-fr</target>
+          <target state="translated">fr</target>
           <note from="MultilingualBuild" annotates="source" priority="2">Controls the Language and ensures that the font for all elements in the RootFrame aligns with the app's language. Set to the language code of this resource file's language.</note>
         </trans-unit>
         <trans-unit id="ApplicationTitle" translate="yes" xml:space="preserve">
@@ -231,6 +231,10 @@
         <trans-unit id="MessageExitTitle" translate="yes" xml:space="preserve">
           <source>App Exit</source>
           <target state="needs-review-translation" state-qualifier="mt-suggestion">Sortie de l'application</target>
+        </trans-unit>
+        <trans-unit id="LocationEnabled" translate="yes" xml:space="preserve">
+          <source>Location now enabled!</source>
+          <target state="translated">Positionnement allumé</target>
         </trans-unit>
       </group>
     </body>
