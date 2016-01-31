@@ -19,7 +19,7 @@ Content:
 Licensed under MIT license, so you are free to use the source code for any purpose you like, open source or commercial.
 Please, don't forget to mention me in your work. I hope that you will learn a lot, as I have learned from others.
 
-Change log since v1.3.3:
+Change log since v1.3.6:
 	- added new Privacy policy regarding location (required by Microsoft)
 	- fixed crash issues for some language localizations
 

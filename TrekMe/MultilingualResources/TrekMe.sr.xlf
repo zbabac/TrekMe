@@ -8,7 +8,7 @@
       <group id="TREKME/RESOURCES/APPRESOURCES.RESX">
         <trans-unit id="ResourceFlowDirection" translate="yes" xml:space="preserve">
           <source>LeftToRight</source>
-          <target state="new">LeftToRight</target>
+          <target state="translated">LeftToRight</target>
           <note from="MultilingualBuild" annotates="source" priority="2">Controls the FlowDirection for all elements in the RootFrame. Set to the traditional direction of this resource file's language</note>
         </trans-unit>
         <trans-unit id="ResourceLanguage" translate="yes" xml:space="preserve">
@@ -18,15 +18,15 @@
         </trans-unit>
         <trans-unit id="ApplicationTitle" translate="yes" xml:space="preserve">
           <source>TrekMe</source>
-          <target state="new">TrekMe</target>
+          <target state="translated">TrekMe</target>
         </trans-unit>
         <trans-unit id="AppBarButtonText" translate="yes" xml:space="preserve">
           <source>add</source>
-          <target state="new">add</target>
+          <target state="translated">add</target>
         </trans-unit>
         <trans-unit id="AppBarMenuItemText" translate="yes" xml:space="preserve">
           <source>Menu Item</source>
-          <target state="new">Menu Item</target>
+          <target state="translated">Menu Item</target>
         </trans-unit>
         <trans-unit id="StartButton" translate="yes" xml:space="preserve">
           <source>Start</source>
@@ -190,7 +190,7 @@
         </trans-unit>
         <trans-unit id="Info6" translate="yes" xml:space="preserve">
           <source>Running Icon by Elegantthemes</source>
-          <target state="new">Running Icon by Elegantthemes</target>
+          <target state="translated">Running Icon by Elegantthemes</target>
         </trans-unit>
         <trans-unit id="SettingsRotateMap" translate="yes" xml:space="preserve">
           <source>Automatic map rotation</source>
@@ -217,7 +217,7 @@
           <target state="translated">Политика приватности: апликација користи локацију да би нацртала путању којом се крећете. Тако прибављене податке ова апликација ни у ком случају неће слати ван телефона.</target>
         </trans-unit>
         <trans-unit id="MessageLocation" translate="yes" xml:space="preserve">
-          <source>Is it ok that app uses location? You can disable it at Settings page. You can read privacy policy at About page.</source>
+          <source>Is it ok that app uses location services? Privacy policy is located at About page. Location data is not used outside this app. You can disable it at any time at Settings page.</source>
           <target state="translated">Да ли је у реду да апликација користи локацију? То можете касније онемогућити на страници са подешавањима. О политици приватности се можете информисати на страници "о програму".</target>
         </trans-unit>
         <trans-unit id="MessageLocationTitle" translate="yes" xml:space="preserve">
@@ -235,6 +235,14 @@
         <trans-unit id="LocationEnabled" translate="yes" xml:space="preserve">
           <source>Location now enabled!</source>
           <target state="translated">Локација укључена</target>
+        </trans-unit>
+        <trans-unit id="CenterMap" translate="yes" xml:space="preserve">
+          <source>o</source>
+          <target state="new">o</target>
+        </trans-unit>
+        <trans-unit id="GotoTab" translate="yes" xml:space="preserve">
+          <source>&gt;</source>
+          <target state="new">&gt;</target>
         </trans-unit>
       </group>
     </body>

@@ -217,12 +217,12 @@
           <target state="translated">Datenschutz: Diese app mithilfe Diensten verfolgt die Bewegung auf der Karte zu zeichnen. Unter keinen Umständen ist die von Entwickler oder Dritten verwendeten Daten. Keine Daten jemals in einem externen Server mit Hilfe dieser App gesendet werden.</target>
         </trans-unit>
         <trans-unit id="MessageLocation" translate="yes" xml:space="preserve">
-          <source>Is it ok that app uses location? You can disable it at Settings page. You can read privacy policy at About page.</source>
-          <target state="translated">Ist es in Ordnung, dass App nutzt Standort? Sie können ihn unter Seite Einstellungen zu deaktivieren. Sie können die Datenschutzrichtlinien bei Info lesen.</target>
+          <source>Is it ok that app uses location services? Privacy policy is located at About page. Location data is not used outside this app. You can disable it at any time at Settings page.</source>
+          <target state="translated">Kann die Anwendung Diensten verwendet? Datenschutzrichtlinie befindet sich zur Seite. Positionsdaten ist außerhalb dieser Anwendung nicht verwendet. Sie können diese an Einstel. Seite jederzeit deaktivieren.</target>
         </trans-unit>
         <trans-unit id="MessageLocationTitle" translate="yes" xml:space="preserve">
           <source>Usage of location</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">Verwendung von Position</target>
+          <target state="translated" state-qualifier="mt-suggestion">Verwendung von Position</target>
         </trans-unit>
         <trans-unit id="MessageExit" translate="yes" xml:space="preserve">
           <source>This app can't function without location services! Exiting.</source>
@@ -235,6 +235,14 @@
         <trans-unit id="LocationEnabled" translate="yes" xml:space="preserve">
           <source>Location now enabled!</source>
           <target state="translated">Positionierung eingeschaltet</target>
+        </trans-unit>
+        <trans-unit id="CenterMap" translate="yes" xml:space="preserve">
+          <source>o</source>
+          <target state="new">o</target>
+        </trans-unit>
+        <trans-unit id="GotoTab" translate="yes" xml:space="preserve">
+          <source>&gt;</source>
+          <target state="new">&gt;</target>
         </trans-unit>
       </group>
     </body>

@@ -273,7 +273,7 @@
     <value>App Exit</value>
   </data>
   <data name="MessageLocation" xml:space="preserve">
-    <value>Is it ok that app uses location? You can disable it at Settings page. You can read privacy policy at About page.</value>
+    <value>Is it ok that app uses location services? Privacy policy is located at About page. Location data is not used outside this app. You can disable it at any time at Settings page.</value>
   </data>
   <data name="MessageLocationTitle" xml:space="preserve">
     <value>Usage of location</value>
@@ -289,5 +289,11 @@
   </data>
   <data name="LocationEnabled" xml:space="preserve">
     <value>Location now enabled!</value>
+  </data>
+  <data name="CenterMap" xml:space="preserve">
+    <value>o</value>
+  </data>
+  <data name="GotoTab" xml:space="preserve">
+    <value>&gt;</value>
   </data>
 </root>

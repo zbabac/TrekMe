@@ -171,7 +171,7 @@
     <value>Política de privacidade: Este aplicativo usa os serviços de localização para rastrear seus movimentos e desenhá-la no mapa. Em nenhuma circunstância é que os dados utilizados pelo desenvolvedor ou de terceiros. Não existem dados nunca vai ser enviado para um servidor externo, por meio deste aplicativo.</value>
   </data>
   <data name="MessageLocation" xml:space="preserve">
-    <value>É ok app usa local? Você pode desativá-lo na página de configurações. Você pode ler a política de privacidade em sobre a página.</value>
+    <value>É que o aplicativo usa serviços de localização ok? Política de privacidade está localizada em "sobre" a página. Dados de local não são usados fora desse aplicativo. Você pode desativá-la a qualquer momento na página de configurações.</value>
   </data>
   <data name="MessageLocationTitle" xml:space="preserve">
     <value>Usar localização</value>

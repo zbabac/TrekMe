@@ -187,6 +187,15 @@ namespace TrekMe.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to o.
+        /// </summary>
+        public static string CenterMap {
+            get {
+                return ResourceManager.GetString("CenterMap", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Current speed:.
         /// </summary>
         public static string CurrentSpeed {
@@ -219,6 +228,15 @@ namespace TrekMe.Resources {
         public static string Distance2 {
             get {
                 return ResourceManager.GetString("Distance2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &gt;.
+        /// </summary>
+        public static string GotoTab {
+            get {
+                return ResourceManager.GetString("GotoTab", resourceCulture);
             }
         }
         
@@ -322,7 +340,7 @@ namespace TrekMe.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Is it ok that app uses location? You can disable it at Settings page. You can read privacy policy at About page..
+        ///   Looks up a localized string similar to Is it ok that app uses location services? Privacy policy is located at About page. Location data is not used outside this app. You can disable it at any time at Settings page..
         /// </summary>
         public static string MessageLocation {
             get {

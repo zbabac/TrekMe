@@ -1,11 +1,13 @@
-﻿<xapCache source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Bin\Debug\TrekMe_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="2015-10-16 16:34:52">
-  <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Debug\TrekMe.dll" archivePath="TrekMe.dll" lastWriteTime="2015-10-16 16:33:31" />
-  <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Debug\de\TrekMe.resources.dll" archivePath="de\TrekMe.resources.dll" lastWriteTime="2015-10-16 16:33:31" />
-  <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Debug\fr\TrekMe.resources.dll" archivePath="fr\TrekMe.resources.dll" lastWriteTime="2015-10-16 16:33:31" />
-  <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Debug\nb\TrekMe.resources.dll" archivePath="nb\TrekMe.resources.dll" lastWriteTime="2015-10-16 16:33:31" />
-  <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Debug\pl\TrekMe.resources.dll" archivePath="pl\TrekMe.resources.dll" lastWriteTime="2015-10-16 16:33:31" />
-  <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Debug\sr\TrekMe.resources.dll" archivePath="sr\TrekMe.resources.dll" lastWriteTime="2015-10-16 16:34:52" />
+﻿<xapCache source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Bin\Debug\TrekMe_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="2016-02-01 00:25:16">
+  <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Debug\TrekMe.dll" archivePath="TrekMe.dll" lastWriteTime="2016-02-01 00:25:15" />
+  <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Debug\de\TrekMe.resources.dll" archivePath="de\TrekMe.resources.dll" lastWriteTime="2016-02-01 00:25:15" />
+  <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Debug\fr\TrekMe.resources.dll" archivePath="fr\TrekMe.resources.dll" lastWriteTime="2016-02-01 00:25:15" />
+  <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Debug\nb\TrekMe.resources.dll" archivePath="nb\TrekMe.resources.dll" lastWriteTime="2016-02-01 00:25:15" />
+  <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Debug\pl\TrekMe.resources.dll" archivePath="pl\TrekMe.resources.dll" lastWriteTime="2016-02-01 00:25:15" />
+  <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Debug\sr\TrekMe.resources.dll" archivePath="sr\TrekMe.resources.dll" lastWriteTime="2016-02-01 00:25:15" />
   <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="2014-02-01 20:02:52" />
+  <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Assets\AppBar1\feature.calendar.png" archivePath="Assets\AppBar1\feature.calendar.png" lastWriteTime="2013-01-01 17:57:00" />
+  <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Assets\AppBar\feature.calendar.png" archivePath="Assets\AppBar\feature.calendar.png" lastWriteTime="2013-01-01 17:57:00" />
   <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="2014-02-01 20:02:52" />
   <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Assets\ApplicationIcon110x110.png" archivePath="Assets\ApplicationIcon110x110.png" lastWriteTime="2014-02-01 20:02:52" />
   <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Assets\ApplicationIcon202x202.png" archivePath="Assets\ApplicationIcon202x202.png" lastWriteTime="2014-02-01 20:02:52" />
@@ -20,8 +22,15 @@
   <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Images\feature.settings.png" archivePath="Images\feature.settings.png" lastWriteTime="2015-06-02 21:55:11" />
   <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Images\overflowdots.png" archivePath="Images\overflowdots.png" lastWriteTime="2015-06-02 21:56:12" />
   <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Images\questionmark.png" archivePath="Images\questionmark.png" lastWriteTime="2015-06-02 21:57:08" />
-  <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="2015-10-16 15:01:40" />
+  <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\README_FIRST.txt" archivePath="README_FIRST.txt" lastWriteTime="2016-01-31 16:48:19" />
+  <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Toolkit.Content\ApplicationBar.Add.png" archivePath="Toolkit.Content\ApplicationBar.Add.png" lastWriteTime="2016-01-31 16:48:19" />
+  <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Toolkit.Content\ApplicationBar.Cancel.png" archivePath="Toolkit.Content\ApplicationBar.Cancel.png" lastWriteTime="2016-01-31 16:48:19" />
+  <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Toolkit.Content\ApplicationBar.Check.png" archivePath="Toolkit.Content\ApplicationBar.Check.png" lastWriteTime="2016-01-31 16:48:19" />
+  <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Toolkit.Content\ApplicationBar.Delete.png" archivePath="Toolkit.Content\ApplicationBar.Delete.png" lastWriteTime="2016-01-31 16:48:19" />
+  <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Toolkit.Content\ApplicationBar.Select.png" archivePath="Toolkit.Content\ApplicationBar.Select.png" lastWriteTime="2016-01-31 16:48:19" />
+  <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="2016-01-31 16:54:07" />
   <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Bin\Debug\Fonts\Warenhaus-Standard.otf" archivePath="Fonts\Warenhaus-Standard.otf" lastWriteTime="2014-07-30 21:04:55" />
+  <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\packages\WPtoolkit.4.2013.08.16\lib\wp8\Microsoft.Phone.Controls.Toolkit.dll" archivePath="Microsoft.Phone.Controls.Toolkit.dll" lastWriteTime="2016-01-31 16:48:17" />
   <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Assets\running-icon300.png" archivePath="Assets\running-icon300.png" lastWriteTime="2015-06-05 18:09:05" />
-  <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="2015-10-16 15:29:16" />
+  <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="2015-10-18 12:24:29" />
 </xapCache>

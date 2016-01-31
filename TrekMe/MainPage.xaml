@@ -31,6 +31,10 @@
                     IconUri="Images/questionmark.png" 
                                             Text="About" 
                                             Click="ApplicationBarAbout_Click"/>
+            <shell:ApplicationBarIconButton x:Name="appButtonRecord" 
+                    IconUri="/Assets/AppBar/feature.calendar.png" 
+                                            Text="Runs" 
+                                            Click="appButtonRecord_Click"/>
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>
     <!-- 2 pivots: one for run details, other for map -->
@@ -169,7 +173,7 @@
                     <Grid Margin="10,5,10,0"
                             util:GridUtils.RowDefinitions="*, *, *, *"
                             util:GridUtils.ColumnDefinitions="*, *">
-                        
+
                         <TextBlock Text="{Binding Path=LocalizedResources.CurrentSpeed, Source={StaticResource LocalizedStrings}}" 
                                 Grid.Row="0" Grid.Column="0"
                                 HorizontalAlignment="Left"
@@ -220,7 +224,8 @@
                     LandmarksEnabled="True"
                     Pitch="25"
                     ZoomLevel="16" Margin="0,-73,0,0" Height="821" VerticalAlignment="Bottom"
-                    Loaded="Map_Loaded"/>
+                    Loaded="Map_Loaded"
+                              Hold="Map_Hold"/>
 
                     <!-- run statistics at top of the screen-->
                     <Grid Margin="0,-77,0,0" 
@@ -262,11 +267,11 @@
                                 HorizontalAlignment="Left" Foreground="White"/>
                             <!-- small button used to jump to details pivot item -->
                             <!-- for those who find it swipe on the map page -->
-                            <Button Content=""
+                            <Button Content="&gt;"
                                 Grid.Row="0" Grid.Column="4"
                                 Click="PivotButton_Click" Background="Red" Width="70" Height="50" 
                                     VerticalAlignment="Bottom" HorizontalAlignment="Right"
-                                x:Name="PivotButton" FontSize="{StaticResource PhoneFontSizeSmall}"/>
+                                x:Name="PivotButton"/>
                         </Grid>
                     </Grid>
                 </Grid>

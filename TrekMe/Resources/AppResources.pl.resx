@@ -171,7 +171,7 @@
     <value>Polityka prywatności: ta aplikacja korzysta z usług lokalizacji w celu śledzenia ruchów i wyciągnąć go na mapie. W żadnym wypadku nie jest to, że dane wykorzystane przez dewelopera lub osób trzecich. Brak danych nigdy nie będzie wysyłany do serwera zewnętrznego za pomocą tej aplikacji.</value>
   </data>
   <data name="MessageLocation" xml:space="preserve">
-    <value>To ok, tej lokalizacji wykorzystuje aplikacji? Można ją wyłączyć na stronie Ustawienia. Możesz przeczytać zasady zachowania poufności informacji na strony Informacje.</value>
+    <value>Czy jest ok, że aplikacja używa usługi lokalizacji? Zasady zachowania poufności informacji znajduje się w "info" strony. Dane dotyczące lokalizacji nie jest używany poza tej aplikacji. Można ją wyłączyć w dowolnym czasie na stronie "Ustawienia".</value>
   </data>
   <data name="MessageLocationTitle" xml:space="preserve">
     <value>Obciążenie lokalizacji</value>

@@ -171,7 +171,7 @@
     <value>Datenschutz: Diese app mithilfe Diensten verfolgt die Bewegung auf der Karte zu zeichnen. Unter keinen Umständen ist die von Entwickler oder Dritten verwendeten Daten. Keine Daten jemals in einem externen Server mit Hilfe dieser App gesendet werden.</value>
   </data>
   <data name="MessageLocation" xml:space="preserve">
-    <value>Ist es in Ordnung, dass App nutzt Standort? Sie können ihn unter Seite Einstellungen zu deaktivieren. Sie können die Datenschutzrichtlinien bei Info lesen.</value>
+    <value>Kann die Anwendung Diensten verwendet? Datenschutzrichtlinie befindet sich zur Seite. Positionsdaten ist außerhalb dieser Anwendung nicht verwendet. Sie können diese an Einstel. Seite jederzeit deaktivieren.</value>
   </data>
   <data name="MessageLocationTitle" xml:space="preserve">
     <value>Verwendung von Position</value>

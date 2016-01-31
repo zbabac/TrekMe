@@ -18,11 +18,11 @@
         </trans-unit>
         <trans-unit id="ApplicationTitle" translate="yes" xml:space="preserve">
           <source>TrekMe</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">TrekMe</target>
+          <target state="translated" state-qualifier="mt-suggestion">TrekMe</target>
         </trans-unit>
         <trans-unit id="AppBarButtonText" translate="yes" xml:space="preserve">
           <source>add</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">Agregar</target>
+          <target state="translated" state-qualifier="mt-suggestion">Agregar</target>
         </trans-unit>
         <trans-unit id="AppBarMenuItemText" translate="yes" xml:space="preserve">
           <source>Menu Item</source>
@@ -30,15 +30,15 @@
         </trans-unit>
         <trans-unit id="Alt" translate="yes" xml:space="preserve">
           <source>Alt: </source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">ALT: </target>
+          <target state="translated" state-qualifier="mt-suggestion">ALT: </target>
         </trans-unit>
         <trans-unit id="AverageSpeed" translate="yes" xml:space="preserve">
           <source>Average speed:</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">Velocidad media:</target>
+          <target state="translated" state-qualifier="mt-suggestion">Velocidad media:</target>
         </trans-unit>
         <trans-unit id="BannerInfo" translate="yes" xml:space="preserve">
           <source>Fetching GPS data, please wait.</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">Obtención de GPS los datos, por favor, espere.</target>
+          <target state="translated" state-qualifier="mt-suggestion">Obtención de GPS los datos, por favor, espere.</target>
         </trans-unit>
         <trans-unit id="Break" translate="yes" xml:space="preserve">
           <source>Break:  </source>
@@ -46,15 +46,15 @@
         </trans-unit>
         <trans-unit id="Calories" translate="yes" xml:space="preserve">
           <source>Calories:</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">Calorías:</target>
+          <target state="translated" state-qualifier="mt-suggestion">Calorías:</target>
         </trans-unit>
         <trans-unit id="CurrentSpeed" translate="yes" xml:space="preserve">
           <source>Current speed:</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">Velocidad actual:</target>
+          <target state="translated" state-qualifier="mt-suggestion">Velocidad actual:</target>
         </trans-unit>
         <trans-unit id="DetailTitle" translate="yes" xml:space="preserve">
           <source>Detailed data</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">Datos detallados</target>
+          <target state="translated" state-qualifier="mt-suggestion">Datos detallados</target>
         </trans-unit>
         <trans-unit id="Distance" translate="yes" xml:space="preserve">
           <source>Distance:</source>
@@ -62,7 +62,7 @@
         </trans-unit>
         <trans-unit id="Distance2" translate="yes" xml:space="preserve">
           <source>Distance:  </source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">Distancia:  </target>
+          <target state="translated" state-qualifier="mt-suggestion">Distancia:  </target>
         </trans-unit>
         <trans-unit id="PauseButton" translate="yes" xml:space="preserve">
           <source>Pause</source>
@@ -70,7 +70,7 @@
         </trans-unit>
         <trans-unit id="SpeedMap" translate="yes" xml:space="preserve">
           <source> Speed:</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion"> Velocidad:</target>
+          <target state="translated" state-qualifier="mt-suggestion"> Velocidad:</target>
         </trans-unit>
         <trans-unit id="StartButton" translate="yes" xml:space="preserve">
           <source>Start</source>
@@ -86,15 +86,15 @@
         </trans-unit>
         <trans-unit id="Time" translate="yes" xml:space="preserve">
           <source>Time: </source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">Hora: </target>
+          <target state="translated" state-qualifier="mt-suggestion">Hora: </target>
         </trans-unit>
         <trans-unit id="Time2" translate="yes" xml:space="preserve">
           <source>Time:</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">Hora:</target>
+          <target state="translated" state-qualifier="mt-suggestion">Hora:</target>
         </trans-unit>
         <trans-unit id="WideContent1" translate="yes" xml:space="preserve">
           <source>Distance: 0 Speed: 0</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">Distancia: velocidad 0: 0</target>
+          <target state="translated" state-qualifier="mt-suggestion">Distancia: velocidad 0: 0</target>
         </trans-unit>
         <trans-unit id="WideContent2" translate="yes" xml:space="preserve">
           <source>Avg. speed: 0 Time: 00:00:00</source>
@@ -102,7 +102,7 @@
         </trans-unit>
         <trans-unit id="WideContent3" translate="yes" xml:space="preserve">
           <source>Longitude Latitude Altitude</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">Longitud latitud altitud</target>
+          <target state="translated" state-qualifier="mt-suggestion">Longitud latitud altitud</target>
         </trans-unit>
         <trans-unit id="Altitude2" translate="yes" xml:space="preserve">
           <source>altitude m</source>
@@ -110,11 +110,11 @@
         </trans-unit>
         <trans-unit id="Latitude2" translate="yes" xml:space="preserve">
           <source>latitude</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">Latitude</target>
+          <target state="translated" state-qualifier="mt-suggestion">Latitude</target>
         </trans-unit>
         <trans-unit id="Longitude2" translate="yes" xml:space="preserve">
           <source>longitude</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">longitud</target>
+          <target state="translated" state-qualifier="mt-suggestion">longitud</target>
         </trans-unit>
         <trans-unit id="About" translate="yes" xml:space="preserve">
           <source>About</source>
@@ -122,7 +122,7 @@
         </trans-unit>
         <trans-unit id="Info1" translate="yes" xml:space="preserve">
           <source>Open source app by Zlatko Babic, 2015</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">Aplicación de código abierto por Zlatko Babic, 2015</target>
+          <target state="translated" state-qualifier="mt-suggestion">Aplicación de código abierto por Zlatko Babic, 2015</target>
         </trans-unit>
         <trans-unit id="Info2" translate="yes" xml:space="preserve">
           <source>Credits</source>
@@ -130,19 +130,19 @@
         </trans-unit>
         <trans-unit id="Info3" translate="yes" xml:space="preserve">
           <source>Geo portion of the NExtra class provided by Daniel Saidi.</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">Geo parte de la clase NExtra proporcionada por Daniel Saidi.</target>
+          <target state="translated" state-qualifier="mt-suggestion">Geo parte de la clase NExtra proporcionada por Daniel Saidi.</target>
         </trans-unit>
         <trans-unit id="Info4" translate="yes" xml:space="preserve">
           <source>Warenhouse Standard font is licensed under SIL Open Font License</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">Fuente estándar Warenhouse está licenciado bajo licencia de fuente abierta SIL</target>
+          <target state="translated" state-qualifier="mt-suggestion">Fuente estándar Warenhouse está licenciado bajo licencia de fuente abierta SIL</target>
         </trans-unit>
         <trans-unit id="Info5" translate="yes" xml:space="preserve">
           <source>Inspired by Colin Eberhardt's sample WP8Runner</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">Inspirado en el ejemplo de Colin Eberhardt WP8Runner</target>
+          <target state="translated" state-qualifier="mt-suggestion">Inspirado en el ejemplo de Colin Eberhardt WP8Runner</target>
         </trans-unit>
         <trans-unit id="SwipeBack" translate="yes" xml:space="preserve">
           <source>-- swipe to return to app --</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">--pase para volver a la aplicación:</target>
+          <target state="translated" state-qualifier="mt-suggestion">--pase para volver a la aplicación:</target>
         </trans-unit>
         <trans-unit id="AboutBack" translate="yes" xml:space="preserve">
           <source>Back</source>
@@ -170,19 +170,19 @@
         </trans-unit>
         <trans-unit id="WarningLocationDisabled" translate="yes" xml:space="preserve">
           <source>Please first turn on location!</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">Por favor, primero Active la ubicación!</target>
+          <target state="translated" state-qualifier="mt-suggestion">Por favor, primero Active la ubicación!</target>
         </trans-unit>
         <trans-unit id="WarningLocationNotSupported" translate="yes" xml:space="preserve">
           <source>Location not supported on this phone!</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">Ubicación no compatible con este teléfono!</target>
+          <target state="translated" state-qualifier="mt-suggestion">Ubicación no compatible con este teléfono!</target>
         </trans-unit>
         <trans-unit id="MessageWarningText1" translate="yes" xml:space="preserve">
           <source>Please enable location services on your phone: Settings --%%amp;gt; Location = ON</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">Habilite los servicios de localización en el teléfono: configuración--%%amp;gt; Ubicación = ON</target>
+          <target state="translated" state-qualifier="mt-suggestion">Habilite los servicios de localización en el teléfono: configuración--%%amp;gt; Ubicación = ON</target>
         </trans-unit>
         <trans-unit id="MessageWarningText2" translate="yes" xml:space="preserve">
           <source>Location not supported on this phone! This app can't function without GPS.</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">Ubicación no compatible con este teléfono! Esta aplicación no puede funcionar sin GPS.</target>
+          <target state="translated" state-qualifier="mt-suggestion">Ubicación no compatible con este teléfono! Esta aplicación no puede funcionar sin GPS.</target>
         </trans-unit>
         <trans-unit id="MessageWarningTitle" translate="yes" xml:space="preserve">
           <source>Warning</source>
@@ -190,15 +190,15 @@
         </trans-unit>
         <trans-unit id="Info6" translate="yes" xml:space="preserve">
           <source>Running Icon by Elegantthemes</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">Icono de ejecución de Elegantthemes</target>
+          <target state="translated" state-qualifier="mt-suggestion">Icono de ejecución de Elegantthemes</target>
         </trans-unit>
         <trans-unit id="SettingsRotateMap" translate="yes" xml:space="preserve">
           <source>Automatic map rotation</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">Rotación de mapa automático</target>
+          <target state="translated" state-qualifier="mt-suggestion">Rotación de mapa automático</target>
         </trans-unit>
         <trans-unit id="SettingsMIles" translate="yes" xml:space="preserve">
           <source>Use miles and feet</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">Uso de millas y pies</target>
+          <target state="translated" state-qualifier="mt-suggestion">Uso de millas y pies</target>
         </trans-unit>
         <trans-unit id="AltUpDown" translate="yes" xml:space="preserve">
           <source>Altitude diff.</source>
@@ -206,35 +206,43 @@
         </trans-unit>
         <trans-unit id="SettingsLocation" translate="yes" xml:space="preserve">
           <source>Use location</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">Utilizar ubicación</target>
+          <target state="translated" state-qualifier="tm-suggestion">Utilizar ubicación</target>
         </trans-unit>
         <trans-unit id="WarningLocationSettings" translate="yes" xml:space="preserve">
           <source>Location disabled in app: Settings: Use location</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">Ubicación deshabilitado en la aplicación: configuración: usar ubicación</target>
+          <target state="translated" state-qualifier="mt-suggestion">Ubicación deshabilitado en la aplicación: configuración: usar ubicación</target>
         </trans-unit>
         <trans-unit id="Privacy" translate="yes" xml:space="preserve">
           <source>Privacy policy: this app uses location services to track your movements and draw it on the map. In no circumstances is that data used by developer or third parties. No data will ever be sent to external server by means of this app.</source>
           <target state="translated">Política de privacidad: esta aplicación utiliza servicios de localización para rastrear sus movimientos y dibujarlo en el mapa. En ningún caso es que los datos utilizados por el desarrollador o de terceros. No hay datos volverá a ser enviado a un servidor externo a través de esta aplicación.</target>
         </trans-unit>
         <trans-unit id="MessageLocation" translate="yes" xml:space="preserve">
-          <source>Is it ok that app uses location? You can disable it at Settings page. You can read privacy policy at About page.</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">¿Está bien esa ubicación de usos de la aplicación? Se puede deshabilitar en la página de configuración. Puede leer la política de privacidad en acerca de la página.</target>
+          <source>Is it ok that app uses location services? Privacy policy is located at About page. Location data is not used outside this app. You can disable it at any time at Settings page.</source>
+          <target state="translated" state-qualifier="mt-suggestion">¿Es aceptar que la aplicación utiliza servicios de ubicación? Política de privacidad se encuentra en acerca de la página. Datos de ubicación no se utilizan fuera de esta aplicación. Se puede deshabilitar en cualquier momento en la página de configuración.</target>
         </trans-unit>
         <trans-unit id="MessageLocationTitle" translate="yes" xml:space="preserve">
           <source>Usage of location</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">Uso de ubicación</target>
+          <target state="translated" state-qualifier="mt-suggestion">Uso de ubicación</target>
         </trans-unit>
         <trans-unit id="MessageExit" translate="yes" xml:space="preserve">
           <source>This app can't function without location services! Exiting.</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">Esta aplicación no puede funcionar sin servicios de localización! Saliendo.</target>
+          <target state="translated" state-qualifier="mt-suggestion">Esta aplicación no puede funcionar sin servicios de localización! Saliendo.</target>
         </trans-unit>
         <trans-unit id="MessageExitTitle" translate="yes" xml:space="preserve">
           <source>App Exit</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">Salir de la aplicación</target>
+          <target state="translated" state-qualifier="mt-suggestion">Salir de la aplicación</target>
         </trans-unit>
         <trans-unit id="LocationEnabled" translate="yes" xml:space="preserve">
           <source>Location now enabled!</source>
           <target state="translated">Posicionamiento encendido</target>
+        </trans-unit>
+        <trans-unit id="CenterMap" translate="yes" xml:space="preserve">
+          <source>o</source>
+          <target state="new">o</target>
+        </trans-unit>
+        <trans-unit id="GotoTab" translate="yes" xml:space="preserve">
+          <source>&gt;</source>
+          <target state="new">&gt;</target>
         </trans-unit>
       </group>
     </body>

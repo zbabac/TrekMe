@@ -12,9 +12,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ResourceFlowDirection" xml:space="preserve">
+    <value>LeftToRight</value>
+    <comment>Controls the FlowDirection for all elements in the RootFrame. Set to the traditional direction of this resource file's language</comment>
+  </data>
   <data name="ResourceLanguage" xml:space="preserve">
     <value>sr</value>
     <comment>Controls the Language and ensures that the font for all elements in the RootFrame aligns with the app's language. Set to the language code of this resource file's language.</comment>
+  </data>
+  <data name="ApplicationTitle" xml:space="preserve">
+    <value>TrekMe</value>
+  </data>
+  <data name="AppBarButtonText" xml:space="preserve">
+    <value>add</value>
+  </data>
+  <data name="AppBarMenuItemText" xml:space="preserve">
+    <value>Menu Item</value>
   </data>
   <data name="StartButton" xml:space="preserve">
     <value>Старт</value>
@@ -135,6 +148,9 @@
   </data>
   <data name="MessageWarningTitle" xml:space="preserve">
     <value>Упозорење</value>
+  </data>
+  <data name="Info6" xml:space="preserve">
+    <value>Running Icon by Elegantthemes</value>
   </data>
   <data name="SettingsRotateMap" xml:space="preserve">
     <value>аутоматска ротација карте</value>

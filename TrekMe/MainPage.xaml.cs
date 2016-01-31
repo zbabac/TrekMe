@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Device.Location;
-using System.Diagnostics;
+using System.Xml.Serialization;
 using System.IO.IsolatedStorage;
-using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
 using System.Windows.Media;
@@ -10,9 +9,13 @@ using System.Windows.Shapes;
 using System.Windows.Threading;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Maps.Controls;
+using Microsoft.Phone.Maps.Toolkit;
 using Microsoft.Phone.Shell;
 using NExtra.Geo;
 using TrekMe.Resources;
+using System.Collections.ObjectModel;
+using System.IO;
+using System.Collections.Generic;
 
 namespace TrekMe
 {   
@@ -65,6 +68,11 @@ namespace TrekMe
         double _curr_speed = 0;
         double _altitude=0, _alt_change_up=0, _alt_change_down=0;
         double _dist=0;
+        MapLayer layerPin = new MapLayer();//layer for showing position on map long press
+        Pushpin pushpin1 = new Pushpin();//pushpin that displays gps position on map
+        MapOverlay overlayPin = new MapOverlay();//overlay for pin
+        private bool center_map = true;//center the map just on first location detection
+        ObservableCollection<string> savedRuns = new ObservableCollection<string>(); //save each run in list that is saved in Isolated Storage for later use
 
         public MainPage()
         {
@@ -72,9 +80,9 @@ namespace TrekMe
             // AppBar can't be localized as resource so this is workaround
             ApplicationBarIconButton appButtonSettings1 = (ApplicationBarIconButton)ApplicationBar.Buttons[0];
             ApplicationBarIconButton appButtonAbout1 = (ApplicationBarIconButton)ApplicationBar.Buttons[1];
-
+            ApplicationBarIconButton appButtonRecord1 = (ApplicationBarIconButton)ApplicationBar.Buttons[2];
             // load settings from isolated storage
-           if (!settings.Contains("settingLocation"))
+            if (!settings.Contains("settingLocation"))
             {
                 settings.Add("settingLocation", location);
             }
@@ -104,7 +112,8 @@ namespace TrekMe
             {
                 use_miles = Convert.ToBoolean(settings["settingMiles"]);
             }
-
+            // load saved runs - user data
+            savedRuns = Deserialize("Treks");
             // detect culture and apply workaround for Application Bar buttons
             switch (System.Threading.Thread.CurrentThread.CurrentUICulture.Name.Substring(0, 2))
             {
@@ -191,6 +200,7 @@ namespace TrekMe
             PhoneApplicationService.Current.State["parameter"] = map_pitch.ToString();
             PhoneApplicationService.Current.State["rotate"] = rotate_map.ToString();
             PhoneApplicationService.Current.State["miles"] = use_miles.ToString();
+            PhoneApplicationService.Current.State["runs"] = savedRuns;
         }
         protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
         {
@@ -286,7 +296,7 @@ namespace TrekMe
             trek_startTime = System.Environment.TickCount; //remember start time
             StartButton.IsEnabled = false; //disallow to start when it is started
             PauseButton.IsEnabled = true; //allow user to pause the run
-            
+            center_map = true;
             paused = false; //not paused
             walk_time_tick = 0; //set variables initial values
             pause_time_tick = 0;
@@ -321,48 +331,70 @@ namespace TrekMe
 
         private void StopButton_Click(object sender, RoutedEventArgs e)
         {
-            //Stop is tapped so change display elements as they were set for start
-            colour = Colors.Green; //last point of the run is green
-            Ellipse myCircle = new Ellipse();  //draw a circle to mark stop point
-            myCircle.Stroke = new SolidColorBrush(colour);
-            myCircle.StrokeThickness = 10;
-            myCircle.Height = 25;
-            myCircle.Width = 25;
-            myCircle.Opacity = .5;
-            // Create a MapOverlay to contain the circle.
-            MapOverlay myLocationOverlay = new MapOverlay();
-            myLocationOverlay.Content = myCircle;
-            myLocationOverlay.PositionOrigin = new Point(0.5, 0.5);
-            myLocationOverlay.GeoCoordinate = coord;
-            // Create a MapLayer to contain the MapOverlay.
-            MapLayer myLocationLayer = new MapLayer();
-            myLocationLayer.Add(myLocationOverlay);
-            // Add the MapLayer to the Map.
-            Map.Layers.Add(myLocationLayer);
-            gps_watcher.Stop();
-            trek_timer.Stop();
-            StartButton.Background = new SolidColorBrush(Colors.Transparent); //make buttons normal color
-            
-            PauseButton.Background = new SolidColorBrush(Colors.Transparent);
-            draw_circle = false;
-            trek_started = false;
-            paused = false;
-            StartButton.IsEnabled = true;
-            PauseButton.IsEnabled = false;
-            
-            walk_time_tick = 0;
-            pause_time_tick = 0;
-            total_pause = 0;
-            ShellTile.ActiveTiles.First().Update(new IconicTileData() //update live tiles
+            if (trek_started)
             {
-                Title = "TrekMe",
-                Count = Math.Abs(Convert.ToInt16(_dist - 0.5)),
-                WideContent1 = string.Format("{0:f1} {1}", _dist, _dst),
-                WideContent2 = string.Format("avg: {0:f0} {1}", _avg_speed, _spd),
-                WideContent3 = string.Format("{0} {1} Alt:{2:f0}{3}", lon2.Text, lat2.Text, _altitude, _alt),
-                BackgroundColor = new Color { A = 255, R = 0, G = 0, B = 255 }
-            });
-            trek_total_distance = 0;
+                string currentDate = String.Format("{0:d}", System.DateTime.Now);
+                savedRuns.Add(currentDate + " | " + distanceBox2.Text + " | " + elapsedTime2.Text + " | " + avgSpeed.Text);
+                Serialize("Treks", savedRuns);//save the last run
+                                              //Stop is tapped so change display elements as they were set for start
+                colour = Colors.Green; //last point of the run is green
+                Ellipse myCircle = new Ellipse();  //draw a circle to mark stop point
+                myCircle.Stroke = new SolidColorBrush(colour);
+                myCircle.StrokeThickness = 10;
+                myCircle.Height = 25;
+                myCircle.Width = 25;
+                myCircle.Opacity = .5;
+                // Create a MapOverlay to contain the circle.
+                MapOverlay myLocationOverlay = new MapOverlay();
+                myLocationOverlay.Content = myCircle;
+                myLocationOverlay.PositionOrigin = new Point(0.5, 0.5);
+                myLocationOverlay.GeoCoordinate = coord;
+                // Create a MapLayer to contain the MapOverlay.
+                MapLayer myLocationLayer = new MapLayer();
+                myLocationLayer.Add(myLocationOverlay);
+                // Add the MapLayer to the Map.
+                Map.Layers.Add(myLocationLayer);
+                gps_watcher.Stop();
+                trek_timer.Stop();
+                StartButton.Background = new SolidColorBrush(Colors.Transparent); //make buttons normal color
+
+                PauseButton.Background = new SolidColorBrush(Colors.Transparent);
+                draw_circle = false;
+                trek_started = false;
+                paused = false;
+                StartButton.IsEnabled = true;
+                PauseButton.IsEnabled = false;
+
+                walk_time_tick = 0;
+                pause_time_tick = 0;
+                total_pause = 0;
+                ShellTile.ActiveTiles.First().Update(new IconicTileData() //update live tiles
+                {
+                    Title = "TrekMe",
+                    Count = Math.Abs(Convert.ToInt16(_dist - 0.5)),
+                    WideContent1 = string.Format("{0:f1} {1}", _dist, _dst),
+                    WideContent2 = string.Format("avg: {0:f0} {1}", _avg_speed, _spd),
+                    WideContent3 = string.Format("{0} {1} Alt:{2:f0}{3}", lon2.Text, lat2.Text, _altitude, _alt),
+                    BackgroundColor = new Color { A = 255, R = 0, G = 0, B = 255 }
+                });
+
+                trek_total_distance = 0;
+            }
+        }
+
+        private void Map_Hold(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+            GeoCoordinate lokacija = Map.ConvertViewportPointToGeoCoordinate(e.GetPosition(Map));
+            string pozicija = string.Format("{0:f4}", lokacija.Latitude) + ", " + string.Format("{0:f4}", lokacija.Longitude);
+            Map.Layers.Remove(layerPin);
+            layerPin.Remove(overlayPin);
+            pushpin1.GeoCoordinate = lokacija;
+            pushpin1.Content = pozicija;
+            overlayPin.Content = pushpin1;
+            overlayPin.GeoCoordinate = lokacija;
+            layerPin.Add(overlayPin);
+
+            Map.Layers.Add(layerPin);
         }
 
         private void PauseButton_Click(object sender, RoutedEventArgs e) //pause can be tapped to start the pause as well to continue the run
@@ -474,6 +506,7 @@ namespace TrekMe
                  break;
             }
         }
+
         private void GPS_PositionChanged(object sender, GeoPositionChangedEventArgs<GeoCoordinate> e)
         {   //event is fired every time GPS sensor detects position change, location coordinates are then fetched
             coord = new GeoCoordinate(e.Position.Location.Latitude, e.Position.Location.Longitude, e.Position.Location.Altitude, e.Position.Location.HorizontalAccuracy,
@@ -598,7 +631,11 @@ namespace TrekMe
             }
             else
             {   // when 1st position detected, center the map
-                Map.Center = coord;
+                if (center_map)
+                {
+                    Map.Center = coord;
+                    center_map = false;
+                }
                 BannerInfo.Foreground = new SolidColorBrush(Colors.Transparent); //remove warning about GPS data
                 banner.Background = new SolidColorBrush(Colors.Transparent);
                 detailLabel.Foreground = new SolidColorBrush(Color.FromArgb(0xFF,0x00,0x9E,0xFF));
@@ -643,6 +680,8 @@ namespace TrekMe
         private void CenterButton_Click(object sender, RoutedEventArgs e)
         {   // when small blue button is clicked on a map, center it
             Map.SetView(coord, Map.ZoomLevel, 0.0, MapAnimationKind.Parabolic); //heading = 0.0
+            //Map.Layers.Remove(layerPin);
+            //layerPin.Remove(overlayPin);
         }
 
         private void Map_Loaded(object sender, RoutedEventArgs e)
@@ -659,6 +698,46 @@ namespace TrekMe
         private void ApplicationBarAbout_Click(object sender, EventArgs e)
         {   // go to about page
             NavigationService.Navigate(new Uri("/About.xaml", UriKind.Relative));
+        }
+
+        private void appButtonRecord_Click(object sender, EventArgs e)
+        {   // go to about page
+            NavigationService.Navigate(new Uri("/Runs.xaml?object1=" + savedRuns, UriKind.Relative));
+        }
+
+        //Serializer to add or save user data (list) to xml file for later use
+        private static void Serialize(string fileName, object source)
+        {
+            var userStore = IsolatedStorageFile.GetUserStoreForApplication();
+
+            using (var stream = new IsolatedStorageFileStream(fileName, FileMode.Create, userStore))
+            {
+                XmlSerializer serializer = new XmlSerializer(source.GetType());
+                serializer.Serialize(stream, source);
+            }
+        }
+        //Deserializer to read saved data in form of the list that populates saved track data
+        public static ObservableCollection<string> Deserialize(string filename)
+        {
+            //public static void Deserialize<T>(ObservableCollection<T> list, string filename)
+            ObservableCollection<string> list = new ObservableCollection<string>();
+
+            var userStore = IsolatedStorageFile.GetUserStoreForApplication();
+            if (userStore.FileExists(filename))
+            {
+                using (var stream = new IsolatedStorageFileStream(filename, FileMode.Open, userStore))
+                {
+                    XmlSerializer serializer = new XmlSerializer(list.GetType());
+                    var items = (ObservableCollection<string>)serializer.Deserialize(stream);
+
+                    foreach (string item in items)
+                    {
+                        list.Add(item);
+                    }
+                }
+                return list;
+            }
+            else return new ObservableCollection<string>();
         }
 
     }

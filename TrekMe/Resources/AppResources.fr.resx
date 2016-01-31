@@ -171,7 +171,7 @@
     <value>Politique de confidentialité : cette application utilise des services de localisation pour suivre vos mouvements et de dessiner sur la carte. En aucun cas sont que les données utilisées par un développeur ou un tiers. Aucune donnée ne sera jamais adressée au serveur externe au moyen de cette application.</value>
   </data>
   <data name="MessageLocation" xml:space="preserve">
-    <value>Il ok cet application utilise emplacement est-il ? Vous pouvez le désactiver dans la page de paramètres. Vous pouvez lire la politique de confidentialité sur à propos de la page.</value>
+    <value>Il n'est pas ok, que cette application utilise les services de localisation ? Politique de confidentialité est située sur la page. Données de localisation ne sont pas utilisées en dehors de cette application. Vous pouvez la désactiver à tout moment à la page Paramètres.</value>
   </data>
   <data name="MessageLocationTitle" xml:space="preserve">
     <value>Utilisation de l'emplacement</value>
