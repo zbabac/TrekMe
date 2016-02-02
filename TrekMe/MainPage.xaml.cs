@@ -538,7 +538,7 @@ namespace TrekMe
                 var distance = coord.GetDistanceTo(previousPoint); //measure distance from previous position
                 var ticks = (System.Environment.TickCount - tick_previousPosition); //time elapsed since was at previous position
                 if (ticks == 0) current_speed = 0.0; //we can measure only if time elapsed is > 0, to avoid dividing by zero
-                
+
                 if (!paused && trek_line.Path.Count > 0)  //if movement detected calculate vars
                 {
                     /*
@@ -560,20 +560,20 @@ namespace TrekMe
                     {
                         _dst = "mil"; // unit for distance
                         _spd = "mph"; // unit for speed
-                        
+
                         _avg_speed = avg_speed * 0.62137;
                         _curr_speed = current_speed * 0.62137;
-                        
+
                         _dist = trek_total_distance * 0.62137;
                     }
                     else
                     {
                         _dst = "km";
                         _spd = "km/h";
-                        
+
                         _avg_speed = avg_speed;
                         _curr_speed = current_speed;
-                        
+
                         _dist = trek_total_distance;
                     }
                     // set values on page with defined units
@@ -582,9 +582,9 @@ namespace TrekMe
                     speedBox.Text = string.Format("{0:f0} {1}", _curr_speed, _spd);
                     speedBox2.Text = string.Format("{0:f1} {1}", _curr_speed, _spd);
                     distanceBox2.Text = string.Format("{0:f2} {1}", _dist, _dst);
-                    
+
                     caloriesLabel.Text = string.Format("{0:f0} kcal", trek_total_distance * 65);
-                    
+
                     trek_line.StrokeThickness = 5;
                 }
                 // if set in settings to rotate map with user changing heading
@@ -599,11 +599,11 @@ namespace TrekMe
                     Map.SetView(coord, Map.ZoomLevel, 0.0, MapAnimationKind.Linear);
 
                 if (coord.Longitude < 0)
-                    longitudelabel.Text = string.Format("{0:f2}⁰W ", (coord.Longitude*(-1.0))); //display latitude and longitude
+                    longitudelabel.Text = string.Format("{0:f2}⁰W ", (coord.Longitude * (-1.0))); //display latitude and longitude
                 else
                     longitudelabel.Text = string.Format("{0:f2}⁰E ", coord.Longitude);
-                if (coord.Latitude <0)
-                    latitudelabel.Text = string.Format("{0:f2}⁰S ", (coord.Latitude*(-1.0)));
+                if (coord.Latitude < 0)
+                    latitudelabel.Text = string.Format("{0:f2}⁰S ", (coord.Latitude * (-1.0)));
                 else
                     latitudelabel.Text = string.Format("{0:f2}⁰N ", coord.Latitude);
                 // set new max and min altidute reached
@@ -611,9 +611,9 @@ namespace TrekMe
                     alt_max = coord.Altitude;
                 else
                     if (coord.Altitude < alt_min)
-                        alt_min = coord.Altitude;
+                    alt_min = coord.Altitude;
                 // define units to be displayed: feet or meters
-                if(use_miles)
+                if (use_miles)
                 {
                     _alt = "ft"; // altitude units
                     _altitude = coord.Altitude * 3.28084;
@@ -633,10 +633,10 @@ namespace TrekMe
                 lat2.Text = latitudelabel.Text;
                 alt2.Text = string.Format("{0:f0} {1}", _altitude, _alt);
                 altUpDown.Text = string.Format("↑{0:f0}  ↓{1:f0} {2}", _alt_change_up, _alt_change_down, _alt);
-                
+
                 if (trek_started && !paused)
                 {
-                    
+
                     // update start tile with updated data
                     ShellTile.ActiveTiles.First().Update(new IconicTileData() //update live tiles
                     {
@@ -647,7 +647,7 @@ namespace TrekMe
                         WideContent3 = string.Format("{0} {1} Alt:{2:f0}{3}", lon2.Text, lat2.Text, _altitude, _alt),
                         BackgroundColor = new Color { A = 255, R = 255, G = 0, B = 0 }
                     });
-                    
+
                 }
             }
             else
@@ -659,10 +659,11 @@ namespace TrekMe
                 }
                 //Map.Layers.Remove(layerPin); //remove pushpin when trek started
                 //layerPin.Remove(overlayPin);
-                BannerInfo.Foreground = new SolidColorBrush(Colors.Transparent); //remove warning about GPS data
-                banner.Background = new SolidColorBrush(Colors.Transparent);
-                detailLabel.Foreground = new SolidColorBrush(Color.FromArgb(0xFF,0x00,0x9E,0xFF));
-                if (trek_started && !paused)   // if not paused, draw start circle
+            }
+            BannerInfo.Foreground = new SolidColorBrush(Colors.Transparent); //remove warning about GPS data
+            banner.Background = new SolidColorBrush(Colors.Transparent);
+            detailLabel.Foreground = new SolidColorBrush(Color.FromArgb(0xFF,0x00,0x9E,0xFF));
+            if (trek_started && !paused)   // if not paused, draw start circle
                 {
                     StartButton.Background = (LinearGradientBrush)this.Resources["linearBrush"];
                     if (draw_circle)
@@ -689,7 +690,7 @@ namespace TrekMe
                     alt_min = alt_start;
                     alt_max = alt_start;
                 }
-            }
+            
             if (trek_started)
                 trek_line.Path.Add(coord); //draw line that displays the change from the last position
             tick_previousPosition = System.Environment.TickCount; //remember time for the next position change
