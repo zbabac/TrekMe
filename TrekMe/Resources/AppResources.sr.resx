@@ -185,4 +185,13 @@
   <data name="LocationEnabled" xml:space="preserve">
     <value>Локација укључена</value>
   </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Обриши</value>
+  </data>
+  <data name="MessageDeleteRuns" xml:space="preserve">
+    <value>Да ли сте сигурни да желите да обришете све сачуване податке?</value>
+  </data>
+  <data name="SavedRuns" xml:space="preserve">
+    <value>Сачувани подаци</value>
+  </data>
 </root>

@@ -185,4 +185,13 @@
   <data name="LocationEnabled" xml:space="preserve">
     <value>Positionnement allumé</value>
   </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Supprimer</value>
+  </data>
+  <data name="MessageDeleteRuns" xml:space="preserve">
+    <value>Etes-vous sûr que vous voulez supprimer l'historique complet?</value>
+  </data>
+  <data name="SavedRuns" xml:space="preserve">
+    <value>Séries enregistrées</value>
+  </data>
 </root>

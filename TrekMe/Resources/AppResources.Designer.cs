@@ -187,20 +187,20 @@ namespace TrekMe.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to o.
-        /// </summary>
-        public static string CenterMap {
-            get {
-                return ResourceManager.GetString("CenterMap", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Current speed:.
         /// </summary>
         public static string CurrentSpeed {
             get {
                 return ResourceManager.GetString("CurrentSpeed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Delete.
+        /// </summary>
+        public static string Delete {
+            get {
+                return ResourceManager.GetString("Delete", resourceCulture);
             }
         }
         
@@ -228,15 +228,6 @@ namespace TrekMe.Resources {
         public static string Distance2 {
             get {
                 return ResourceManager.GetString("Distance2", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to &gt;.
-        /// </summary>
-        public static string GotoTab {
-            get {
-                return ResourceManager.GetString("GotoTab", resourceCulture);
             }
         }
         
@@ -318,6 +309,15 @@ namespace TrekMe.Resources {
         public static string Longitude2 {
             get {
                 return ResourceManager.GetString("Longitude2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Are you sure you want to delete complete runs history?.
+        /// </summary>
+        public static string MessageDeleteRuns {
+            get {
+                return ResourceManager.GetString("MessageDeleteRuns", resourceCulture);
             }
         }
         
@@ -417,6 +417,15 @@ namespace TrekMe.Resources {
         public static string ResourceLanguage {
             get {
                 return ResourceManager.GetString("ResourceLanguage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Saved runs.
+        /// </summary>
+        public static string SavedRuns {
+            get {
+                return ResourceManager.GetString("SavedRuns", resourceCulture);
             }
         }
         

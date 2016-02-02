@@ -290,10 +290,13 @@
   <data name="LocationEnabled" xml:space="preserve">
     <value>Location now enabled!</value>
   </data>
-  <data name="CenterMap" xml:space="preserve">
-    <value>o</value>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
   </data>
-  <data name="GotoTab" xml:space="preserve">
-    <value>&gt;</value>
+  <data name="MessageDeleteRuns" xml:space="preserve">
+    <value>Are you sure you want to delete complete runs history?</value>
+  </data>
+  <data name="SavedRuns" xml:space="preserve">
+    <value>Saved runs</value>
   </data>
 </root>

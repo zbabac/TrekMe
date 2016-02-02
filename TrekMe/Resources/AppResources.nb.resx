@@ -185,4 +185,13 @@
   <data name="LocationEnabled" xml:space="preserve">
     <value>Posisjonering slått på</value>
   </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Slett</value>
+  </data>
+  <data name="MessageDeleteRuns" xml:space="preserve">
+    <value>Er du sikker på at du vil slette hele kjører loggen?</value>
+  </data>
+  <data name="SavedRuns" xml:space="preserve">
+    <value>Lagrede kjører</value>
+  </data>
 </root>

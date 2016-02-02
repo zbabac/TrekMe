@@ -241,6 +241,10 @@
                             <TextBlock Text="{Binding Path=LocalizedResources.SpeedMap, Source={StaticResource LocalizedStrings}}" 
                                        Grid.Column="4" HorizontalAlignment="Right" VerticalAlignment="Top" Foreground="White"/>
                             <TextBlock Text="0 " Grid.Column="5" Grid.ColumnSpan="2" HorizontalAlignment="Right" VerticalAlignment="Top"  x:Name="speedBox" Foreground="White"/>
+                            <Button Content="x" x:Name="SearchButton" Click="SearchButton_Click" IsEnabled="True" Visibility="Visible"
+                        Grid.Column="0" Grid.Row="1" Opacity=".3" HorizontalAlignment="Left" Foreground="White"
+                        VerticalAlignment="Bottom" Width="40" Height="40" BorderBrush="Gray" Background="Black"/>
+
                         </Grid>
                     </Grid>
 

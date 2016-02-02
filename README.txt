@@ -8,7 +8,7 @@ or at SF: git clone ssh://zbabac@git.code.sf.net/p/trekme/code trekme-code
 Windows Phone Store location:
 http://www.windowsphone.com/s?appid=f519dba9-5601-4691-a614-2df33604452c
 
-Latest version 1.3.6
+Latest version 1.4.0
 
 Content:
  - Change logs
@@ -18,6 +18,12 @@ Content:
 
 Licensed under MIT license, so you are free to use the source code for any purpose you like, open source or commercial.
 Please, don't forget to mention me in your work. I hope that you will learn a lot, as I have learned from others.
+
+Change log since v1.4.0:
+	- added 3 new features
+	- long press on map shows pin with coordinates (longitude, latitude)
+	- tap on that pin copies coordinates to the clipboard
+	- added page that shows statistics for every run and saves it
 
 Change log since v1.3.6:
 	- added new Privacy policy regarding location (required by Microsoft)
@@ -59,6 +65,8 @@ Features:
 - starting point is shown with red or blue circle
 - pause point is shown with gray circle
 - stopping point is shown with green circle
+- long press on the map shows the pin with geo coordinates, tap on that pin copies the coordinates to the clipboard, you can share them for example via SMS or another application
+- every run is saved to the file and shown at "runs" page (click at button located at app bar)
 - settings page options: map pitch (0-70), map auto rotate option (or fixed north heading), use miles and feet (instead of m and km)
 - settings are saved automatically so that they are not lost after app exits
 - no ads, only map, location and data capabilities needed

@@ -8,13 +8,14 @@ using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using System.Collections.ObjectModel;
+using TrekMe.Resources;
 
 namespace TrekMe
 {
     public partial class Runs : PhoneApplicationPage
     {
         ObservableCollection<string> lista = new ObservableCollection<string>();
-        
+        private bool deleteRuns = false;
         public Runs()
         {
             InitializeComponent();
@@ -31,5 +32,21 @@ namespace TrekMe
                 Lista.UpdateLayout();
             }
         }
+
+        protected override void OnNavigatedFrom(System.Windows.Navigation.NavigationEventArgs e)
+        {
+            PhoneApplicationService.Current.State["deleteRuns"] = deleteRuns.ToString();
+        }
+
+        private void DeleteRunsButton_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBoxResult deleteOK = MessageBox.Show(AppResources.MessageDeleteRuns, AppResources.MessageWarningTitle, MessageBoxButton.OKCancel);
+            if (deleteOK == MessageBoxResult.OK)
+            {
+                deleteRuns = true;
+                Lista.ItemsSource.Clear();
+            }
+        }
+
     }
 }

@@ -23,23 +23,31 @@
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel Grid.Row="0" Margin="12,17,0,28">
             <TextBlock Text="TrekMe" Style="{StaticResource PhoneTextNormalStyle}"/>
-            <TextBlock Text="Saved runs" Margin="9,-7,0,0" FontSize="36"
-                       Foreground="#FF009EFF"/>
+            <TextBlock Text="{Binding Path=LocalizedResources.SavedRuns, Source={StaticResource LocalizedStrings}}" 
+                       Margin="9,-7,0,0" FontSize="36" Foreground="#FF009EFF"/>
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,60">
             <phone:LongListSelector Name="Lista" LayoutMode="List" IsGroupingEnabled="False">
                 <phone:LongListSelector.ItemTemplate>
                     <DataTemplate>
                         <ListBoxItem Margin="0,4,0,4">
                             <StackPanel>
-                                <TextBlock Text="{Binding}" TextWrapping="Wrap" Style="{StaticResource PhoneTextSubtleStyle}" FontSize="{StaticResource PhoneFontSizeSmall}"/>
+                                <TextBlock Text="{Binding}" TextWrapping="Wrap" Style="{StaticResource PhoneTextSubtleStyle}" FontSize="{StaticResource PhoneFontSizeNormal}"/>
                             </StackPanel>
                         </ListBoxItem>
                     </DataTemplate>
                 </phone:LongListSelector.ItemTemplate>
             </phone:LongListSelector>
+        </Grid>
+        <Grid x:Name="bottom" Grid.Row="2">
+            <Button x:Name="DeleteRunsButton" Content="{Binding Path=LocalizedResources.Delete, Source={StaticResource LocalizedStrings}}"
+                                Click="DeleteRunsButton_Click"
+                                VerticalAlignment="Bottom" HorizontalAlignment="Center"
+                                FontFamily="Segoe UI"
+                                FontWeight="SemiBold"
+                                FontSize="20" Padding="0,0"/>
         </Grid>
     </Grid>
 

@@ -2,92 +2,92 @@
 <ArrayOfCacheFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <CacheFile>
     <FileName>TrekMe\Resources\AppResources.resx</FileName>
-    <Checksum>154136569207591944821715346140100179217250</Checksum>
-    <ModifiedTime>2016-01-31T16:03:21.5535973</ModifiedTime>
+    <Checksum>7524479254204151654373112154244611</Checksum>
+    <ModifiedTime>2016-02-02T12:55:39.8785877</ModifiedTime>
     <CacheFileType>NeutralResource</CacheFileType>
   </CacheFile>
   <CacheFile>
     <FileName>TrekMe\MultilingualResources\TrekMe.de.xlf</FileName>
-    <Checksum>812031312352441309511815218620526241186203208</Checksum>
-    <ModifiedTime>2016-01-31T16:03:36.247444+01:00</ModifiedTime>
+    <Checksum>113511219917138180111811647911944123225141</Checksum>
+    <ModifiedTime>2016-02-02T13:30:06.6151124+01:00</ModifiedTime>
     <CacheFileType>XlfResource</CacheFileType>
   </CacheFile>
   <CacheFile>
     <FileName>TrekMe\Resources\AppResources.de.resx</FileName>
-    <Checksum>1437182197129119022224153120175715422052</Checksum>
-    <ModifiedTime>2016-01-31T16:03:36.247444+01:00</ModifiedTime>
+    <Checksum>208195167165682423315540218226333101150185</Checksum>
+    <ModifiedTime>2016-02-02T14:56:09.1642296+01:00</ModifiedTime>
     <CacheFileType>LanguageResource</CacheFileType>
   </CacheFile>
   <CacheFile>
     <FileName>TrekMe\MultilingualResources\TrekMe.es.xlf</FileName>
-    <Checksum>1171258911810222424945210261271394297190227</Checksum>
-    <ModifiedTime>2016-01-31T16:03:36.5444475+01:00</ModifiedTime>
+    <Checksum>21531721011639267210824913763419525537</Checksum>
+    <ModifiedTime>2016-02-02T13:21:03.1451236+01:00</ModifiedTime>
     <CacheFileType>XlfResource</CacheFileType>
   </CacheFile>
   <CacheFile>
     <FileName>TrekMe\Resources\AppResources.es.resx</FileName>
-    <Checksum>2471001624537351861321921856018712918166140</Checksum>
-    <ModifiedTime>2016-01-31T16:03:36.5444475+01:00</ModifiedTime>
+    <Checksum>104158381684321715855237203178141461913151</Checksum>
+    <ModifiedTime>2016-02-02T13:21:03.1501266+01:00</ModifiedTime>
     <CacheFileType>LanguageResource</CacheFileType>
   </CacheFile>
   <CacheFile>
     <FileName>TrekMe\MultilingualResources\TrekMe.fr.xlf</FileName>
-    <Checksum>2735210871672352225320668230121139241706</Checksum>
-    <ModifiedTime>2016-01-31T16:03:36.8258169+01:00</ModifiedTime>
+    <Checksum>31581387182144114601791871671861074383180</Checksum>
+    <ModifiedTime>2016-02-02T13:21:03.4431458+01:00</ModifiedTime>
     <CacheFileType>XlfResource</CacheFileType>
   </CacheFile>
   <CacheFile>
     <FileName>TrekMe\Resources\AppResources.fr.resx</FileName>
-    <Checksum>402717912525222012653818452858513145101</Checksum>
-    <ModifiedTime>2016-01-31T16:03:36.8258169+01:00</ModifiedTime>
+    <Checksum>15276159942086712549180351111757269150130</Checksum>
+    <ModifiedTime>2016-02-02T13:21:03.4451468+01:00</ModifiedTime>
     <CacheFileType>LanguageResource</CacheFileType>
   </CacheFile>
   <CacheFile>
     <FileName>TrekMe\MultilingualResources\TrekMe.nb.xlf</FileName>
-    <Checksum>6223414455157125614515223716521121312351124</Checksum>
-    <ModifiedTime>2016-01-31T16:03:37.1071844+01:00</ModifiedTime>
+    <Checksum>2021901105421924116218010741431424937109</Checksum>
+    <ModifiedTime>2016-02-02T13:21:03.7431691+01:00</ModifiedTime>
     <CacheFileType>XlfResource</CacheFileType>
   </CacheFile>
   <CacheFile>
     <FileName>TrekMe\Resources\AppResources.nb.resx</FileName>
-    <Checksum>12049772547618377178355228111101586027</Checksum>
-    <ModifiedTime>2016-01-31T16:03:37.1071844+01:00</ModifiedTime>
+    <Checksum>722501851536115013412523451203168168201183184</Checksum>
+    <ModifiedTime>2016-02-02T13:21:03.745171+01:00</ModifiedTime>
     <CacheFileType>LanguageResource</CacheFileType>
   </CacheFile>
   <CacheFile>
     <FileName>TrekMe\MultilingualResources\TrekMe.pl.xlf</FileName>
-    <Checksum>32191064214718022714648158212618880251141</Checksum>
-    <ModifiedTime>2016-01-31T16:03:37.3885537+01:00</ModifiedTime>
+    <Checksum>136325736146107451161527169241861471636</Checksum>
+    <ModifiedTime>2016-02-02T13:21:04.0731968+01:00</ModifiedTime>
     <CacheFileType>XlfResource</CacheFileType>
   </CacheFile>
   <CacheFile>
     <FileName>TrekMe\Resources\AppResources.pl.resx</FileName>
-    <Checksum>1623653658802078318766701162023211953</Checksum>
-    <ModifiedTime>2016-01-31T16:03:37.3885537+01:00</ModifiedTime>
+    <Checksum>1042008138912219675912503221201199170225</Checksum>
+    <ModifiedTime>2016-02-02T13:21:04.0741955+01:00</ModifiedTime>
     <CacheFileType>LanguageResource</CacheFileType>
   </CacheFile>
   <CacheFile>
     <FileName>TrekMe\MultilingualResources\TrekMe.pt.xlf</FileName>
-    <Checksum>15224220518598108196921406412524710312264122</Checksum>
-    <ModifiedTime>2016-01-31T16:03:37.6649756+01:00</ModifiedTime>
+    <Checksum>563281051701393513244105105140103793</Checksum>
+    <ModifiedTime>2016-02-02T13:21:04.3858741+01:00</ModifiedTime>
     <CacheFileType>XlfResource</CacheFileType>
   </CacheFile>
   <CacheFile>
     <FileName>TrekMe\Resources\AppResources.pt.resx</FileName>
-    <Checksum>5922824271166251614019397229711873395166</Checksum>
-    <ModifiedTime>2016-01-31T16:03:37.6649756+01:00</ModifiedTime>
+    <Checksum>185211452522392191991411051571741773224810116</Checksum>
+    <ModifiedTime>2016-02-02T13:21:04.3878542+01:00</ModifiedTime>
     <CacheFileType>LanguageResource</CacheFileType>
   </CacheFile>
   <CacheFile>
     <FileName>TrekMe\MultilingualResources\TrekMe.sr.xlf</FileName>
-    <Checksum>1626623879347914125771767113318419437198</Checksum>
-    <ModifiedTime>2016-01-31T16:03:37.9463632+01:00</ModifiedTime>
+    <Checksum>1379555177582131351131421353619650244155</Checksum>
+    <ModifiedTime>2016-02-02T13:21:04.6958806+01:00</ModifiedTime>
     <CacheFileType>XlfResource</CacheFileType>
   </CacheFile>
   <CacheFile>
     <FileName>TrekMe\Resources\AppResources.sr.resx</FileName>
-    <Checksum>4023523150113607189164142204121250636110</Checksum>
-    <ModifiedTime>2016-01-31T16:03:37.9463632+01:00</ModifiedTime>
+    <Checksum>204101051224858241022646206161190774114</Checksum>
+    <ModifiedTime>2016-02-02T13:21:04.7008778+01:00</ModifiedTime>
     <CacheFileType>LanguageResource</CacheFileType>
   </CacheFile>
 </ArrayOfCacheFile>

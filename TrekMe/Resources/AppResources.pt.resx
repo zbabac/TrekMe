@@ -185,4 +185,13 @@
   <data name="LocationEnabled" xml:space="preserve">
     <value>Localização ligado</value>
   </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Excluir</value>
+  </data>
+  <data name="MessageDeleteRuns" xml:space="preserve">
+    <value>Tem certeza de que deseja excluir completa executa o histórico?</value>
+  </data>
+  <data name="SavedRuns" xml:space="preserve">
+    <value>Execuções salvas</value>
+  </data>
 </root>

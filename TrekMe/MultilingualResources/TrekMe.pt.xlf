@@ -236,13 +236,17 @@
           <source>Location now enabled!</source>
           <target state="translated">Localização ligado</target>
         </trans-unit>
-        <trans-unit id="CenterMap" translate="yes" xml:space="preserve">
-          <source>o</source>
-          <target state="new">o</target>
+        <trans-unit id="Delete" translate="yes" xml:space="preserve">
+          <source>Delete</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Excluir</target>
         </trans-unit>
-        <trans-unit id="GotoTab" translate="yes" xml:space="preserve">
-          <source>&gt;</source>
-          <target state="new">&gt;</target>
+        <trans-unit id="MessageDeleteRuns" translate="yes" xml:space="preserve">
+          <source>Are you sure you want to delete complete runs history?</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Tem certeza de que deseja excluir completa executa o histórico?</target>
+        </trans-unit>
+        <trans-unit id="SavedRuns" translate="yes" xml:space="preserve">
+          <source>Saved runs</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Execuções salvas</target>
         </trans-unit>
       </group>
     </body>

@@ -71,7 +71,7 @@ namespace TrekMe
         MapLayer layerPin = new MapLayer();//layer for showing position on map long press
         Pushpin pushpin1 = new Pushpin();//pushpin that displays gps position on map
         MapOverlay overlayPin = new MapOverlay();//overlay for pin
-        private bool center_map = true;//center the map just on first location detection
+        private bool center_map = true, delete_Runs = false;//center the map just on first location detection
         ObservableCollection<string> savedRuns = new ObservableCollection<string>(); //save each run in list that is saved in Isolated Storage for later use
 
         public MainPage()
@@ -81,6 +81,8 @@ namespace TrekMe
             ApplicationBarIconButton appButtonSettings1 = (ApplicationBarIconButton)ApplicationBar.Buttons[0];
             ApplicationBarIconButton appButtonAbout1 = (ApplicationBarIconButton)ApplicationBar.Buttons[1];
             ApplicationBarIconButton appButtonRecord1 = (ApplicationBarIconButton)ApplicationBar.Buttons[2];
+
+            pushpin1.MouseLeftButtonUp += new System.Windows.Input.MouseButtonEventHandler(PushpinTap);
             // load settings from isolated storage
             if (!settings.Contains("settingLocation"))
             {
@@ -120,38 +122,47 @@ namespace TrekMe
                 case "en":
                     appButtonSettings1.Text = "settings";
                     appButtonAbout1.Text = "about";
+                    appButtonRecord1.Text = "runs";
                     break;
                 case "sr":
                     appButtonSettings1.Text = "подеси";
                     appButtonAbout1.Text = "инфо";
+                    appButtonRecord1.Text = "историја";
                     break;
                 case "nb":
                     appButtonSettings1.Text = "innstillinger";
                     appButtonAbout1.Text = "om";
+                    appButtonRecord1.Text = "løper";
                     break;
                 case "de":
-                    appButtonSettings1.Text = "einstellungen";
-                    appButtonAbout1.Text = "über";
+                    appButtonSettings1.Text = "Einstellungen";
+                    appButtonAbout1.Text = "Info";
+                    appButtonRecord1.Text = "Läufe";
                     break;
                 case "fr":
                     appButtonSettings1.Text = "paramètres";
                     appButtonAbout1.Text = "environ";
+                    appButtonRecord1.Text = "cours";
                     break;
                 case "es":
                     appButtonSettings1.Text = "configuración";
                     appButtonAbout1.Text = "sobre";
+                    appButtonRecord1.Text = "curso";
                     break;
                 case "pt":
                     appButtonSettings1.Text = "configurações";
                     appButtonAbout1.Text = "sobre";
+                    appButtonRecord1.Text = "curso";
                     break;
                 case "pl":
                     appButtonSettings1.Text = "ustawienia";
                     appButtonAbout1.Text = "info";
+                    appButtonRecord1.Text = "trasy";
                     break;
                 default:
                     appButtonSettings1.Text = "settings";
                     appButtonAbout1.Text = "about";
+                    appButtonRecord1.Text = "runs";
                     break;
             }
             // draw a line for a run
@@ -227,8 +238,18 @@ namespace TrekMe
                 string miles = (string)PhoneApplicationService.Current.State["miles"];
                 use_miles = Convert.ToBoolean(miles);
             }
-            // save settings section when navigated from Settings page
-            settings["settingLocation"] = location;
+            //if signal sent from page Runs, then delete run history from user file
+            if (PhoneApplicationService.Current.State.ContainsKey("deleteRuns"))
+            {
+                if (delete_Runs)
+                {
+                    savedRuns.Clear();
+                    Serialize("Treks", savedRuns);
+                }
+            }
+
+                // save settings section when navigated from Settings page
+                settings["settingLocation"] = location;
             settings["settingPitch"] = map_pitch;
             settings["settingRotate"] = rotate_map;
             settings["settingMiles"] = use_miles;
@@ -334,7 +355,7 @@ namespace TrekMe
             if (trek_started)
             {
                 string currentDate = String.Format("{0:d}", System.DateTime.Now);
-                savedRuns.Add(currentDate + " | " + distanceBox2.Text + " | " + elapsedTime2.Text + " | " + avgSpeed.Text);
+                savedRuns.Add(currentDate + " | " + distanceBox2.Text + " | " + elapsedTime2.Text + " | " + avgSpeed.Text+ " | ↑↓ " + (alt_max - alt_min).ToString() + _alt);
                 Serialize("Treks", savedRuns);//save the last run
                                               //Stop is tapped so change display elements as they were set for start
                 colour = Colors.Green; //last point of the run is green
@@ -385,7 +406,7 @@ namespace TrekMe
         private void Map_Hold(object sender, System.Windows.Input.GestureEventArgs e)
         {
             GeoCoordinate lokacija = Map.ConvertViewportPointToGeoCoordinate(e.GetPosition(Map));
-            string pozicija = string.Format("{0:f4}", lokacija.Latitude) + ", " + string.Format("{0:f4}", lokacija.Longitude);
+            string pozicija = string.Format("{0:f6}", lokacija.Latitude) + ", " + string.Format("{0:f6}", lokacija.Longitude);
             Map.Layers.Remove(layerPin);
             layerPin.Remove(overlayPin);
             pushpin1.GeoCoordinate = lokacija;
@@ -636,6 +657,8 @@ namespace TrekMe
                     Map.Center = coord;
                     center_map = false;
                 }
+                //Map.Layers.Remove(layerPin); //remove pushpin when trek started
+                //layerPin.Remove(overlayPin);
                 BannerInfo.Foreground = new SolidColorBrush(Colors.Transparent); //remove warning about GPS data
                 banner.Background = new SolidColorBrush(Colors.Transparent);
                 detailLabel.Foreground = new SolidColorBrush(Color.FromArgb(0xFF,0x00,0x9E,0xFF));
@@ -672,6 +695,12 @@ namespace TrekMe
             tick_previousPosition = System.Environment.TickCount; //remember time for the next position change
             Map.Pitch = map_pitch;
         }
+
+        private void SearchButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
         private void PivotButton_Click(object sender, RoutedEventArgs e)
         {   //when small red button is clicked on pivot item with a map, change the view to pivot item with run details
             pivotControl.SelectedIndex = 0;
@@ -738,6 +767,17 @@ namespace TrekMe
                 return list;
             }
             else return new ObservableCollection<string>();
+        }
+
+        private void PushpinTap(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            Pushpin pushpin = sender as Pushpin;
+            if (pushpin.Content != null)
+            {
+                Clipboard.SetText(pushpin.Content.ToString());
+            }
+            // to stop the event from going to the parent map control
+            e.Handled = true;
         }
 
     }

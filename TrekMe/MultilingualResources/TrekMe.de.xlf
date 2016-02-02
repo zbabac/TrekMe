@@ -66,7 +66,7 @@
         </trans-unit>
         <trans-unit id="PauseButton" translate="yes" xml:space="preserve">
           <source>Pause</source>
-          <target state="translated" state-qualifier="tm-suggestion">Anhalten</target>
+          <target state="translated">Pause</target>
         </trans-unit>
         <trans-unit id="SpeedMap" translate="yes" xml:space="preserve">
           <source> Speed:</source>
@@ -78,7 +78,7 @@
         </trans-unit>
         <trans-unit id="StopButton" translate="yes" xml:space="preserve">
           <source>Stop</source>
-          <target state="translated" state-qualifier="tm-suggestion">Anhalten</target>
+          <target state="translated">Stop</target>
         </trans-unit>
         <trans-unit id="SwipeText" translate="yes" xml:space="preserve">
           <source>-- swipe left or right to see the map --</source>
@@ -236,13 +236,17 @@
           <source>Location now enabled!</source>
           <target state="translated">Positionierung eingeschaltet</target>
         </trans-unit>
-        <trans-unit id="CenterMap" translate="yes" xml:space="preserve">
-          <source>o</source>
-          <target state="new">o</target>
+        <trans-unit id="Delete" translate="yes" xml:space="preserve">
+          <source>Delete</source>
+          <target state="translated">Löschen</target>
         </trans-unit>
-        <trans-unit id="GotoTab" translate="yes" xml:space="preserve">
-          <source>&gt;</source>
-          <target state="new">&gt;</target>
+        <trans-unit id="MessageDeleteRuns" translate="yes" xml:space="preserve">
+          <source>Are you sure you want to delete complete runs history?</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Sind wirklich löschen vollständige Historie ausgeführt wird?</target>
+        </trans-unit>
+        <trans-unit id="SavedRuns" translate="yes" xml:space="preserve">
+          <source>Saved runs</source>
+          <target state="translated">Gespeicherten Läufe</target>
         </trans-unit>
       </group>
     </body>

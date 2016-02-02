@@ -57,7 +57,7 @@
     <value>Abstand:  </value>
   </data>
   <data name="PauseButton" xml:space="preserve">
-    <value>Anhalten</value>
+    <value>Pause</value>
   </data>
   <data name="SpeedMap" xml:space="preserve">
     <value> Geschw.:</value>
@@ -66,7 +66,7 @@
     <value>Start</value>
   </data>
   <data name="StopButton" xml:space="preserve">
-    <value>Anhalten</value>
+    <value>Stop</value>
   </data>
   <data name="SwipeText" xml:space="preserve">
     <value>Swipe nach links oder rechts, um die Karte zu sehen</value>
@@ -184,5 +184,14 @@
   </data>
   <data name="LocationEnabled" xml:space="preserve">
     <value>Positionierung eingeschaltet</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Löschen</value>
+  </data>
+  <data name="MessageDeleteRuns" xml:space="preserve">
+    <value>Sind wirklich löschen vollständige Historie ausgeführt wird?</value>
+  </data>
+  <data name="SavedRuns" xml:space="preserve">
+    <value>Gespeicherten Läufe</value>
   </data>
 </root>
