@@ -34,7 +34,7 @@
                     <DataTemplate>
                         <ListBoxItem Margin="0,4,0,4">
                             <StackPanel>
-                                <TextBlock Text="{Binding}" TextWrapping="Wrap" Style="{StaticResource PhoneTextAccentStyle}" FontSize="{StaticResource PhoneFontSizeSmall}"/>
+                                <TextBlock Text="{Binding}" TextWrapping="Wrap" Style="{StaticResource PhoneTextNormalStyle}" FontSize="{StaticResource PhoneFontSizeSmall}"/>
                             </StackPanel>
                         </ListBoxItem>
                     </DataTemplate>

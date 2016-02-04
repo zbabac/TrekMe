@@ -248,6 +248,10 @@
           <source>Saved runs</source>
           <target state="translated">Carreras guardadas</target>
         </trans-unit>
+        <trans-unit id="CopiedToClipboard" translate="yes" xml:space="preserve">
+          <source>Copied to Clipboard</source>
+          <target state="new">Copied to Clipboard</target>
+        </trans-unit>
       </group>
     </body>
   </file>

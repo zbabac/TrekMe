@@ -16,6 +16,7 @@ using TrekMe.Resources;
 using System.Collections.ObjectModel;
 using System.IO;
 using System.Collections.Generic;
+using System.Globalization;
 
 namespace TrekMe
 {   
@@ -81,8 +82,10 @@ namespace TrekMe
             ApplicationBarIconButton appButtonSettings1 = (ApplicationBarIconButton)ApplicationBar.Buttons[0];
             ApplicationBarIconButton appButtonAbout1 = (ApplicationBarIconButton)ApplicationBar.Buttons[1];
             ApplicationBarIconButton appButtonRecord1 = (ApplicationBarIconButton)ApplicationBar.Buttons[2];
-
+            // event handler for tapping the pushpin
             pushpin1.MouseLeftButtonUp += new System.Windows.Input.MouseButtonEventHandler(PushpinTap);
+            // event handler for tapping the map
+            Map.MouseLeftButtonUp += new System.Windows.Input.MouseButtonEventHandler(MapTap);
             // load settings from isolated storage
             if (!settings.Contains("settingLocation"))
             {
@@ -406,7 +409,7 @@ namespace TrekMe
         private void Map_Hold(object sender, System.Windows.Input.GestureEventArgs e)
         {
             GeoCoordinate lokacija = Map.ConvertViewportPointToGeoCoordinate(e.GetPosition(Map));
-            string pozicija = string.Format("{0:f6}", lokacija.Latitude) + ", " + string.Format("{0:f6}", lokacija.Longitude);
+            string pozicija = lokacija.Latitude.ToString("f6", CultureInfo.InvariantCulture) + ", " + lokacija.Longitude.ToString("f6", CultureInfo.InvariantCulture);
             Map.Layers.Remove(layerPin);
             layerPin.Remove(overlayPin);
             pushpin1.GeoCoordinate = lokacija;
@@ -780,10 +783,19 @@ namespace TrekMe
             Pushpin pushpin = sender as Pushpin;
             if (pushpin.Content != null)
             {
+                int n_position = pushpin.Content.ToString().IndexOf('\n');
+                if (n_position != -1)   //if it is already copied to clipboard, then remove that string before copying again
+                    pushpin1.Content = pushpin.Content.ToString().Substring(0, n_position);
                 Clipboard.SetText(pushpin.Content.ToString());
+                pushpin1.Content = pushpin1.Content + "\n" + AppResources.CopiedToClipboard; //add info that it is copied to clipboard
             }
             // to stop the event from going to the parent map control
             e.Handled = true;
+        }
+        private void MapTap(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {   // remove previously added pin on short tap
+            Map.Layers.Remove(layerPin);
+            layerPin.Remove(overlayPin);
         }
 
     }
