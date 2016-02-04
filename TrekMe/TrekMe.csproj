@@ -15,7 +15,7 @@
     <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
     <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
     <SilverlightApplication>true</SilverlightApplication>
-    <SupportedCultures>nb%3bpl%3bfr%3bde%3bsr</SupportedCultures>
+    <SupportedCultures>nb%3bpl%3bfr%3bde%3bsr%3bpt%3bes</SupportedCultures>
     <XapOutputs>true</XapOutputs>
     <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
     <XapFilename>TrekMe_$(Configuration)_$(Platform).xap</XapFilename>
@@ -212,6 +212,7 @@
     <EmbeddedResource Include="Resources\AppResources.fr.resx" />
     <EmbeddedResource Include="Resources\AppResources.nb.resx" />
     <EmbeddedResource Include="Resources\AppResources.pl.resx" />
+    <EmbeddedResource Include="Resources\AppResources.pt-PT.resx" />
     <EmbeddedResource Include="Resources\AppResources.pt.resx" />
     <EmbeddedResource Include="Resources\AppResources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

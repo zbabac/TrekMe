@@ -1,9 +1,11 @@
 Compile filter specified.  Only the following files will be processed:
 c:\users\ba100065\documents\visual studio 2015\projects\trekme\trekme\bin\release\mdil\trekme.dll
 c:\users\ba100065\documents\visual studio 2015\projects\trekme\trekme\bin\release\mdil\de\trekme.resources.dll
+c:\users\ba100065\documents\visual studio 2015\projects\trekme\trekme\bin\release\mdil\es\trekme.resources.dll
 c:\users\ba100065\documents\visual studio 2015\projects\trekme\trekme\bin\release\mdil\fr\trekme.resources.dll
 c:\users\ba100065\documents\visual studio 2015\projects\trekme\trekme\bin\release\mdil\nb\trekme.resources.dll
 c:\users\ba100065\documents\visual studio 2015\projects\trekme\trekme\bin\release\mdil\pl\trekme.resources.dll
+c:\users\ba100065\documents\visual studio 2015\projects\trekme\trekme\bin\release\mdil\pt\trekme.resources.dll
 c:\users\ba100065\documents\visual studio 2015\projects\trekme\trekme\bin\release\mdil\sr\trekme.resources.dll
 Processing file: C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Bin\Release\MDIL\Microsoft.Phone.Controls.Toolkit.dll
 File C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Bin\Release\MDIL\Microsoft.Phone.Controls.Toolkit.dll is not in the compile filter. Skipping.
@@ -19,12 +21,16 @@ Processing file: C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\
 File C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Bin\Release\MDIL\WMAppManifest.xml is not in the compile filter. Skipping.
 Processing file: C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Bin\Release\MDIL\de\TrekMe.resources.dll
 File C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Bin\Release\MDIL\de\TrekMe.resources.dll is not an IL assembly. Copying.
+Processing file: C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Bin\Release\MDIL\es\TrekMe.resources.dll
+File C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Bin\Release\MDIL\es\TrekMe.resources.dll is not an IL assembly. Copying.
 Processing file: C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Bin\Release\MDIL\fr\TrekMe.resources.dll
 File C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Bin\Release\MDIL\fr\TrekMe.resources.dll is not an IL assembly. Copying.
 Processing file: C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Bin\Release\MDIL\nb\TrekMe.resources.dll
 File C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Bin\Release\MDIL\nb\TrekMe.resources.dll is not an IL assembly. Copying.
 Processing file: C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Bin\Release\MDIL\pl\TrekMe.resources.dll
 File C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Bin\Release\MDIL\pl\TrekMe.resources.dll is not an IL assembly. Copying.
+Processing file: C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Bin\Release\MDIL\pt\TrekMe.resources.dll
+File C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Bin\Release\MDIL\pt\TrekMe.resources.dll is not an IL assembly. Copying.
 Processing file: C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Bin\Release\MDIL\sr\TrekMe.resources.dll
 File C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Bin\Release\MDIL\sr\TrekMe.resources.dll is not an IL assembly. Copying.
 Processing file: C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Bin\Release\MDIL\sr-Cyrl\TrekMe.resources.dll

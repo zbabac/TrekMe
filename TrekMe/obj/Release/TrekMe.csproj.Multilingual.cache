@@ -68,14 +68,14 @@
   </CacheFile>
   <CacheFile>
     <FileName>TrekMe\MultilingualResources\TrekMe.pt.xlf</FileName>
-    <Checksum>563281051701393513244105105140103793</Checksum>
-    <ModifiedTime>2016-02-02T13:21:04.3858741+01:00</ModifiedTime>
+    <Checksum>175675714023191361539913113238173238228</Checksum>
+    <ModifiedTime>2016-02-04T09:07:16.3784246+01:00</ModifiedTime>
     <CacheFileType>XlfResource</CacheFileType>
   </CacheFile>
   <CacheFile>
     <FileName>TrekMe\Resources\AppResources.pt.resx</FileName>
-    <Checksum>185211452522392191991411051571741773224810116</Checksum>
-    <ModifiedTime>2016-02-02T13:21:04.3878542+01:00</ModifiedTime>
+    <Checksum>19937195331393525416613831155311636214035</Checksum>
+    <ModifiedTime>2016-02-04T09:10:41.5272895+01:00</ModifiedTime>
     <CacheFileType>LanguageResource</CacheFileType>
   </CacheFile>
   <CacheFile>

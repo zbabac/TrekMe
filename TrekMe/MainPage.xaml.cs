@@ -266,7 +266,7 @@ namespace TrekMe
                 
                 StartButton.IsEnabled = false;
             }
-            else
+            else if (!trek_started)
             {
                 BannerInfo.Foreground = new SolidColorBrush(Colors.White);
                 banner.Background = new SolidColorBrush(Colors.Blue);
@@ -659,11 +659,11 @@ namespace TrekMe
                 }
                 //Map.Layers.Remove(layerPin); //remove pushpin when trek started
                 //layerPin.Remove(overlayPin);
-            }
-            BannerInfo.Foreground = new SolidColorBrush(Colors.Transparent); //remove warning about GPS data
-            banner.Background = new SolidColorBrush(Colors.Transparent);
-            detailLabel.Foreground = new SolidColorBrush(Color.FromArgb(0xFF,0x00,0x9E,0xFF));
-            if (trek_started && !paused)   // if not paused, draw start circle
+
+                BannerInfo.Foreground = new SolidColorBrush(Colors.Transparent); //remove warning about GPS data
+                banner.Background = new SolidColorBrush(Colors.Transparent);
+                detailLabel.Foreground = new SolidColorBrush(Color.FromArgb(0xFF, 0x00, 0x9E, 0xFF));
+                if (trek_started && !paused)   // if not paused, draw start circle
                 {
                     StartButton.Background = (LinearGradientBrush)this.Resources["linearBrush"];
                     if (draw_circle)
@@ -690,9 +690,14 @@ namespace TrekMe
                     alt_min = alt_start;
                     alt_max = alt_start;
                 }
-            
+            }
             if (trek_started)
+            {
                 trek_line.Path.Add(coord); //draw line that displays the change from the last position
+                //BannerInfo.Foreground = new SolidColorBrush(Colors.Transparent); //remove warning about GPS data
+                //banner.Background = new SolidColorBrush(Colors.Transparent);
+                //detailLabel.Foreground = new SolidColorBrush(Color.FromArgb(0xFF, 0x00, 0x9E, 0xFF));
+            }
             tick_previousPosition = System.Environment.TickCount; //remember time for the next position change
             Map.Pitch = map_pitch;
         }

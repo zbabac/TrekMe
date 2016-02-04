@@ -22,11 +22,11 @@
         </trans-unit>
         <trans-unit id="AppBarButtonText" translate="yes" xml:space="preserve">
           <source>add</source>
-          <target state="translated" state-qualifier="mt-suggestion">Adicionar</target>
+          <target state="translated">add</target>
         </trans-unit>
         <trans-unit id="AppBarMenuItemText" translate="yes" xml:space="preserve">
           <source>Menu Item</source>
-          <target state="translated" state-qualifier="mt-suggestion">Item de menu</target>
+          <target state="translated">Menu Item</target>
         </trans-unit>
         <trans-unit id="Alt" translate="yes" xml:space="preserve">
           <source>Alt: </source>

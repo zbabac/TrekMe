@@ -142,3 +142,6 @@ C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Bin\Debug\
 C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Bin\Debug\zh-TW\Microsoft.Phone.Controls.Toolkit.resources.dll
 C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Debug\TrekMe.csprojResolveAssemblyReference.cache
 C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Debug\Runs.g.cs
+C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Bin\Debug\pt-PT\TrekMe.resources.dll
+C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Debug\TrekMe.Resources.AppResources.pt-PT.resources
+C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Debug\pt-PT\TrekMe.resources.dll
