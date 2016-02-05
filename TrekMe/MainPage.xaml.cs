@@ -162,6 +162,11 @@ namespace TrekMe
                     appButtonAbout1.Text = "info";
                     appButtonRecord1.Text = "trasy";
                     break;
+                case "it":
+                    appButtonSettings1.Text = "impostazioni";
+                    appButtonAbout1.Text = "su app";
+                    appButtonRecord1.Text = "percorsi";
+                    break;
                 default:
                     appButtonSettings1.Text = "settings";
                     appButtonAbout1.Text = "about";

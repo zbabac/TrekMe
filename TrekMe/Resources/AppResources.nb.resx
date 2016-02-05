@@ -194,4 +194,7 @@
   <data name="SavedRuns" xml:space="preserve">
     <value>Lagrede kjører</value>
   </data>
+  <data name="CopiedToClipboard" xml:space="preserve">
+    <value>Kopiert til utklippstavlen</value>
+  </data>
 </root>

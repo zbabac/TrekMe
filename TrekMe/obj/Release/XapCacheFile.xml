@@ -1,12 +1,12 @@
-﻿<xapCache source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Bin\Release\TrekMe_Release_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="2016-02-04 19:39:45">
-  <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Release\TrekMe.dll" archivePath="TrekMe.dll" lastWriteTime="2016-02-04 19:39:43" />
-  <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Release\de\TrekMe.resources.dll" archivePath="de\TrekMe.resources.dll" lastWriteTime="2016-02-04 19:39:43" />
-  <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Release\es\TrekMe.resources.dll" archivePath="es\TrekMe.resources.dll" lastWriteTime="2016-02-04 19:39:43" />
-  <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Release\fr\TrekMe.resources.dll" archivePath="fr\TrekMe.resources.dll" lastWriteTime="2016-02-04 19:39:43" />
-  <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Release\nb\TrekMe.resources.dll" archivePath="nb\TrekMe.resources.dll" lastWriteTime="2016-02-04 19:39:43" />
-  <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Release\pl\TrekMe.resources.dll" archivePath="pl\TrekMe.resources.dll" lastWriteTime="2016-02-04 19:39:44" />
-  <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Release\pt\TrekMe.resources.dll" archivePath="pt\TrekMe.resources.dll" lastWriteTime="2016-02-04 19:39:44" />
-  <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Release\sr\TrekMe.resources.dll" archivePath="sr\TrekMe.resources.dll" lastWriteTime="2016-02-04 19:39:44" />
+﻿<xapCache source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Bin\Release\TrekMe_Release_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="2016-02-05 19:50:08">
+  <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Release\TrekMe.dll" archivePath="TrekMe.dll" lastWriteTime="2016-02-05 19:50:06" />
+  <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Release\de\TrekMe.resources.dll" archivePath="de\TrekMe.resources.dll" lastWriteTime="2016-02-05 19:50:06" />
+  <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Release\es\TrekMe.resources.dll" archivePath="es\TrekMe.resources.dll" lastWriteTime="2016-02-05 19:50:06" />
+  <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Release\fr\TrekMe.resources.dll" archivePath="fr\TrekMe.resources.dll" lastWriteTime="2016-02-05 19:50:07" />
+  <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Release\it\TrekMe.resources.dll" archivePath="it\TrekMe.resources.dll" lastWriteTime="2016-02-05 19:50:07" />
+  <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Release\nb\TrekMe.resources.dll" archivePath="nb\TrekMe.resources.dll" lastWriteTime="2016-02-05 19:50:07" />
+  <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Release\pl\TrekMe.resources.dll" archivePath="pl\TrekMe.resources.dll" lastWriteTime="2016-02-05 19:50:07" />
+  <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\obj\Release\pt\TrekMe.resources.dll" archivePath="pt\TrekMe.resources.dll" lastWriteTime="2016-02-05 19:50:07" />
   <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="2014-02-01 20:02:52" />
   <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Assets\AppBar1\feature.calendar.png" archivePath="Assets\AppBar1\feature.calendar.png" lastWriteTime="2013-01-01 17:57:00" />
   <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Assets\AppBar\feature.calendar.png" archivePath="Assets\AppBar\feature.calendar.png" lastWriteTime="2013-01-01 17:57:00" />
@@ -30,9 +30,9 @@
   <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Toolkit.Content\ApplicationBar.Check.png" archivePath="Toolkit.Content\ApplicationBar.Check.png" lastWriteTime="2016-01-31 16:48:19" />
   <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Toolkit.Content\ApplicationBar.Delete.png" archivePath="Toolkit.Content\ApplicationBar.Delete.png" lastWriteTime="2016-01-31 16:48:19" />
   <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Toolkit.Content\ApplicationBar.Select.png" archivePath="Toolkit.Content\ApplicationBar.Select.png" lastWriteTime="2016-01-31 16:48:19" />
-  <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Bin\Release\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="2016-02-04 09:49:48" />
+  <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Bin\Release\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="2016-02-05 09:46:35" />
   <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Bin\Release\Fonts\Warenhaus-Standard.otf" archivePath="Fonts\Warenhaus-Standard.otf" lastWriteTime="2014-07-30 21:04:55" />
   <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\packages\WPtoolkit.4.2013.08.16\lib\wp8\Microsoft.Phone.Controls.Toolkit.dll" archivePath="Microsoft.Phone.Controls.Toolkit.dll" lastWriteTime="2016-01-31 16:48:17" />
   <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Assets\running-icon300.png" archivePath="Assets\running-icon300.png" lastWriteTime="2015-06-05 18:09:05" />
-  <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Bin\Release\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="2016-02-04 19:31:39" />
+  <file source="C:\Users\ba100065\Documents\Visual Studio 2015\Projects\TrekMe\TrekMe\Bin\Release\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="2016-02-05 09:46:57" />
 </xapCache>

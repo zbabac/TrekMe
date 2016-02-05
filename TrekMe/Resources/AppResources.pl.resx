@@ -194,4 +194,7 @@
   <data name="SavedRuns" xml:space="preserve">
     <value>Uruchamia zapisane</value>
   </data>
+  <data name="CopiedToClipboard" xml:space="preserve">
+    <value>Skopiowany do schowka</value>
+  </data>
 </root>

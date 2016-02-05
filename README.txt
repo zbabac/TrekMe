@@ -8,7 +8,7 @@ or at SF: git clone ssh://zbabac@git.code.sf.net/p/trekme/code trekme-code
 Windows Phone Store location:
 http://www.windowsphone.com/s?appid=f519dba9-5601-4691-a614-2df33604452c
 
-Latest version 1.4.6
+Latest version 1.4.6.2
 
 Content:
  - Change logs
@@ -19,12 +19,13 @@ Content:
 Licensed under MIT license, so you are free to use the source code for any purpose you like, open source or commercial.
 Please, don't forget to mention me in your work. I hope that you will learn a lot, as I have learned from others.
 
-Change log since v1.4.6:
+Change log since v1.4.6.2:
 	- added 3 new features
 	- long press on map shows pin with coordinates (longitude, latitude)
-	- tap on that pin copies coordinates to the clipboard
+	- tap on that pin copies coordinates to the clipboard, tap anywhere else removes the pin
 	- added page that shows statistics for every run and saves it
 	- fixed coordinates decimal format
+	- added language Italian
 
 Change log since v1.3.6:
 	- added new Privacy policy regarding location (required by Microsoft)

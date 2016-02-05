@@ -34,7 +34,7 @@
         </trans-unit>
         <trans-unit id="AverageSpeed" translate="yes" xml:space="preserve">
           <source>Average speed:</source>
-          <target state="translated">Durchschnittliche Geschw.:</target>
+          <target state="translated">Durchschnittl. Geschw.:</target>
         </trans-unit>
         <trans-unit id="BannerInfo" translate="yes" xml:space="preserve">
           <source>Fetching GPS data, please wait.</source>
@@ -250,7 +250,7 @@
         </trans-unit>
         <trans-unit id="CopiedToClipboard" translate="yes" xml:space="preserve">
           <source>Copied to Clipboard</source>
-          <target state="new">Copied to Clipboard</target>
+          <target state="translated">In die Zwischenablage kopiert</target>
         </trans-unit>
       </group>
     </body>

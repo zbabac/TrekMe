@@ -33,7 +33,7 @@
     <value>Höhe: </value>
   </data>
   <data name="AverageSpeed" xml:space="preserve">
-    <value>Durchschnittliche Geschw.:</value>
+    <value>Durchschnittl. Geschw.:</value>
   </data>
   <data name="BannerInfo" xml:space="preserve">
     <value>Abrufen von GPS warten-Daten, bitte.</value>
@@ -193,5 +193,8 @@
   </data>
   <data name="SavedRuns" xml:space="preserve">
     <value>Gespeicherten Läufe</value>
+  </data>
+  <data name="CopiedToClipboard" xml:space="preserve">
+    <value>In die Zwischenablage kopiert</value>
   </data>
 </root>

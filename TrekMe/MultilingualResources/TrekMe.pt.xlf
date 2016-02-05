@@ -250,7 +250,7 @@
         </trans-unit>
         <trans-unit id="CopiedToClipboard" translate="yes" xml:space="preserve">
           <source>Copied to Clipboard</source>
-          <target state="new">Copied to Clipboard</target>
+          <target state="translated">Copiados para a área de transferência</target>
         </trans-unit>
       </group>
     </body>

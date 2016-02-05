@@ -17,59 +17,50 @@
     <comment>Controls the FlowDirection for all elements in the RootFrame. Set to the traditional direction of this resource file's language</comment>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
-    <value>pt</value>
+    <value>it</value>
     <comment>Controls the Language and ensures that the font for all elements in the RootFrame aligns with the app's language. Set to the language code of this resource file's language.</comment>
-  </data>
-  <data name="ApplicationTitle" xml:space="preserve">
-    <value>TrekMe</value>
-  </data>
-  <data name="AppBarButtonText" xml:space="preserve">
-    <value>add</value>
-  </data>
-  <data name="AppBarMenuItemText" xml:space="preserve">
-    <value>Menu Item</value>
   </data>
   <data name="Alt" xml:space="preserve">
     <value>ALT: </value>
   </data>
   <data name="AverageSpeed" xml:space="preserve">
-    <value>Velocidade média:</value>
+    <value>Velocità media:</value>
   </data>
   <data name="BannerInfo" xml:space="preserve">
-    <value>Buscando GPS dados, aguarde.</value>
+    <value>GPS di recupero dati, è in corso.</value>
   </data>
   <data name="Break" xml:space="preserve">
-    <value>Pausa:  </value>
+    <value>Interruzione:  </value>
   </data>
   <data name="Calories" xml:space="preserve">
-    <value>Calorias:</value>
+    <value>Calorie:</value>
   </data>
   <data name="CurrentSpeed" xml:space="preserve">
-    <value>Velocidade atual:</value>
+    <value>Velocità corrente:</value>
   </data>
   <data name="DetailTitle" xml:space="preserve">
-    <value>Dados detalhados</value>
+    <value>Dati dettagliati</value>
   </data>
   <data name="Distance" xml:space="preserve">
-    <value>Distância:</value>
+    <value>Distanza:</value>
   </data>
   <data name="Distance2" xml:space="preserve">
-    <value>Distância:  </value>
+    <value>Distanza:  </value>
   </data>
   <data name="PauseButton" xml:space="preserve">
     <value>Pausa</value>
   </data>
   <data name="SpeedMap" xml:space="preserve">
-    <value> Velocidade:</value>
+    <value> Velocità:</value>
   </data>
   <data name="StartButton" xml:space="preserve">
-    <value>Start</value>
+    <value>Avvia</value>
   </data>
   <data name="StopButton" xml:space="preserve">
-    <value>Parada</value>
+    <value>Stop</value>
   </data>
   <data name="SwipeText" xml:space="preserve">
-    <value>passar à esquerda ou à direita para ver o mapa</value>
+    <value>-swipe per visualizzare la mappa:</value>
   </data>
   <data name="Time" xml:space="preserve">
     <value>Tempo: </value>
@@ -78,123 +69,123 @@
     <value>Tempo:</value>
   </data>
   <data name="WideContent1" xml:space="preserve">
-    <value>Distância: 0 velocidade: 0</value>
+    <value>Distanza: 0 velocità: 0</value>
   </data>
   <data name="WideContent2" xml:space="preserve">
-    <value>Velocidade média: 0 tempo de: 00:00:00</value>
+    <value>Vel. media: 0 Tempo: 00:00:00</value>
   </data>
   <data name="WideContent3" xml:space="preserve">
-    <value>Altitude Latitude Longitude</value>
+    <value>Longitudine latitudine altitudine</value>
   </data>
   <data name="Altitude2" xml:space="preserve">
-    <value>m de altitude</value>
+    <value>Altitudine m</value>
   </data>
   <data name="Latitude2" xml:space="preserve">
-    <value>Latitude</value>
+    <value>Latitudine</value>
   </data>
   <data name="Longitude2" xml:space="preserve">
-    <value>longitude</value>
+    <value>Longitudine</value>
   </data>
   <data name="About" xml:space="preserve">
-    <value>Sobre</value>
+    <value>Info</value>
   </data>
   <data name="Info1" xml:space="preserve">
-    <value>Aplicativo de código-fonte aberto por Zlatko Babic, 2015</value>
+    <value>Apri origine app da Zlatko Babic, 2015</value>
   </data>
   <data name="Info2" xml:space="preserve">
-    <value>Créditos</value>
+    <value>Riconoscimenti</value>
   </data>
   <data name="Info3" xml:space="preserve">
-    <value>Geo parte da classe NExtra fornecida por Daniel Saidi.</value>
+    <value>Geo parte della classe NExtra fornito da Daniel Saidi.</value>
   </data>
   <data name="Info4" xml:space="preserve">
-    <value>Fonte padrão de Warenhouse está licenciado sob a licença de fonte aberta SIL</value>
+    <value>Tipo di carattere Warenhouse Standard è concesso in licenza con licenza del tipo di carattere Open SIL</value>
   </data>
   <data name="Info5" xml:space="preserve">
-    <value>Inspirado por exemplo de Colin Eberhardt WP8Runner</value>
+    <value>Ispirato dall'esempio di Colin Eberhardt WP8Runner</value>
   </data>
   <data name="SwipeBack" xml:space="preserve">
-    <value>-passar para retornar ao aplicativo –</value>
+    <value>-swipe per tornare all'applicazione:</value>
   </data>
   <data name="AboutBack" xml:space="preserve">
-    <value>Voltar</value>
+    <value>Precedente</value>
   </data>
   <data name="Settings" xml:space="preserve">
-    <value>Configurações</value>
+    <value>Opzioni</value>
   </data>
   <data name="SettingsBack" xml:space="preserve">
-    <value>Voltar</value>
+    <value>Precedente</value>
   </data>
   <data name="SettingsMapTilt" xml:space="preserve">
-    <value>Mapa inclinação</value>
+    <value>Mappa passo</value>
   </data>
   <data name="AppBarAbout" xml:space="preserve">
-    <value>sobre</value>
+    <value>Info</value>
   </data>
   <data name="AppBarSettings" xml:space="preserve">
-    <value>config.</value>
+    <value>Opzioni</value>
   </data>
   <data name="WarningLocationDisabled" xml:space="preserve">
-    <value>Por favor, pela primeira vez no local!</value>
+    <value>Innanzitutto attivare posizione!</value>
   </data>
   <data name="WarningLocationNotSupported" xml:space="preserve">
-    <value>Local não tem suportado neste telefone!</value>
+    <value>Percorso non è supportato su questo telefono!</value>
   </data>
   <data name="MessageWarningText1" xml:space="preserve">
-    <value>Habilite os serviços no seu telefone local: configurações--&gt; Local = ligar</value>
+    <value>Attivare servizi di localizzazione sul telefono: impostazioni--percorso&gt; = ON</value>
   </data>
   <data name="MessageWarningText2" xml:space="preserve">
-    <value>Local não tem suportado neste telefone! Esse aplicativo não funciona sem GPS.</value>
+    <value>Percorso non è supportato su questo telefono! Questa applicazione non può funzionare senza GPS.</value>
   </data>
   <data name="MessageWarningTitle" xml:space="preserve">
-    <value>Advertência</value>
+    <value>Avviso</value>
   </data>
   <data name="Info6" xml:space="preserve">
-    <value>RunningIcon por Elegantthemes</value>
+    <value>Icona in Running da Elegantthemes</value>
   </data>
   <data name="SettingsRotateMap" xml:space="preserve">
-    <value>Rotação automática de mapa</value>
+    <value>Rotazione automatica della mappa</value>
   </data>
   <data name="SettingsMIles" xml:space="preserve">
-    <value>Milhas de uso e pés</value>
+    <value>Utilizzare miglia e piedi</value>
   </data>
   <data name="AltUpDown" xml:space="preserve">
-    <value>Diferença de altitude</value>
-  </data>
-  <data name="SettingsLocation" xml:space="preserve">
-    <value>Usar localização</value>
-  </data>
-  <data name="WarningLocationSettings" xml:space="preserve">
-    <value>Local desativado no app: configurações: Usar localização</value>
-  </data>
-  <data name="Privacy" xml:space="preserve">
-    <value>Política de privacidade: Este aplicativo usa os serviços de localização para rastrear seus movimentos e desenhá-la no mapa. Em nenhuma circunstância é que os dados utilizados pelo desenvolvedor ou de terceiros. Não existem dados nunca vai ser enviado para um servidor externo, por meio deste aplicativo.</value>
-  </data>
-  <data name="MessageLocation" xml:space="preserve">
-    <value>É que o aplicativo usa serviços de localização ok? Política de privacidade está localizada em "sobre" a página. Dados de local não são usados fora desse aplicativo. Você pode desativá-la a qualquer momento na página de configurações.</value>
-  </data>
-  <data name="MessageLocationTitle" xml:space="preserve">
-    <value>Usar localização</value>
+    <value>Altitudine diff.</value>
   </data>
   <data name="MessageExit" xml:space="preserve">
-    <value>Este aplicativo não pode funcionar sem serviços de localização! Saindo.</value>
+    <value>Questa applicazione non può funzionare senza servizi di localizzazione! Uscita.</value>
   </data>
   <data name="MessageExitTitle" xml:space="preserve">
-    <value>Sair do aplicativo</value>
+    <value>Uscita App</value>
+  </data>
+  <data name="MessageLocation" xml:space="preserve">
+    <value>Si tratta di tale applicazione utilizza i servizi di posizione ok? Informativa sulla privacy si trova sulla pagina. Dati del percorso non viene utilizzati di fuori di questa applicazione. È possibile disattivarlo in qualsiasi momento nella pagina Impostazioni.</value>
+  </data>
+  <data name="MessageLocationTitle" xml:space="preserve">
+    <value>Utilizzo dell'ubicazione</value>
+  </data>
+  <data name="Privacy" xml:space="preserve">
+    <value>Informativa sulla privacy: questa applicazione utilizza i servizi di posizione per registrare i movimenti e il disegno sulla mappa. In nessun caso è che i dati utilizzati dallo sviluppatore o di terze parti. Dati non verranno mai inviati al server esterno mediante questa applicazione.</value>
+  </data>
+  <data name="SettingsLocation" xml:space="preserve">
+    <value>Utilizza ubicazione</value>
+  </data>
+  <data name="WarningLocationSettings" xml:space="preserve">
+    <value>Posizione in app: impostazioni: posizione</value>
   </data>
   <data name="LocationEnabled" xml:space="preserve">
-    <value>Localização ligado</value>
+    <value>Posizione dopo aver attivato!</value>
   </data>
   <data name="Delete" xml:space="preserve">
-    <value>Excluir</value>
+    <value>Elimina</value>
   </data>
   <data name="MessageDeleteRuns" xml:space="preserve">
-    <value>Tem certeza de que deseja excluir completa executa o histórico?</value>
+    <value>Sono se si desidera eliminare completa esegue cronologia?</value>
   </data>
   <data name="SavedRuns" xml:space="preserve">
-    <value>Execuções salvas</value>
+    <value>Esecuzioni salvate</value>
   </data>
   <data name="CopiedToClipboard" xml:space="preserve">
-    <value>Copiados para a área de transferência</value>
+    <value>Copiato negli Appunti</value>
   </data>
 </root>

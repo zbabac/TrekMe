@@ -194,4 +194,7 @@
   <data name="SavedRuns" xml:space="preserve">
     <value>Séries enregistrées</value>
   </data>
+  <data name="CopiedToClipboard" xml:space="preserve">
+    <value>Copié dans le presse-papiers</value>
+  </data>
 </root>
