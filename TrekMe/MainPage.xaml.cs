@@ -25,6 +25,9 @@ namespace TrekMe
     /// It records time of the walk/run/drive, calculates speed, average speed, etc.
     /// It also draws the path at the map.
     /// It also updates large live tile with details and medium and small tile with kilometers taken.
+    /// Long press on map shows pin with coordinates. Tap on pin copies it to Clipboard.
+    /// Tap elsewhere on the map removes the pin.
+    /// Settings: map pitch, auto rotate map, use miles or kilometers
     /// </summary>
     /// <remarks>
     /// Author:     Zlatko Babic [zlatko.babic@outlook.com]
