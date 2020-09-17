@@ -1,12 +1,19 @@
 TrekMe  ---Windows Phone 8 and higher tracking app
 
+Binary xap for sideloading to the phone (Windows store for WP8 doesn't work anymore):
+**TrekMe_Release_AnyCPU.xap**  at: `https://github.com/zbabac/TrekMe/tree/master/TrekMe/Bin/Release`
+
+or from Source forge:
+
+`https://sourceforge.net/projects/trekme/`
+
 source code at GIT: https://github.com/zbabac/TrekMe.git
 
 
 or at SF: git clone ssh://zbabac@git.code.sf.net/p/trekme/code trekme-code
 
-Windows Phone Store location:
-http://www.windowsphone.com/s?appid=f519dba9-5601-4691-a614-2df33604452c
+Windows Phone Store location (only for WP10):
+`http://www.windowsphone.com/s?appid=f519dba9-5601-4691-a614-2df33604452c`
 
 Latest version 1.4.6.2
 
