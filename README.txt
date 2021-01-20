@@ -4,6 +4,7 @@ Binary xap for sideloading to the phone (Windows store for WP8 doesn't work anym
 **TrekMe_Release_AnyCPU.xap**  at: https://github.com/zbabac/TrekMe/tree/master/TrekMe/Bin/Release/TrekMe_Release_AnyCPU.xap
 
 or from Source forge:
+https://sourceforge.net/projects/trekme/
 
 
 source code at GIT: https://github.com/zbabac/TrekMe.git
