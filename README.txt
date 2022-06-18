@@ -1,4 +1,4 @@
-***TrekMe  ---Windows Phone 8 and higher tracking app  
+***TrekMe  ---Windows Phone 8 and higher tracking app***  
 
 This is final version 1.4.6.2 as released on Windows Phone Store (available only for Windows Phone 10 devices).  
 
@@ -30,7 +30,7 @@ Content:
  - Features
 
 '''Licensed under MIT license, so you are free to use the source code for any purpose you like, open source or commercial.
-Please, don't forget to mention me in your work. I hope that you will learn a lot, as I have learned from others.
+Please, don't forget to mention me in your work. I hope that you will learn a lot, as I have learned from others.'''
 
 Change log since v1.4.6.2:
 	- added 3 new features
