@@ -1,19 +1,23 @@
 TrekMe  ---Windows Phone 8 and higher tracking app
 
-Binary xap for sideloading to the phone (Windows store for WP8 doesn't work anymore):
-**TrekMe_Release_AnyCPU.xap**  at: https://github.com/zbabac/TrekMe/tree/master/TrekMe/Bin/Release/TrekMe_Release_AnyCPU.xap
+This is final version 1.4.6.2 as released on Windows Phone Store (available only for Windows Phone 10 devices).
+You can sideload here released xap on Windows Phone 8 and 8.1 devices, if you're still in possesion of one :)
 
-or from Source forge:
-https://sourceforge.net/projects/trekme/
+The is no more Microsoft store for Windows 8 and 8.1 devices, please check some threads like this one guide to sideload on Windows Phone 8.1:
+https://stackoverflow.com/questions/41239377/install-xap-file-locally-in-windows-phone-8-1-device
 
+The point is that you need SDK and registered account to be able to sideload. On some older Windows Phone 8 devices it may be possible just to copy the XAP file locally and install.
 
-source code at GIT: https://github.com/zbabac/TrekMe.git
+Windows Phone Store location (only for WP10):
 
+Other app locations:
+
+source code at GIT:
 
 or at SF: git clone ssh://zbabac@git.code.sf.net/p/trekme/code trekme-code
 
-Windows Phone Store location (only for WP10):
-`http://www.windowsphone.com/s?appid=f519dba9-5601-4691-a614-2df33604452c`
+The app uses maps stored on the windows phone, so it can be used offline (no Internet connection).
+It uses language that it set on the phone (if supported, check localizations in changelog below), otherwise it is set to English.
 
 Latest version 1.4.6.2
 
