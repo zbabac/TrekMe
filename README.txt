@@ -1,7 +1,8 @@
-TrekMe  ---Windows Phone 8 and higher tracking app
+***TrekMe  ---Windows Phone 8 and higher tracking app  
 
-This is final version 1.4.6.2 as released on Windows Phone Store (available only for Windows Phone 10 devices).
-You can sideload here released xap on Windows Phone 8 and 8.1 devices, if you're still in possesion of one :)
+This is final version 1.4.6.2 as released on Windows Phone Store (available only for Windows Phone 10 devices).  
+
+You can sideload here released xap on Windows Phone 8 and 8.1 devices, if you're still in possesion of one :)  
 
 The is no more Microsoft store for Windows 8 and 8.1 devices, please check some threads like this one guide to sideload on Windows Phone 8.1:
 https://stackoverflow.com/questions/41239377/install-xap-file-locally-in-windows-phone-8-1-device
@@ -9,10 +10,11 @@ https://stackoverflow.com/questions/41239377/install-xap-file-locally-in-windows
 The point is that you need SDK and registered account to be able to sideload. On some older Windows Phone 8 devices it may be possible just to copy the XAP file locally and install.
 
 Windows Phone Store location (only for WP10):
+http://www.windowsphone.com/s?appid=f519dba9-5601-4691-a614-2df33604452c)](http://www.windowsphone.com/s?appid=f519dba9-5601-4691-a614-2df33604452c
 
 Other app locations:
 
-source code at GIT:
+source code at GIT: https://github.com/zbabac/TrekMe.git
 
 or at SF: git clone ssh://zbabac@git.code.sf.net/p/trekme/code trekme-code
 
@@ -27,7 +29,7 @@ Content:
  - Prerequisities
  - Features
 
-Licensed under MIT license, so you are free to use the source code for any purpose you like, open source or commercial.
+'''Licensed under MIT license, so you are free to use the source code for any purpose you like, open source or commercial.
 Please, don't forget to mention me in your work. I hope that you will learn a lot, as I have learned from others.
 
 Change log since v1.4.6.2:
