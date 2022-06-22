@@ -19,7 +19,16 @@ source code at GIT: https://github.com/zbabac/TrekMe.git
 or at SF: git clone ssh://zbabac@git.code.sf.net/p/trekme/code trekme-code
 
 The app uses maps stored on the windows phone, so it can be used offline (no Internet connection).
-It uses language that it set on the phone (if supported, check localizations in changelog below), otherwise it is set to English.
+It uses language that it set on the phone (if supported, by the app localization), otherwise it is set to English.
+Localizations implemented:
+- German
+- Spanish
+- French
+- Italian
+- Norwegian (Bokmål)
+- Polish
+- Portuguese
+- Serbian
 
 Latest version 1.4.6.2
 
